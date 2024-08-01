@@ -182,6 +182,10 @@ sensor:
     name: JXF37
     resolution: 2400x1440@5~30fps
     docs: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+  JXQ03: &sensor_JXQ03
+    name: JXQ03
+    resolution: 3600x1600@5~30fps ???
+    docs: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
   JXQ03p: &sensor_JXQ03p
     name: JXQ03p
     resolution: 2304x1296@5~30fps ???
@@ -192,7 +196,7 @@ sensor:
     docs: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/omnivision.md"
   OS02G10: &sensor_OS02G10
     name: OS02G10
-    resolution: 1920x1080@3-fps
+    resolution: 1920x1080@30fps
     docs: "https://www.ovt.com/wp-content/uploads/2022/01/OS02G10-PB-v1.2-WEB.pdf"
 
 
@@ -643,6 +647,34 @@ devices:
     wifi: *wifi_ATBM6032
     firmware: ""
 
+  iflytek_fxp301_m:
+    device_type: camera
+    brand: iFlytek
+    model: XFP301-M
+    version:
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31ZX
+    sensor: *sensor_JXQ03
+    wifi: *wifi_RTL8188FTV
+    ethernet:
+    sd_card:
+    data_transfer: wifi
+    view_angle:
+    pan:
+    tilt:
+    power:
+    ir_led:
+    audio_in:
+    audio_out:
+    ip_rating:
+    last_price_w_ship:
+    last_price_date:
+    shop_url: ""
+    device_image: ""
+    wiki_page: ""
+    firmware: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-iflytek_fxp301_m.bin"
+
   litokam_c1:
     device_type: camera
     brand: Litokam
@@ -867,7 +899,7 @@ devices:
     wiki_page: ""
     firmware: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_k5.bin"
 
-  wansview_w6:
+  wansview_w6: &wansview_w6
     device_type: camera
     brand: Wansview
     model: W6
@@ -894,6 +926,15 @@ devices:
     device_image: ""
     wiki_page: ""
     firmware: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_w6.bin"
+
+  wansview_w6_os02g10:
+    <<: *wansview_w6
+    status: supported
+    flash_mb: 16
+    soc: *soc_T21N
+    sensor: *sensor_OS02G10
+    wifi: *wifi_RTL8188FTV
+    firmware: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_w6_os02g10.bin"
 
   wansview_w7:
     device_type: camera
@@ -1280,6 +1321,13 @@ devices:
     device_image: ""
     wiki_page: ""
     firmware: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj03hl_t31l.bin"
+
+  xiaomi_mjsxj03hl_t31n_jxq03:
+    <<: *xiaomi_mjsxj03hl_t31l
+    soc: *soc_T31N
+    sensor: *sensor_JXQ03
+    wifi: *wifi_RTL8189FTV
+    firmware: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj03hl_t31n_jxq03.bin"
 
   xiaomi_mjsxj03hl_t31n:
     <<: *xiaomi_mjsxj03hl_t31l
