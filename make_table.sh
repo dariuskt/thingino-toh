@@ -2,7 +2,7 @@
 
 echo -e "\n### Table of Hardware\n"
 
-cat thingino-toh.yml | yq \
+cat toh.yml | yq \
 '.devices[] | ""
 +","+.device_type
 +","+.brand
@@ -25,5 +25,5 @@ cat thingino-toh.yml | yq \
 | tr -d '"' | column -t -s',' -o ' | ' --table-columns \
 " ,type,brand,model,status,soc,sensor,wifi,flash MB,CPU MHz,RAM MB,ethernet,wifi,data,resolution,power,price,"
 
-#yq -y thingino-toh.yml >/dev/null
+yq '.devices | del(.template)' toh.yml > toh.json
 

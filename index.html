@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>ToH</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.1.3/css/dataTables.dataTables.css">
+	<style type="text/css">
+		.version,
+		.soc-brand,
+		.soc-family,
+		.soc-cpu_arch,
+		.soc-docs_url,
+		.soc-max_resolution,
+		.soc-max_encoding,
+		.soc-docs_url,
+		.sensor-docs_url,
+		.wifi-interface,
+		.wifi-w2g_radio,
+		.wifi-w5g,
+		.wifi-docs_url {display: none}
+		h1 {position: absolute; margin-top: 0;}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<script src="https://cdn.datatables.net/2.1.3/js/dataTables.js"></script>
+</head>
+<body>
+
+	<h1>Table of Hardware</h1>
+
+
+	<table id="toh" class="row-border hover compact" style="width:100%"><thead><tr></tr><thead><tbody></tbody><tfoot><tr></tr></tfoot></table>
+
+	<p>Repo at: <a href="https://github.com/dariuskt/thingino-toh">https://github.com/dariuskt/thingino-toh</a></p>
+
+	<script type="text/javascript" class="init">
+
+	$(document).ready(function () {
+
+		$.getJSON('toh.json', setupTable);
+
+		function setupTable(data) {
+
+			// build and flatten headers
+			function addHeader(h) {
+				$('#toh thead tr').append('<th class="'+h+'">'+h+'</th>')
+			}
+			function buildHeaders(ob, prefix='') {
+				$(Object.keys(ob)).each(function(){
+					if ( ob[this] instanceof Object) {
+						buildHeaders(ob[this], this+'-')
+					} else {
+						addHeader(prefix+this);
+					}
+				});
+			}
+			var first = $(Object.keys(data))[0]
+			buildHeaders(data[first])
+
+
+			// add fitering inputs
+			$('#toh tfoot').html($('#toh thead tr').clone())
+			$('#toh thead th').each(function (i) {
+				$(this).append('<div><input type="text" style="width:50px;" data-index="' + i + '" /></div>')
+			})
+
+
+			// populate data
+			function addDataCell(row, cl, val, link='') {
+				val = (val===null)?'':val
+				val = (val===false)?'-':val
+				val = (link !== null && link.length>5)?`<a href="${link}">${val}</a>`:val
+
+				$(row).append(`<td class="${cl}">${val}</td>`)
+			}
+			$(Object.keys(data)).each(function(){
+				var dev = this;
+				var tr = $('<tr></tr>')
+				$('#toh tfoot tr th').each(function(){
+					var cl=this.innerHTML
+					var [p,c] = cl.split('-')
+					if ( c === undefined ) {
+						val = data[dev][cl]
+					} else {
+						val = data[dev][p][c]
+					}
+
+					var link = ''
+					if (cl.endsWith('_url') && val !== null) {
+						link = val
+						if (val.length>5) {
+							val = 'link'
+						}
+					}
+					if (cl == 'soc-name') {    link = data[dev].soc.docs_url }
+					if (cl == 'sensor-name') { link = data[dev].sensor.docs_url }
+					if (cl == 'wifi-name') {   link = data[dev].wifi.docs_url }
+
+					addDataCell(tr, cl, val, link);
+				});
+				$('#toh tbody').append(tr)
+			});
+
+
+
+			var table = $('#toh').DataTable({
+				paging: false,
+				fixedColumns: true
+			});
+
+
+			$('input').on('click', function(e){e.stopPropagation();});
+
+			$(table.table().container()).on('keyup', 'thead input', function () {
+				table
+					.column($(this).data('index'))
+					.search(this.value)
+					.draw();
+			});
+		}
+	});
+
+
+
+	</script>
+</body>
+</html>
+
+
+
+
