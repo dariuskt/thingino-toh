@@ -949,7 +949,7 @@
     "wiki_page_url": "",
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_g6.bin"
   },
-  "wansview_k5": {
+  "wansview_k5_ov2735b": {
     "device_type": "camera",
     "brand": "Wansview",
     "model": "K5",
@@ -997,7 +997,57 @@
     "shop_url": "https://www.amazon.com/Security-Wansview-1080PHD-Monitor-Detection/dp/B093B9LQKF",
     "device_image": "",
     "wiki_page_url": "",
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_k5.bin"
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_k5_ov2735b.bin"
+  },
+  "wansview_k5_os02b10": {
+    "device_type": "camera",
+    "brand": "Wansview",
+    "model": "K5",
+    "version": null,
+    "status": "supported",
+    "flash_mb": 8,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T21",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2048x2048",
+      "max_encoding": "1920x1080@40fps",
+      "name": "T21N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 800
+    },
+    "sensor": {
+      "name": "OS02B10",
+      "resolution": "1600x1200@30fps",
+      "docs_url": "https://www.ovt.com/wp-content/uploads/2022/01/OV02B-PB-v1.1-WEB.pdf"
+    },
+    "wifi": {
+      "name": "MT7601STA",
+      "interface": "USB?",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://github.com/themactep/thingino-firmware/blob/master/package/wifi-mt7601sta/wifi-mt7601sta.mk"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "data_transfer": "wifi",
+    "view_angle": 125,
+    "pan": false,
+    "tilt": false,
+    "power": "wired 5V",
+    "ir_led": "false?",
+    "audio_in": true,
+    "audio_out": true,
+    "ip_rating": null,
+    "last_price_w_ship": null,
+    "last_price_date": null,
+    "shop_url": "https://www.amazon.com/Security-Wansview-1080PHD-Monitor-Detection/dp/B093B9LQKF",
+    "device_image": "",
+    "wiki_page_url": "",
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_k5_os02b10.bin"
   },
   "wansview_w6": {
     "device_type": "camera",

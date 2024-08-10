@@ -194,6 +194,10 @@ sensor:
     name: OV2735b
     resolution: 2106x1595@5~30fps
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/omnivision.md"
+  OS02B10: &sensor_OS02B10
+    name: OS02B10
+    resolution: 1600x1200@30fps
+    docs_url: "https://www.ovt.com/wp-content/uploads/2022/01/OV02B-PB-v1.1-WEB.pdf"
   OS02G10: &sensor_OS02G10
     name: OS02G10
     resolution: 1920x1080@30fps
@@ -808,7 +812,7 @@ devices:
     wiki_page_url: ""
     firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_g6.bin"
 
-  wansview_k5:
+  wansview_k5_ov2735b: &wansview_k5
     device_type: camera
     brand: Wansview
     model: K5
@@ -834,7 +838,16 @@ devices:
     shop_url: "https://www.amazon.com/Security-Wansview-1080PHD-Monitor-Detection/dp/B093B9LQKF"
     device_image: ""
     wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_k5.bin"
+    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_k5_ov2735b.bin"
+
+  wansview_k5_os02b10:
+    <<: *wansview_k5
+    status: supported
+    flash_mb: 8
+    soc: *soc_T21N
+    sensor: *sensor_OS02B10
+    wifi: *wifi_MT7601STA
+    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_k5_os02b10.bin"
 
   wansview_w6: &wansview_w6
     device_type: camera
