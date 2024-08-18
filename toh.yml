@@ -24,6 +24,11 @@ soc_family:
     cpu_arch: XBurst1
     max_resolution: 2308x2048
     max_encoding: 3MP@40fps
+  ingenic_T30: &soc_family_ingenic_T30
+    family: T30
+    cpu_arch: XBurst1
+    max_resolution: 2688x2048
+    max_encoding: 3840x2160@30fps
   ingenic_T31: &soc_family_ingenic_T31
     family: T31
     cpu_arch: XBurst1
@@ -72,6 +77,12 @@ soc:
     ram_mb: 64
     cpu_clock_mhz: 1400
   T23ZN:
+  T30L: &soc_T30L
+    <<: *soc_brand_ingenic
+    <<: *soc_family_ingenic_T30
+    name: T30L
+    ram_mb: 64
+    cpu_clock_mhz: 1500
   T31A:
   T31AL: &soc_T31AL
     <<: *soc_brand_ingenic
@@ -118,6 +129,14 @@ sensor:
     name: --
     resolution: --
     docs_url: "--"
+  SC1235: &sensor_SC1235
+    name: SC1235
+    resolution: 1800x1200@30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+  SC1A4T: &sensor_SC1A4T
+    name: SC1A4T
+    resolution: ???
+    docs_url: ""
   SC223A: &sensor_SC223A
     name: SC223A
     resolution: 1920x1080@30fps
@@ -534,7 +553,7 @@ devices:
 
   dekco_dc5l:
     device_type: camera
-    brand: Deco
+    brand: Decko
     model: DC5L
     version:
     status: supported
@@ -643,6 +662,62 @@ devices:
     device_image: ""
     wiki_page_url: ""
     firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-iflytek_fxp301_m.bin"
+
+  jooan_a6m:
+    device_type: camera
+    brand: Jooan
+    model: A6M
+    version:
+    status: supported
+    flash_mb: 8
+    soc: *soc_T23N
+    sensor: *sensor_SC1A4T
+    wifi: *wifi_ATBM6012BX
+    ethernet: false
+    sd_card: true
+    data_transfer: wifi
+    view_angle:
+    pan: false
+    tilt: false
+    power:
+    ir_led: 850
+    audio_in:
+    audio_out: true
+    ip_rating:
+    last_price_w_ship:
+    last_price_date:
+    shop_url: ""
+    device_image: ""
+    wiki_page_url: ""
+    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_a6m.bin"
+
+  jooan_q3h:
+    device_type: camera
+    brand: Jooan
+    model: Q3H
+    version:
+    status: supported
+    flash_mb: 16
+    soc: *soc_T30L
+    sensor: *sensor_SC1235
+    wifi: *wifi_RTL8189FTV
+    ethernet: false
+    sd_card: true
+    data_transfer: wifi
+    view_angle:
+    pan: false
+    tilt: false
+    power:
+    ir_led: 850
+    audio_in:
+    audio_out: true
+    ip_rating:
+    last_price_w_ship:
+    last_price_date:
+    shop_url: ""
+    device_image: ""
+    wiki_page_url: ""
+    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_q3h.bin"
 
   litokam_c1:
     device_type: camera
