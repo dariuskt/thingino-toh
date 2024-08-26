@@ -1,0 +1,20 @@
+  ${cam}:
+    id: '$cam'
+    device_type: '$device_type'
+    brand: '$brand'
+    model: '$model'
+    status: $status
+    flash_mb: $flash_mb
+    soc: '*soc_${soc:-tpl}'
+    sensor: '*sensor_${sensor:-tpl}'
+    wifi: '*wifi_${wifi:-tpl}'
+    ethernet: $ethernet
+    sd_card: $sd_card
+    pan_tilt: $pan_tilt
+    mic: $mic
+    speaker: $speaker
+    ir_cut: $ir_cut
+    ir_850: $ir_850
+    ir_940: $ir_940
+    firmware_url: 'https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-${cam}.bin'
+

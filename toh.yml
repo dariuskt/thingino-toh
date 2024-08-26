@@ -9,6 +9,11 @@ soc_family:
     cpu_arch: --
     max_resolution: --
     max_encoding: --
+  ingenic_T10: &soc_family_ingenic_T10
+    family: T10
+    cpu_arch: XBurst1
+    max_resolution: 1280x1024
+    max_encoding: 960p@40fps
   ingenic_T20: &soc_family_ingenic_T20
     family: T20
     cpu_arch: XBurst1
@@ -42,48 +47,54 @@ soc:
     name: --
     ram_mb: "--:"
     cpu_clock_mhz: "--:"
+  T10L: &soc_T10L
+    <<: *soc_brand_ingenic
+    <<: *soc_family_ingenic_T10
+    name: T10L
+    ram_mb: 64
+    cpu_clock_mhz: 860
   T20L: &soc_T20L
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T20
     name: T20L
     ram_mb: 64
     cpu_clock_mhz: 800
-  T20N:
   T20X: &soc_T20X
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T20
     name: T20X
     ram_mb: 128
     cpu_clock_mhz: 800
-  T21L:
   T21N: &soc_T21N
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T21
     name: T21N
     ram_mb: 64
     cpu_clock_mhz: 800
-  T21X:
   T21Z: &soc_T21Z
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T21
     name: T21Z
     ram_mb: 64
     cpu_clock_mhz: 800
-  T21ZL:
   T23N: &soc_T23N
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T23
     name: T23N
     ram_mb: 64
     cpu_clock_mhz: 1400
-  T23ZN:
   T30L: &soc_T30L
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T30
     name: T30L
     ram_mb: 64
-    cpu_clock_mhz: 1500
-  T31A:
+    cpu_clock_mhz: 1000
+  T30X: &soc_T30X
+    <<: *soc_brand_ingenic
+    <<: *soc_family_ingenic_T30
+    name: T30X
+    ram_mb: 128
+    cpu_clock_mhz: 1000
   T31AL: &soc_T31AL
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T31
@@ -96,6 +107,12 @@ soc:
     name: T31L
     ram_mb: 64
     cpu_clock_mhz: 1000
+  T31LC: &soc_T31LC
+    <<: *soc_brand_ingenic
+    <<: *soc_family_ingenic_T31
+    name: T31LC
+    ram_mb: ??
+    cpu_clock_mhz: ??
   T31N: &soc_T31N
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T31
@@ -108,13 +125,6 @@ soc:
     name: T31X
     ram_mb: 128
     cpu_clock_mhz: 1400
-  T31ZL:
-  T31LC: &soc_T31LC
-    <<: *soc_brand_ingenic
-    <<: *soc_family_ingenic_T31
-    name: T31LC
-    ram_mb: ??
-    cpu_clock_mhz: ??
   T31ZX: &soc_T31ZX
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T31
@@ -129,6 +139,70 @@ sensor:
     name: --
     resolution: --
     docs_url: "--"
+  GC1084: &sensor_GC1084
+    name: GC1084
+    resolution: ??
+    docs_url: "??"
+  GC2053: &sensor_GC2053
+    name: GC2053
+    resolution: 1920x1080@30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+  GC2083: &sensor_GC2083
+    name: GC2083
+    resolution: 1920x1080@30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+  GC4653: &sensor_GC4653
+    name: GC4653
+    resolution: 2560x1440@30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+  IMX327: &sensor_IMX327
+    name: IMX327
+    resolution: 2136x2781@5~25fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/sony.md"
+  JXF22: &sensor_JXF22
+    name: JXF22
+    resolution: 1920x1080@60fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+  JXF23: &sensor_JXF23
+    name: JXF23
+    resolution: 1920x1080@30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+  JXF37: &sensor_JXF37
+    name: JXF37
+    resolution: 2400x1440@5~30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+  JXH42: &sensor_JXH42
+    name: JXH42
+    resolution: ??@60fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+  JXH62: &sensor_JXH62
+    name: JXH62
+    resolution: ??@60fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+  JXK04: &sensor_JXK04
+    name: JXK04
+    resolution: 2560x1440@5~30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+  JXQ03: &sensor_JXQ03
+    name: JXQ03
+    resolution: 3600x1600@5~30fps ???
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+  JXQ03P: &sensor_JXQ03P
+    name: JXQ03p
+    resolution: 2304x1296@5~30fps ???
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+  OS02B10: &sensor_OS02B10
+    name: OS02B10
+    resolution: 1600x1200@30fps
+    docs_url: "https://www.ovt.com/wp-content/uploads/2022/01/OV02B-PB-v1.1-WEB.pdf"
+  OS02G10: &sensor_OS02G10
+    name: OS02G10
+    resolution: 1920x1080@30fps
+    docs_url: "https://www.ovt.com/wp-content/uploads/2022/01/OS02G10-PB-v1.2-WEB.pdf"
+  OV2735B: &sensor_OV2735B
+    name: OV2735b
+    resolution: 2106x1595@5~30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/omnivision.md"
   SC1235: &sensor_SC1235
     name: SC1235
     resolution: 1800x1200@30fps
@@ -137,13 +211,13 @@ sensor:
     name: SC1A4T
     resolution: ???
     docs_url: ""
-  SC223A: &sensor_SC223A
-    name: SC223A
-    resolution: 1920x1080@30fps
-    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
   SC2235: &sensor_SC2235
     name: SC2235
     resolution: 1920x1080@50fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+  SC223A: &sensor_SC223A
+    name: SC223A
+    resolution: 1920x1080@30fps
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
   SC2300: &sensor_SC2300
     name: SC2300
@@ -173,54 +247,10 @@ sensor:
     name: SC4236
     resolution: 2304x1536@30fps
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
-  SC4336p: &sensor_SC4336p
+  SC4336P: &sensor_SC4336P
     name: SC4336p
     resolution: 2880x1620@30fps ???
     docs_url: "https://smartsens.oss-cn-beijing.aliyuncs.com/web/img/1677747703063551255.pdf"
-  GC2053: &sensor_GC2053
-    name: GC2053
-    resolution: 1920x1080@30fps
-    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
-  GC2083: &sensor_GC2083
-    name: GC2083
-    resolution: 1920x1080@30fps
-    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
-  GC4653: &sensor_GC4653
-    name: GC4653
-    resolution: 2560x1440@30fps
-    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
-  JXF22: &sensor_JXF22
-    name: JXF22
-    resolution: 1920x1080@60fps
-    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
-  JXF23: &sensor_JXF23
-    name: JXF23
-    resolution: 1920x1080@30fps
-    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
-  JXF37: &sensor_JXF37
-    name: JXF37
-    resolution: 2400x1440@5~30fps
-    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
-  JXQ03: &sensor_JXQ03
-    name: JXQ03
-    resolution: 3600x1600@5~30fps ???
-    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
-  JXQ03p: &sensor_JXQ03p
-    name: JXQ03p
-    resolution: 2304x1296@5~30fps ???
-    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
-  OV2735b: &sensor_OV2735b
-    name: OV2735b
-    resolution: 2106x1595@5~30fps
-    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/omnivision.md"
-  OS02B10: &sensor_OS02B10
-    name: OS02B10
-    resolution: 1600x1200@30fps
-    docs_url: "https://www.ovt.com/wp-content/uploads/2022/01/OV02B-PB-v1.1-WEB.pdf"
-  OS02G10: &sensor_OS02G10
-    name: OS02G10
-    resolution: 1920x1080@30fps
-    docs_url: "https://www.ovt.com/wp-content/uploads/2022/01/OS02G10-PB-v1.2-WEB.pdf"
 
 
 
@@ -273,14 +303,38 @@ wifi:
     w2g_HT40: true
     w5g: false
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
-  BCM43: &wifi_BCM43
-    name: BCM43???
-    interface:
-    w2g: ???
-    w2g_radio:
-    w2g_HT40:
-    w5g:
-    docs_url: ""
+  ETH: &wifi_ETH
+    name: --
+    interface: --
+    w2g: --
+    w2g_radio: --
+    w2g_HT40: --
+    w5g: --
+    docs_url: "--"
+  HI3881: &wifi_HI3881
+    name: HI3881
+    interface: SDIO
+    w2g: b/g/n
+    w2g_radio: 1T1R
+    w2g_HT40: false
+    w5g: false
+    docs_url: "??"
+  MT7601: &wifi_MT7601
+    name: MT7601
+    interface: ??
+    w2g: ??
+    w2g_radio: ??
+    w2g_HT40: ??
+    w5g: ??
+    docs_url: "??"
+  MT7601U: &wifi_MT7601U
+    name: MT7601U
+    interface: ??
+    w2g: ??
+    w2g_radio: ??
+    w2g_HT40: ??
+    w5g: ??
+    docs_url: "??"
   MT7601STA: &wifi_MT7601STA
     name: MT7601STA
     interface: USB?
@@ -321,6 +375,14 @@ wifi:
     w2g_HT40: true
     w5g: false
     docs_url: "https://fccid.io/pdf.php?id=1291410"
+  SSV6155: &wifi_SSV6155
+    name: SSV6155
+    interface: ??
+    w2g: ??
+    w2g_radio: ??
+    w2g_HT40: ??
+    w5g: ??
+    docs_url: "??"
   SSV6158: &wifi_SSV6158
     name: SSV6158
     interface: SDIO
@@ -329,71 +391,30 @@ wifi:
     w2g_HT40: true
     w5g: false
     docs_url: "http://www.icomm-semi.com/Uploads/Temp/files/2022-08-18/SV6158%20Datasheet%20V1.2.pdf"
-
+  SYN43436: &wifi_SYN43436
+    name: SYN43436
+    interface: ??
+    w2g: ??
+    w2g_radio: ??
+    w2g_HT40: ??
+    w5g: ??
+    docs_url: "??"
+  SYN43438: &wifi_SYN43438
+    name: SYN43438
+    interface: ??
+    w2g: ??
+    w2g_radio: ??
+    w2g_HT40: ??
+    w5g: ??
+    docs_url: "??"
 
 
 devices:
-  template:
-    device_type: --
-    brand: --
-    model: --
-    version: --
-    status: --
-    flash_mb: "--:"
-    soc: *soc_tpl
-    sensor: *sensor_tpl
-    wifi: *wifi_tpl
-    ethernet: --
-    sd_card: --
-    data_transfer: --
-    view_angle: --
-    pan: --
-    tilt: --
-    power: --
-    ir_led: --
-    audio_in: --
-    audio_out: --
-    ip_rating: --
-    last_price_w_ship: --
-    last_price_date: --
-    shop_url: "--"
-    device_image: "--"
-    wiki_page_url: "--"
-    firmware_url: "--"
-
-  aosu_c5:
-    device_type: camera
-    brand: AOSU
-    model: C5L
-    version:
-    status: supported
-    flash_mb: 16
-    soc: *soc_T31L
-    sensor: *sensor_SC3336
-    wifi: *wifi_RTL8188FTV
-    ethernet: false
-    sd_card: true?
-    data_transfer: wifi
-    view_angle:
-    pan: true
-    tilt: true
-    power: wired
-    ir_led:
-    audio_in:
-    audio_out:
-    ip_rating: 65
-    last_price_w_ship: 63 USD
-    last_price_date: 2024-07
-    shop_url: "https://www.amazon.com/dp/B0BXP8BCH1"
-    device_image: 
-    wiki_page_url:
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-aosu_c5l.bin"
-
-  aqoee_c1:
-    device_type: camera
-    brand: Aqoee
-    model: C1
-    version:
+  aoqee_c1:
+    id: aoqee_c1
+    device_type: TBD
+    brand: aoqee
+    model: c1
     status: supported
     flash_mb: 8
     soc: *soc_T23N
@@ -401,56 +422,45 @@ devices:
     wifi: *wifi_ATBM6062
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: false
-    tilt: false
-    power:
-    ir_led: 850
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: 
-    wiki_page_url:
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-aqoee_c1.bin"
-
-
-  personalcam:
-    device_type: camera
-    brand: AT
-    model: Personal Cam 3
-    version:
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-aoqee_c1.bin
+  aosu_c5l:
+    id: aosu_c5l
+    device_type: TBD
+    brand: aosu
+    model: c5l
     status: supported
     flash_mb: 16
-    soc: *soc_T31X
-    sensor: *sensor_GC2053
-    wifi: *wifi_ATBM6031
+    soc: *soc_T31L
+    sensor: *sensor_SC3336
+    wifi: *wifi_RTL8188FTV
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: true
-    tilt: true
-    power:
-    ir_led: 850
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url:
-    device_image: 
-    wiki_page_url:
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-personalcam.bin"
-
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-aosu_c5l.bin
+    view_angle: null
+    power: wired
+    ip_rating: 65
+    last_price_w_ship: 63 USD
+    last_price_date: 2024-07
+    shop_url: https://www.amazon.com/dp/B0BXP8BCH1
+    device_image: null
+    wiki_page_url: null
   atom_cam_2:
-    device_type: camera
-    brand: Atom
-    model: AC2
-    version:
+    id: atom_cam_2
+    device_type: TBD
+    brand: atom
+    model: cam
     status: supported
     flash_mb: 16
     soc: *soc_T31X
@@ -458,27 +468,26 @@ devices:
     wifi: *wifi_ATBM6031
     ethernet: false
     sd_card: true
-    data_transfer: wifi
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-atom_cam_2.bin
     view_angle: 120
-    pan: false
-    tilt: false
     power: wired 5V/1A
-    ir_led: 850
-    audio_in: true
-    audio_out: true
     ip_rating: 67
-    last_price_w_ship:
-    last_price_date:
-    shop_url: "https://www.amazon.co.jp/-/en/Sensitivity-Waterproof-Dustproof-Infrared-Detection/dp/B094YDG7ZV"
-    device_image: 
-    wiki_page_url:
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-atom_cam_2.bin"
-
-  chinamobile_hdc51_t21n: &chinamobile_hdc51_t21n
-    device_type: camera
-    brand: China Mobile
-    model: HDC-51
-    version:
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: https://www.amazon.co.jp/-/en/Sensitivity-Waterproof-Dustproof-Infrared-Detection/dp/B094YDG7ZV
+    device_image: null
+    wiki_page_url: null
+  chinamobile_hdc51_t21n:
+    id: chinamobile_hdc51_t21n
+    device_type: TBD
+    brand: chinamobile
+    model: hdc51
     status: supported
     flash_mb: 16
     soc: *soc_T21N
@@ -486,41 +495,80 @@ devices:
     wifi: *wifi_RTL8189FTV
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle: 
-    pan: false
-    tilt: false
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-chinamobile_hdc51_t21n.bin
+    view_angle: null
     power: wired
-    ir_led: false
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: "https://www.chinahao.com/Product/619963647106"
-    device_image: 
-    wiki_page_url:
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-chinamobile_hdc51_t21n.bin"
-
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: https://www.chinahao.com/Product/619963647106
+    device_image: null
+    wiki_page_url: null
   chinamobile_hdc51_t31l_jxf37:
-    <<: *chinamobile_hdc51_t21n
+    id: chinamobile_hdc51_t31l_jxf37
+    device_type: TBD
+    brand: chinamobile
+    model: hdc51
+    status: supported
+    flash_mb: 16
     soc: *soc_T31L
     sensor: *sensor_JXF37
     wifi: *wifi_RTL8188FTV
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-chinamobile_hdc51_t31l_jxf37.bin"
-
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-chinamobile_hdc51_t31l_jxf37.bin
+    view_angle: null
+    power: wired
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: https://www.chinahao.com/Product/619963647106
+    device_image: null
+    wiki_page_url: null
   chinamobile_hdc51_t31l_sc2332:
-    <<: *chinamobile_hdc51_t21n
+    id: chinamobile_hdc51_t31l_sc2332
+    device_type: TBD
+    brand: chinamobile
+    model: hdc51
+    status: supported
+    flash_mb: 16
     soc: *soc_T31L
     sensor: *sensor_SC2332
     wifi: *wifi_RTL8188FTV
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-chinamobile_hdc51_t31l_sc2332.bin"
-
-  cinnado_d1_t23n: &cinnado_d1_t23n
-    device_type: camera
-    brand: Cinnado
-    model: D1
-    version:
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-chinamobile_hdc51_t31l_sc2332.bin
+    view_angle: null
+    power: wired
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: https://www.chinahao.com/Product/619963647106
+    device_image: null
+    wiki_page_url: null
+  cinnado_d1_t23n:
+    id: cinnado_d1_t23n
+    device_type: TBD
+    brand: cinnado
+    model: d1
     status: supported
     flash_mb: 8
     soc: *soc_T23N
@@ -528,34 +576,55 @@ devices:
     wifi: *wifi_ATBM6012BX
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: true
-    tilt: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-cinnado_d1_t23n.bin
+    view_angle: null
     power: wired 5V/1A
-    ir_led: 940
-    audio_in: true
-    audio_out: true
-    ip_rating:
+    ip_rating: null
     last_price_w_ship: 30 EUR ???
     last_price_date: 2024-07
-    shop_url: "https://www.amazon.de/-/en/Cinnado-Indoor-Surveillance-Camera-Compatible/dp/B0CDBTDRTP ???"
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-cinnado_d1_t23n.bin"
-
+    shop_url: https://www.amazon.de/-/en/Cinnado-Indoor-Surveillance-Camera-Compatible/dp/B0CDBTDRTP
+      ???
+    device_image: ''
+    wiki_page_url: ''
   cinnado_d1_t31l:
-    <<: *cinnado_d1_t23n
+    id: cinnado_d1_t31l
+    device_type: TBD
+    brand: cinnado
+    model: d1
+    status: supported
+    flash_mb: 8
     soc: *soc_T31L
     sensor: *sensor_SC2336
     wifi: *wifi_ATBM6031
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-cinnado_d1_t31l.bin"
-
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-cinnado_d1_t31l.bin
+    view_angle: null
+    power: wired 5V/1A
+    ip_rating: null
+    last_price_w_ship: 30 EUR ???
+    last_price_date: 2024-07
+    shop_url: https://www.amazon.de/-/en/Cinnado-Indoor-Surveillance-Camera-Compatible/dp/B0CDBTDRTP
+      ???
+    device_image: ''
+    wiki_page_url: ''
   dekco_dc5l:
-    device_type: camera
-    brand: Decko
-    model: DC5L
-    version:
+    id: dekco_dc5l
+    device_type: TBD
+    brand: dekco
+    model: dc5l
     status: supported
     flash_mb: 16
     soc: *soc_T31L
@@ -563,27 +632,83 @@ devices:
     wifi: *wifi_RTL8188FTV
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: true
-    tilt: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-dekco_dc5l.bin
+    view_angle: null
     power: wired 12V/0.25A
-    ir_led: 940
-    audio_in: true
-    audio_out: true
     ip_rating: 54
     last_price_w_ship: 63 USD
     last_price_date: 2024-07
-    shop_url: "https://www.amazon.com/Security-DEKCO-Surveillance-Detection-Waterproof/dp/B09GK7RHSM"
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-dekco_dc5l.bin"
-
-  galayou_g2_t23n: &galayou_g2_t23n
-    device_type: camera
-    brand: Galayou
-    model: G2
-    version:
+    shop_url: https://www.amazon.com/Security-DEKCO-Surveillance-Detection-Waterproof/dp/B09GK7RHSM
+    device_image: ''
+    wiki_page_url: ''
+  ec76_u15:
+    id: ec76_u15
+    device_type: TBD
+    brand: ec76
+    model: u15
+    status: supported
+    flash_mb: 8
+    soc: *soc_T21N
+    sensor: *sensor_JXF23
+    wifi: *wifi_RTL8188FTV
+    ethernet: true
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-ec76_u15.bin
+  escam_g16:
+    id: escam_g16
+    device_type: TBD
+    brand: escam
+    model: g16
+    status: supported
+    flash_mb: 8
+    soc: *soc_T21N
+    sensor: *sensor_JXH62
+    wifi: *wifi_MT7601U
+    ethernet: true
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-escam_g16.bin
+  eufy_e220:
+    id: eufy_e220
+    device_type: TBD
+    brand: eufy
+    model: e220
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_SC3336
+    wifi: *wifi_SYN43438
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_e220.bin
+  galayou_g2_t23n:
+    id: galayou_g2_t23n
+    device_type: TBD
+    brand: galayou
+    model: g2
     status: supported
     flash_mb: 8
     soc: *soc_T23N
@@ -591,27 +716,64 @@ devices:
     wifi: *wifi_ATBM6012BX
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: true
-    tilt: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_g2_t23n.bin
+    view_angle: null
     power: wired
-    ir_led: 940
-    audio_in: true
-    audio_out: true
-    ip_rating:
+    ip_rating: null
     last_price_w_ship: 35 EUR
     last_price_date: 2024-07
-    shop_url: "https://www.amazon.de/dp/B0B28PS326"
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_g2_t23n.bin"
-
-  galayou_y4_t31n: &galayou_y4_t31n
-    device_type: camera
-    brand: Galayou
-    model: Y4
-    version:
+    shop_url: https://www.amazon.de/dp/B0B28PS326
+    device_image: ''
+    wiki_page_url: ''
+  galayou_y4_t23n_atbm6062:
+    id: galayou_y4_t23n_atbm6062
+    device_type: TBD
+    brand: galayou
+    model: y4
+    status: supported
+    flash_mb: 8
+    soc: *soc_T23N
+    sensor: *sensor_SC2336
+    wifi: *wifi_ATBM6062
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_y4_t23n_atbm6062.bin
+  galayou_y4_t31l_atbm6032:
+    id: galayou_y4_t31l_atbm6032
+    device_type: TBD
+    brand: galayou
+    model: y4
+    status: supported
+    flash_mb: 8
+    soc: *soc_T31L
+    sensor: *sensor_SC2336
+    wifi: *wifi_ATBM6032
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: false
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_y4_t31l_atbm6032.bin
+  galayou_y4_t31n_atbm6012b:
+    id: galayou_y4_t31n_atbm6012b
+    device_type: TBD
+    brand: galayou
+    model: y4
     status: supported
     flash_mb: 8
     soc: *soc_T31N
@@ -619,55 +781,64 @@ devices:
     wifi: *wifi_ATBM6012B
     ethernet: false
     sd_card: true
-    data_transfer: wifi
+    pan_tilt: true
+    mic: true
+    speaker: false
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_y4_t31n_atbm6012b.bin
     view_angle: 90
-    pan: true
-    tilt: true
     power: wired 5V/1A microUSB
-    ir_led: 940
-    audio_in: true
-    audio_out: true?
-    ip_rating:
+    ip_rating: null
     last_price_w_ship: 38 EUR
     last_price_date: 2024-07
-    shop_url: "https://www.amazon.de/dp/B09Y5FG27D"
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_y4_t31n.bin"
-
-  iflytek_fxp301_m:
-    device_type: camera
-    brand: iFlytek
-    model: XFP301-M
-    version:
+    shop_url: https://www.amazon.de/dp/B09Y5FG27D
+    device_image: ''
+    wiki_page_url: ''
+  iflytek_xfp301_m_rtl8188ftv:
+    id: iflytek_xfp301_m_rtl8188ftv
+    device_type: TBD
+    brand: iflytek
+    model: xfp301
     status: supported
     flash_mb: 16
-    soc: *soc_T31ZX
+    soc: *soc_T31X
     sensor: *sensor_JXQ03
     wifi: *wifi_RTL8188FTV
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: true
-    tilt: true
-    power:
-    ir_led: 850
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-iflytek_fxp301_m.bin"
-
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-iflytek_xfp301_m_rtl8188ftv.bin
+  iflytek_xfp301_m_ssv6155:
+    id: iflytek_xfp301_m_ssv6155
+    device_type: TBD
+    brand: iflytek
+    model: xfp301
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_JXQ03
+    wifi: *wifi_SSV6155
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-iflytek_xfp301_m_ssv6155.bin
   jooan_a6m:
-    device_type: camera
-    brand: Jooan
-    model: A6M
-    version:
+    id: jooan_a6m
+    device_type: TBD
+    brand: jooan
+    model: a6m
     status: supported
     flash_mb: 8
     soc: *soc_T23N
@@ -675,27 +846,18 @@ devices:
     wifi: *wifi_ATBM6012BX
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: false
-    tilt: false
-    power:
-    ir_led: 850
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_a6m.bin"
-
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_a6m.bin
   jooan_q3h:
-    device_type: camera
-    brand: Jooan
-    model: Q3H
-    version:
+    id: jooan_q3h
+    device_type: TBD
+    brand: jooan
+    model: q3h
     status: supported
     flash_mb: 16
     soc: *soc_T30L
@@ -703,27 +865,18 @@ devices:
     wifi: *wifi_RTL8189FTV
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: false
-    tilt: false
-    power:
-    ir_led: 850
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_q3h.bin"
-
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_q3h.bin
   litokam_c1:
-    device_type: camera
-    brand: Litokam
-    model: C1
-    version:
+    id: litokam_c1
+    device_type: TBD
+    brand: litokam
+    model: c1
     status: supported
     flash_mb: 8
     soc: *soc_T31L
@@ -731,27 +884,45 @@ devices:
     wifi: *wifi_ATBM6012B
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: false
-    tilt: false
-    power: wired 
-    ir_led: 850
-    audio_in: true
-    audio_out: true
-    ip_rating:
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-litokam_c1.bin
+    view_angle: null
+    power: wired
+    ip_rating: null
     last_price_w_ship: 59 USD
     last_price_date: 2024-07
-    shop_url: "https://www.amazon.com/litokam-Cameras-Security-Detection-Monitor-2Pack/dp/B0D86VWTW5"
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-litokam_c1.bin"
-
+    shop_url: https://www.amazon.com/litokam-Cameras-Security-Detection-Monitor-2Pack/dp/B0D86VWTW5
+    device_image: ''
+    wiki_page_url: ''
+  noname_t10l_jxh42_mt7601:
+    id: noname_t10l_jxh42_mt7601
+    device_type: TBD
+    brand: noname
+    model: t10l
+    status: supported
+    flash_mb: 8
+    soc: *soc_T10L
+    sensor: *sensor_JXH42
+    wifi: *wifi_MT7601
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-noname_t10l_jxh42_mt7601.bin
   overtech_ov59wb:
-    device_type: camera
-    brand: Overtech
-    model: OV-59WB
-    version:
+    id: overtech_ov59wb
+    device_type: TBD
+    brand: overtech
+    model: ov59wb
     status: supported
     flash_mb: 16
     soc: *soc_T31N
@@ -759,27 +930,45 @@ devices:
     wifi: *wifi_RTL8188FTV
     ethernet: true
     sd_card: true
-    data_transfer: wifi/eth
-    view_angle:
-    pan: false
-    tilt: false
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-overtech_ov59wb.bin
+    view_angle: null
     power: wired
-    ir_led: 850
-    audio_in: true
-    audio_out: true
     ip_rating: 65
-    last_price_w_ship:
-    last_price_date:
-    shop_url: "https://www.fravega.com/p/camara-exterior-seguridad-overtech-ov-59wb-full-hd-wifi-3x-color-blanco-21192815/"
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-overtech_ov59wb.bin"
-
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: https://www.fravega.com/p/camara-exterior-seguridad-overtech-ov-59wb-full-hd-wifi-3x-color-blanco-21192815/
+    device_image: ''
+    wiki_page_url: ''
+  personalcam:
+    id: personalcam
+    device_type: TBD
+    brand: personalcam
+    model: personalcam
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_GC2053
+    wifi: *wifi_ATBM6031
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-personalcam.bin
   primecables_08360:
-    device_type: camera
-    brand: PrimeCables
-    model: "08360"
-    version:
+    id: primecables_08360
+    device_type: TBD
+    brand: primecables
+    model: '08360'
     status: supported
     flash_mb: 8
     soc: *soc_T21Z
@@ -787,27 +976,26 @@ devices:
     wifi: *wifi_RTL8188FTV
     ethernet: false
     sd_card: true
-    data_transfer: wifi
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-primecables_08360.bin
     view_angle: 105
-    pan: false
-    tilt: false
     power: wired 5V
-    ir_led: 850
-    audio_in: true
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: "https://www.primecables.ca/p-397949-cab-pc-08360-security-smart-camera-1080p-2-way-audio-night-vision-motion-detection-cloud-storage-sd-card"
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-primecables_08360.bin"
-
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: https://www.primecables.ca/p-397949-cab-pc-08360-security-smart-camera-1080p-2-way-audio-night-vision-motion-detection-cloud-storage-sd-card
+    device_image: ''
+    wiki_page_url: ''
   primecables_08361:
-    device_type: camera
-    brand: PrimeCables
-    model: "08361"
-    version:
+    id: primecables_08361
+    device_type: TBD
+    brand: primecables
+    model: '08361'
     status: supported
     flash_mb: 8
     soc: *soc_T21N
@@ -815,27 +1003,140 @@ devices:
     wifi: *wifi_RTL8188FTV
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: true
-    tilt: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-primecables_08361.bin
+    view_angle: null
     power: wired 5V/1A
-    ir_led: 850
-    audio_in: true
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: "https://www.shopperplus.ca/p-397950-cab-pc-08361-smart-security-camera-ptz-360-2-way-audio-night-vision-motion-detection-cloud-storage-sd-card#sku429817"
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-primecables_08361.bin"
-
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: https://www.shopperplus.ca/p-397950-cab-pc-08361-smart-security-camera-ptz-360-2-way-audio-night-vision-motion-detection-cloud-storage-sd-card#sku429817
+    device_image: ''
+    wiki_page_url: ''
+  teacup:
+    id: teacup
+    device_type: TBD
+    brand: teacup
+    model: teacup
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31ZX
+    sensor: *sensor_IMX327
+    wifi: *wifi_ETH
+    ethernet: true
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-teacup.bin
+  tplink_tapo_c100:
+    id: tplink_tapo_c100
+    device_type: TBD
+    brand: tplink
+    model: tapo
+    status: supported
+    flash_mb: null
+    soc: *soc_T31L
+    sensor: *sensor_SC2336
+    wifi: *wifi_RTL8188FTV
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-tplink_tapo_c100.bin
+  vanhua_ak54:
+    id: vanhua_ak54
+    device_type: TBD
+    brand: vanhua
+    model: ak54
+    status: supported
+    flash_mb: 8
+    soc: *soc_T31N
+    sensor: *sensor_GC2053
+    wifi: *wifi_ETH
+    ethernet: true
+    sd_card: false
+    pan_tilt: false
+    mic: true
+    speaker: false
+    ir_cut: true
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_ak54.bin
+  vanhua_h33c:
+    id: vanhua_h33c
+    device_type: TBD
+    brand: vanhua
+    model: h33c
+    status: supported
+    flash_mb: 8
+    soc: *soc_T31L
+    sensor: *sensor_GC2083
+    wifi: *wifi_ETH
+    ethernet: true
+    sd_card: false
+    pan_tilt: false
+    mic: true
+    speaker: false
+    ir_cut: true
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_h33c.bin
+  vanhua_l34:
+    id: vanhua_l34
+    device_type: TBD
+    brand: vanhua
+    model: l34
+    status: supported
+    flash_mb: 8
+    soc: *soc_T31L
+    sensor: *sensor_GC2083
+    wifi: *wifi_ETH
+    ethernet: true
+    sd_card: false
+    pan_tilt: false
+    mic: true
+    speaker: false
+    ir_cut: true
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_l34.bin
+  vanhua_z55i:
+    id: vanhua_z55i
+    device_type: TBD
+    brand: vanhua
+    model: z55i
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_GC4653
+    wifi: *wifi_ETH
+    ethernet: true
+    sd_card: false
+    pan_tilt: false
+    mic: true
+    speaker: false
+    ir_cut: true
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_z55i.bin
   victure_pc420:
-    device_type: camera
-    brand: Victure
-    model: PC420
-    version:
+    id: victure_pc420
+    device_type: TBD
+    brand: victure
+    model: pc420
     status: supported
     flash_mb: 8
     soc: *soc_T21N
@@ -843,129 +1144,164 @@ devices:
     wifi: *wifi_RTL8188FTV
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: false
-    tilt: false
-    power:
-    ir_led: 850
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-victure_pc420.bin"
-
-  wansview_g6:
-    device_type: camera
-    brand: Wansview
-    model: G6
-    version:
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-victure_pc420.bin
+  wanjiaan_t30x:
+    id: wanjiaan_t30x
+    device_type: TBD
+    brand: wanjiaan
+    model: t30x
     status: supported
     flash_mb: 16
+    soc: *soc_T30X
+    sensor: *sensor_SC2235
+    wifi: *wifi_RTL8189FTV
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wanjiaan_t30x.bin
+  wansview_g6:
+    id: wansview_g6
+    device_type: TBD
+    brand: wansview
+    model: g6
+    status: supported
+    flash_mb: 8
     soc: *soc_T31L
     sensor: *sensor_SC2336
     wifi: *wifi_ATBM6012B
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: true
-    tilt: true
-    power:
-    ir_led: 850
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_g6.bin"
-
-  wansview_k5_ov2735b: &wansview_k5
-    device_type: camera
-    brand: Wansview
-    model: K5
-    version:
-    status: supported
-    flash_mb: 8
-    soc: *soc_T21N
-    sensor: *sensor_OV2735b
-    wifi: *wifi_MT7601STA
-    ethernet: false
-    sd_card: true
-    data_transfer: wifi
-    view_angle: 125
-    pan: false
-    tilt: false
-    power: wired 5V
-    ir_led: false?
-    audio_in: true
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: "https://www.amazon.com/Security-Wansview-1080PHD-Monitor-Detection/dp/B093B9LQKF"
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_k5_ov2735b.bin"
-
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_g6.bin
   wansview_k5_os02b10:
-    <<: *wansview_k5
+    id: wansview_k5_os02b10
+    device_type: TBD
+    brand: wansview
+    model: k5
     status: supported
     flash_mb: 8
     soc: *soc_T21N
     sensor: *sensor_OS02B10
-    wifi: *wifi_MT7601STA
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_k5_os02b10.bin"
-
-  wansview_w6: &wansview_w6
-    device_type: camera
-    brand: Wansview
-    model: W6
-    version:
+    wifi: *wifi_MT7601U
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_k5_os02b10.bin
+    view_angle: 125
+    power: wired 5V
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: https://www.amazon.com/Security-Wansview-1080PHD-Monitor-Detection/dp/B093B9LQKF
+    device_image: ''
+    wiki_page_url: ''
+  wansview_k5_ov2735b:
+    id: wansview_k5_ov2735b
+    device_type: TBD
+    brand: wansview
+    model: k5
     status: supported
     flash_mb: 8
     soc: *soc_T21N
-    sensor: *sensor_OV2735b
-    wifi: *wifi_RTL8188FTV
-    ethernet: true
+    sensor: *sensor_OV2735B
+    wifi: *wifi_MT7601U
+    ethernet: false
     sd_card: true
-    data_transfer: wifi/eth
-    view_angle:
-    pan: false
-    tilt: false
-    power: wired 5V/1A barel
-    ir_led: 850
-    audio_in: true
-    audio_out: true
-    ip_rating: 66
-    last_price_w_ship:
-    last_price_date:
-    shop_url: "https://www.amazon.com/Security-Wansview-Waterproof-Surveillance-Detection/dp/B08CL1B2PM"
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_w6.bin"
-
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_k5_ov2735b.bin
+    view_angle: 125
+    power: wired 5V
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: https://www.amazon.com/Security-Wansview-1080PHD-Monitor-Detection/dp/B093B9LQKF
+    device_image: ''
+    wiki_page_url: ''
   wansview_w6_os02g10:
-    <<: *wansview_w6
+    id: wansview_w6_os02g10
+    device_type: TBD
+    brand: wansview
+    model: w6
     status: supported
     flash_mb: 16
     soc: *soc_T21N
     sensor: *sensor_OS02G10
     wifi: *wifi_RTL8188FTV
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_w6_os02g10.bin"
-
+    ethernet: true
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_w6_os02g10.bin
+    view_angle: null
+    power: wired 5V/1A barel
+    ip_rating: 66
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: https://www.amazon.com/Security-Wansview-Waterproof-Surveillance-Detection/dp/B08CL1B2PM
+    device_image: ''
+    wiki_page_url: ''
+  wansview_w6_ov2735b:
+    id: wansview_w6_ov2735b
+    device_type: TBD
+    brand: wansview
+    model: w6
+    status: supported
+    flash_mb: 16
+    soc: *soc_T21N
+    sensor: *sensor_OV2735B
+    wifi: *wifi_RTL8188FTV
+    ethernet: true
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_w6_ov2735b.bin
+    view_angle: null
+    power: wired 5V/1A barel
+    ip_rating: 66
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: https://www.amazon.com/Security-Wansview-Waterproof-Surveillance-Detection/dp/B08CL1B2PM
+    device_image: ''
+    wiki_page_url: ''
   wansview_w7:
-    device_type: camera
-    brand: Wansview
-    model: W7
-    version:
+    id: wansview_w7
+    device_type: TBD
+    brand: wansview
+    model: w7
     status: supported
     flash_mb: 8
     soc: *soc_T31L
@@ -973,27 +1309,26 @@ devices:
     wifi: *wifi_ATBM6012B
     ethernet: false
     sd_card: true
-    data_transfer: wifi
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_w7.bin
     view_angle: 95
-    pan: true
-    tilt: true
     power: wired 5V/1A USB
-    ir_led: 940
-    audio_in: true
-    audio_out: true
     ip_rating: 65
     last_price_w_ship: 52 USD
     last_price_date: 2024-07
-    shop_url: "https://www.amazon.com/wansview-Security-Cameras-Wireless-Outdoor-2-4G/dp/B0BWDPSYDT"
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_w7.bin"
-
-  wuuk_y0510_sc401ai: &wuuk_y0510_sc401ai
-    device_type: camera
-    brand: WUUK
-    model: Y0510
-    version:
+    shop_url: https://www.amazon.com/wansview-Security-Cameras-Wireless-Outdoor-2-4G/dp/B0BWDPSYDT
+    device_image: ''
+    wiki_page_url: ''
+  wuuk_y0510_sc401ai:
+    id: wuuk_y0510_sc401ai
+    device_type: TBD
+    brand: wuuk
+    model: y0510
     status: supported
     flash_mb: 16
     soc: *soc_T31X
@@ -1001,62 +1336,53 @@ devices:
     wifi: *wifi_SSV6158
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: true
-    tilt: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wuuk_y0510_sc401ai.bin
+    view_angle: null
     power: wired 5V
-    ir_led: 850
-    audio_in: true
-    audio_out: true?
-    ip_rating:
+    ip_rating: null
     last_price_w_ship: 27 EUR
     last_price_date: 2024-07
-    shop_url: "https://www.amazon.de/-/en/Surveillance-Tracking-Monitor-Supports-Detection/dp/B0BC8DRX9D"
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wuuk_y0510_sc401ai.bin"
-
+    shop_url: https://www.amazon.de/-/en/Surveillance-Tracking-Monitor-Supports-Detection/dp/B0BC8DRX9D
+    device_image: ''
+    wiki_page_url: ''
   wuuk_y0510_sc4336p:
-    <<: *wuuk_y0510_sc401ai
-    soc: *soc_T31X
-    sensor: *sensor_SC4336p
-    wifi: *wifi_SSV6158
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wuuk_y0510_sc4336p.bin"
-
-  wyze_cp1:
-    device_type: camera
-    brand: Wyze
-    model: Cam Pan 1
-    version:
+    id: wuuk_y0510_sc4336p
+    device_type: TBD
+    brand: wuuk
+    model: y0510
     status: supported
     flash_mb: 16
-    soc: *soc_T20X
-    sensor: *sensor_JXF22
-    wifi: *wifi_RTL8189ETV
+    soc: *soc_T31X
+    sensor: *sensor_SC4336P
+    wifi: *wifi_SSV6158
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: true
-    tilt: true
-    power:
-    ir_led: 940
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cp1.bin"
-
-  wyze_c2_jxf22: &wyze_c2_jxf22
-    device_type: camera
-    brand: Wyze
-    model: Cam 2
-    version:
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wuuk_y0510_sc4336p.bin
+    view_angle: null
+    power: wired 5V
+    ip_rating: null
+    last_price_w_ship: 27 EUR
+    last_price_date: 2024-07
+    shop_url: https://www.amazon.de/-/en/Surveillance-Tracking-Monitor-Supports-Detection/dp/B0BC8DRX9D
+    device_image: ''
+    wiki_page_url: ''
+  wyze_c2_jxf22:
+    id: wyze_c2_jxf22
+    device_type: TBD
+    brand: wyze
+    model: c2
     status: supported
     flash_mb: 16
     soc: *soc_T20X
@@ -1064,62 +1390,37 @@ devices:
     wifi: *wifi_RTL8189FTV
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: false
-    tilt: false
-    power:
-    ir_led: 850
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c2_jxf22.bin"
-
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c2_jxf22.bin
   wyze_c2_jxf23:
-    <<: *wyze_c2_jxf22
+    id: wyze_c2_jxf23
+    device_type: TBD
+    brand: wyze
+    model: c2
+    status: supported
+    flash_mb: 16
     soc: *soc_T20X
     sensor: *sensor_JXF23
     wifi: *wifi_RTL8189FTV
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c2_jxf23.bin"
-
-  wyze_cp2:
-    device_type: camera
-    brand: Wyze
-    model: Cam Pan 2
-    version:
-    status: supported
-    flash_mb: 16
-    soc: *soc_T31X
-    sensor: *sensor_GC2053
-    wifi: *wifi_ATBM6031
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: true
-    tilt: true
-    power:
-    ir_led: 850
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cp2.bin"
-
-  wyze_c3_t31al_atbm: &wyze_c3_t31al_atbm
-    device_type: camera
-    brand: Wyze
-    model: Cam 3
-    version:
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c2_jxf23.bin
+  wyze_c3_t31al_atbm:
+    id: wyze_c3_t31al_atbm
+    device_type: TBD
+    brand: wyze
+    model: c3
     status: supported
     flash_mb: 16
     soc: *soc_T31AL
@@ -1127,83 +1428,132 @@ devices:
     wifi: *wifi_ATBM6031
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: false
-    tilt: false
-    power:
-    ir_led: 850/940
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31al_atbm.bin"
-
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31al_atbm.bin
   wyze_c3_t31x_atbm:
-    <<: *wyze_c3_t31al_atbm
-    soc: *soc_T31X
-    sensor: *sensor_GC2053
-    wifi: *wifi_ATBM6031
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31x_atbm.bin"
-
-  wyze_c3_t31x_rtl:
-    <<: *wyze_c3_t31al_atbm
-    soc: *soc_T31X
-    sensor: *sensor_GC2053
-    wifi: *wifi_RTL8189FTV
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31x_rtl.bin"
-
-  wyze_c3_t31x_atbm__Z:
-    <<: *wyze_c3_t31al_atbm
-    soc: *soc_T31ZX
-    sensor: *sensor_GC2053
-    wifi: *wifi_ATBM6031
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31x_atbm.bin"
-
-  wyze_c3_t31x_rtl__Z:
-    <<: *wyze_c3_t31al_atbm
-    soc: *soc_T31ZX
-    sensor: *sensor_GC2053
-    wifi: *wifi_RTL8189FTV
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31x_rtl.bin"
-
-  wyze_vdb1:
-    device_type: camera
-    brand: Wyze
-    model: Video Doorbell 1
-    version:
+    id: wyze_c3_t31x_atbm
+    device_type: TBD
+    brand: wyze
+    model: c3
     status: supported
     flash_mb: 16
-    soc: *soc_T31ZX
-    sensor: *sensor_SC4236
+    soc: *soc_T31X
+    sensor: *sensor_GC2053
+    wifi: *wifi_ATBM6031
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31x_atbm.bin
+  wyze_c3_t31x_rtl:
+    id: wyze_c3_t31x_rtl
+    device_type: TBD
+    brand: wyze
+    model: c3
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_GC2053
+    wifi: *wifi_RTL8189FTV
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31x_rtl.bin
+  wyze_cp1:
+    id: wyze_cp1
+    device_type: TBD
+    brand: wyze
+    model: cp1
+    status: supported
+    flash_mb: 16
+    soc: *soc_T20X
+    sensor: *sensor_JXF22
     wifi: *wifi_RTL8189ETV
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: false
-    tilt: false
-    power:
-    ir_led: 850
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1.bin"
-
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cp1.bin
+  wyze_cp2:
+    id: wyze_cp2
+    device_type: TBD
+    brand: wyze
+    model: cp2
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_GC2053
+    wifi: *wifi_ATBM6031
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cp2.bin
+  wyze_cp3:
+    id: wyze_cp3
+    device_type: TBD
+    brand: wyze
+    model: cp3
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_GC2053
+    wifi: *wifi_ATBM6031
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cp3.bin
+  wyze_vdb1:
+    id: wyze_vdb1
+    device_type: TBD
+    brand: wyze
+    model: vdb1
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_SC4236
+    wifi: *wifi_RTL8189FTV
+    ethernet: false
+    sd_card: false
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1.bin
   xiaomi_hlcam04:
-    device_type: camera
-    brand: Xiaomi
-    model: HL-CAM04
-    version:
+    id: xiaomi_hlcam04
+    device_type: TBD
+    brand: xiaomi
+    model: hlcam04
     status: supported
     flash_mb: 16
     soc: *soc_T31N
@@ -1211,27 +1561,75 @@ devices:
     wifi: *wifi_ATBM6031
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: false
-    tilt: false
-    power:
-    ir_led: 850/940
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_hlcam04.bin"
-
-  xiaomi_xiaofang_t20l_jxf22: &xiaomi_xiaofang_t20l_jxf22
-    device_type: camera
-    brand: Xiaomi
-    model: iSC5
-    version:
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_hlcam04.bin
+  xiaomi_mjsxj03hl_t31l_jxq03p:
+    id: xiaomi_mjsxj03hl_t31l_jxq03p
+    device_type: TBD
+    brand: xiaomi
+    model: mjsxj03hl
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31L
+    sensor: *sensor_JXQ03P
+    wifi: *wifi_RTL8189FTV
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj03hl_t31l_jxq03p.bin
+  xiaomi_mjsxj03hl_t31n_jxq03:
+    id: xiaomi_mjsxj03hl_t31n_jxq03
+    device_type: TBD
+    brand: xiaomi
+    model: mjsxj03hl
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31N
+    sensor: *sensor_JXQ03
+    wifi: *wifi_RTL8189FTV
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj03hl_t31n_jxq03.bin
+  xiaomi_mjsxj03hl_t31n_jxq03p:
+    id: xiaomi_mjsxj03hl_t31n_jxq03p
+    device_type: TBD
+    brand: xiaomi
+    model: mjsxj03hl
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31N
+    sensor: *sensor_JXQ03P
+    wifi: *wifi_RTL8189FTV
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj03hl_t31n_jxq03p.bin
+  xiaomi_xiaofang_t20l_jxf22:
+    id: xiaomi_xiaofang_t20l_jxf22
+    device_type: TBD
+    brand: xiaomi
+    model: xiaofang
     status: supported
     flash_mb: 16
     soc: *soc_T20L
@@ -1239,401 +1637,352 @@ devices:
     wifi: *wifi_RTL8189FTV
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: false
-    tilt: false
-    power:
-    ir_led: 940
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_xiaofang_t20l_jxf22.bin"
-
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_xiaofang_t20l_jxf22.bin
   xiaomi_xiaofang_t20l_jxf23:
-    <<: *xiaomi_xiaofang_t20l_jxf22
+    id: xiaomi_xiaofang_t20l_jxf23
+    device_type: TBD
+    brand: xiaomi
+    model: xiaofang
+    status: supported
+    flash_mb: 16
     soc: *soc_T20L
     sensor: *sensor_JXF23
     wifi: *wifi_RTL8189FTV
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_xiaofang_t20l_jxf23.bin"
-
-  xiaomi_mjsxj03hl_t31l: &xiaomi_mjsxj03hl_t31l
-    device_type: camera
-    brand: Xiaomi
-    model: MJSXJ03HL
-    version:
-    status: supported
-    flash_mb: 16
-    soc: *soc_T31L
-    sensor: *sensor_JXQ03p
-    wifi: *wifi_RTL8189FTV
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: false
-    tilt: false
-    power:
-    ir_led: 850
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj03hl_t31l.bin"
-
-  xiaomi_mjsxj03hl_t31n_jxq03:
-    <<: *xiaomi_mjsxj03hl_t31l
-    soc: *soc_T31N
-    sensor: *sensor_JXQ03
-    wifi: *wifi_RTL8189FTV
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj03hl_t31n_jxq03.bin"
-
-  xiaomi_mjsxj03hl_t31n:
-    <<: *xiaomi_mjsxj03hl_t31l
-    soc: *soc_T31N
-    sensor: *sensor_JXQ03p
-    wifi: *wifi_RTL8189FTV
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj03hl_t31n.bin"
-
-
-
-
-  vanhua_ak54:
-    device_type: IPC-module
-    brand: Enzhi / Vanhua
-    model: AK54
-    version:
-    status: supported
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_xiaofang_t20l_jxf23.bin
+  camsoy_okc01:
+    id: camsoy_okc01
+    device_type: TBD
+    brand: camsoy
+    model: okc01
+    status: wip
     flash_mb: 8
-    soc: *soc_T31N
-    sensor: *sensor_GC2053
-    wifi: *wifi_tpl
-    ethernet: true
-    sd_card: true?
-    data_transfer: eth
-    view_angle:
-    pan: false
-    tilt: false
-    power:
-    ir_led: false
-    audio_in: false
-    audio_out: false
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_ak54.bin"
-
-  vanhua_h33c:
-    device_type: IPC-module
-    brand: Enzhi / Vanhua
-    model: H33C
-    version:
-    status: supported
+    soc: *soc_T31LC
+    sensor: *sensor_GC1084
+    wifi: *wifi_HI3881
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: false
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-camsoy_okc01.bin
+  cinnado_d1_t31l_kernel44:
+    id: cinnado_d1_t31l_kernel44
+    device_type: TBD
+    brand: cinnado
+    model: d1
+    status: wip
     flash_mb: 8
     soc: *soc_T31L
-    sensor: *sensor_GC2083
-    wifi: *wifi_tpl
-    ethernet: true
-    sd_card: true?
-    data_transfer: eth
-    view_angle:
-    pan: true?
-    tilt: true?
-    power:
-    ir_led: false
-    audio_in:
-    audio_out: false
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_h33c.bin"
-
-  vanhua_l34:
-    device_type: IPC-module
-    brand: Enzhi / Vanhua
-    model: L34
-    version:
-    status: supported
-    flash_mb: 8
-    soc: *soc_T31L
-    sensor: *sensor_GC2083
-    wifi: *wifi_tpl
-    ethernet: true
-    sd_card: false
-    data_transfer: eth
-    view_angle:
-    pan: false
-    tilt: false
-    power:
-    ir_led: false
-    audio_in:
-    audio_out: false
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_l34.bin"
-
-  vanhua_z55i:
-    device_type: IPC-module
-    brand: Enzhi / Vanhua
-    model: Z55I
-    version:
-    status: supported
-    flash_mb: 16
-    soc: *soc_T31X
-    sensor: *sensor_GC4653
-    wifi: *wifi_tpl
-    ethernet: true
-    sd_card: true?
-    data_transfer: eth
-    view_angle:
-    pan: false
-    tilt: false
-    power:
-    ir_led: false
-    audio_in:
-    audio_out: false
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_z55i.bin"
-
-
-
-  roku_indor_camera_se:
-    device_type: camera
-    brand: Roku
-    model: Indoor Camera SE
-    version:
-    status: secure-boot
-    flash_mb: 16
-    soc: *soc_T31X
-    sensor: *sensor_GC2053
-    wifi: *wifi_ATBM6031
-    ethernet:
-    sd_card:
-    data_transfer:
-    view_angle:
-    pan:
-    tilt:
-    power:
-    ir_led:
-    audio_in:
-    audio_out:
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: ""
- 
-  wyze_cam_pan_3_sb:
-    device_type: camera
-    brand: Wyze
-    model: Cam Pan 3
-    version:
-    status: secure-boot
-    flash_mb: 16
-    soc: *soc_T31X
-    sensor: *sensor_GC2053
+    sensor: *sensor_SC2336
     wifi: *wifi_ATBM6031
     ethernet: false
     sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: true
-    tilt: true
-    power:
-    ir_led: 850
-    audio_in:
-    audio_out: true
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: ""
-
-
-
-  eufy_e220:
-    device_type: camera
-    brand: Eufy
-    model: E220
-    version:
+    pan_tilt: true
+    mic: false
+    speaker: false
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-cinnado_d1_t31l_kernel44.bin
+  eufy_t8441:
+    id: eufy_t8441
+    device_type: TBD
+    brand: eufy
+    model: t8441
     status: wip
     flash_mb: 32
     soc: *soc_T31X
-    sensor: *sensor_SC3336
-    wifi: *wifi_BCM43
-    ethernet: false
-    sd_card: true
-    data_transfer: wifi
-    view_angle:
-    pan: true
-    tilt: true
-    power:
-    ir_led: 850
-    audio_in:
-    audio_out: false
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: ""
-
+    sensor: *sensor_SC3335
+    wifi: *wifi_SYN43436
+    ethernet: true
+    sd_card: false
+    pan_tilt: false
+    mic: true
+    speaker: false
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8441.bin
   ezviz_cs_my3_3why:
-    device_type: camera
-    brand: Ezviz
-    model: CS-MY3-3WHY
-    version:
+    id: ezviz_cs_my3_3why
+    device_type: TBD
+    brand: ezviz
+    model: cs
     status: wip
     flash_mb: 16
     soc: *soc_T31X
     sensor: *sensor_JXQ03
-    wifi: *wifi_RTL8189FTV
-    ethernet: true?
+    wifi: *wifi_RTL8188FTV
+    ethernet: true
     sd_card: true
-    data_transfer: wifi/eth?
-    view_angle:
-    pan: true
-    tilt: true
-    power:
-    ir_led: 850
-    audio_in:
-    audio_out: false
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: ""
-
-  galayou_g2_t31lc:
-    <<: *galayou_g2_t23n
-    status: wip
-    soc: *soc_T31LC
-    sensor: *sensor_SC2336
-    wifi: *wifi_ATBM6012BX
-    firmware_url: ""
-
-  galayou_g7:
-    device_type: camera
-    brand: Galayou
-    model: G7
-    version:
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: false
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-ezviz_cs_my3_3why.bin
+  galayou_g2_t31lc_atbm6012b:
+    id: galayou_g2_t31lc_atbm6012b
+    device_type: TBD
+    brand: galayou
+    model: g2
     status: wip
     flash_mb: 8
     soc: *soc_T31LC
     sensor: *sensor_SC2336
     wifi: *wifi_ATBM6012B
-    ethernet:
-    sd_card:
-    data_transfer:
-    view_angle:
-    pan:
-    tilt:
-    power:
-    ir_led:
-    audio_in:
-    audio_out:
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: ""
-
-  galayou_y4_t31l:
-    <<: *galayou_y4_t31n
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: false
+    speaker: false
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_g2_t31lc_atbm6012b.bin
+  galayou_g2_t31lc_atbm6012bx:
+    id: galayou_g2_t31lc_atbm6012bx
+    device_type: TBD
+    brand: galayou
+    model: g2
     status: wip
-    soc: *soc_T31L
+    flash_mb: 8
+    soc: *soc_T31LC
     sensor: *sensor_SC2336
-    wifi: *wifi_ATBM6032
-    firmware_url: ""
-
-  tp-link_tapo_c100:
-    device_type: camera
-    brand: T-Link
-    model: Tapo C100
-    version:
+    wifi: *wifi_ATBM6012BX
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: false
+    speaker: false
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_g2_t31lc_atbm6012bx.bin
+  galayou_g7_t31lc:
+    id: galayou_g7_t31lc
+    device_type: TBD
+    brand: galayou
+    model: g7
+    status: wip
+    flash_mb: 8
+    soc: *soc_T31LC
+    sensor: *sensor_SC2336
+    wifi: *wifi_ATBM6012B
+    ethernet: true
+    sd_card: false
+    pan_tilt: false
+    mic: false
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_g7_t31lc.bin
+  galayou_y4_t31l:
+    id: galayou_y4_t31l
+    device_type: TBD
+    brand: galayou
+    model: y4
     status: wip
     flash_mb: 8
     soc: *soc_T31L
     sensor: *sensor_SC2336
-    wifi: *wifi_RTL8188FTV
-    ethernet:
-    sd_card:
-    data_transfer:
-    view_angle:
-    pan:
-    tilt:
-    power:
-    ir_led:
-    audio_in:
-    audio_out:
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: ""
-
-  winees_m3_pro:
-    device_type: camera
-    brand: Winees
-    model: M3 PRO
-    version:
+    wifi: *wifi_ATBM6032
+    ethernet: true
+    sd_card: true
+    pan_tilt: true
+    mic: false
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_y4_t31l.bin
+  h3c_c2041_t31x_jxk04_rtl8188ftv:
+    id: h3c_c2041_t31x_jxk04_rtl8188ftv
+    device_type: TBD
+    brand: h3c
+    model: c2041
     status: wip
     flash_mb: 16
     soc: *soc_T31X
-    sensor: *sensor_SC3336
-    wifi: *wifi_RTL8192FC
-    ethernet:
-    sd_card:
-    data_transfer:
-    view_angle:
-    pan:
-    tilt:
-    power:
-    ir_led:
-    audio_in:
-    audio_out:
-    ip_rating:
-    last_price_w_ship:
-    last_price_date:
-    shop_url: ""
-    device_image: ""
-    wiki_page_url: ""
-    firmware_url: ""
-
-
-
+    sensor: *sensor_JXK04
+    wifi: *wifi_RTL8188FTV
+    ethernet: true
+    sd_card: true
+    pan_tilt: true
+    mic: false
+    speaker: false
+    ir_cut: true
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-h3c_c2041_t31x_jxk04_rtl8188ftv.bin
+  t10_ov9712_ap6181:
+    id: t10_ov9712_ap6181
+    device_type: TBD
+    brand: t10
+    model: ov9712
+    status: wip
+    flash_mb: 16
+    soc: *soc_tpl
+    sensor: *sensor_tpl
+    wifi: *wifi_tpl
+    ethernet: true
+    sd_card: false
+    pan_tilt: false
+    mic: false
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-t10_ov9712_ap6181.bin
+  t31al_xxx_rtl8189ftv:
+    id: t31al_xxx_rtl8189ftv
+    device_type: TBD
+    brand: t31al
+    model: xxx
+    status: wip
+    flash_mb: null
+    soc: *soc_tpl
+    sensor: *sensor_tpl
+    wifi: *wifi_tpl
+    ethernet: true
+    sd_card: false
+    pan_tilt: false
+    mic: false
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-t31al_xxx_rtl8189ftv.bin
+  t31l_sc2336_atbm6031_kernel44:
+    id: t31l_sc2336_atbm6031_kernel44
+    device_type: TBD
+    brand: t31l
+    model: sc2336
+    status: wip
+    flash_mb: null
+    soc: *soc_tpl
+    sensor: *sensor_tpl
+    wifi: *wifi_tpl
+    ethernet: true
+    sd_card: false
+    pan_tilt: true
+    mic: false
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-t31l_sc2336_atbm6031_kernel44.bin
+  t31x_gc2053_rtl8189ftv_gnu:
+    id: t31x_gc2053_rtl8189ftv_gnu
+    device_type: TBD
+    brand: t31x
+    model: gc2053
+    status: wip
+    flash_mb: 16
+    soc: *soc_tpl
+    sensor: *sensor_tpl
+    wifi: *wifi_tpl
+    ethernet: true
+    sd_card: false
+    pan_tilt: false
+    mic: false
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-t31x_gc2053_rtl8189ftv_gnu.bin
+  t31x_gc2053_rtl8189ftv_kernel44:
+    id: t31x_gc2053_rtl8189ftv_kernel44
+    device_type: TBD
+    brand: t31x
+    model: gc2053
+    status: wip
+    flash_mb: 16
+    soc: *soc_tpl
+    sensor: *sensor_tpl
+    wifi: *wifi_tpl
+    ethernet: true
+    sd_card: false
+    pan_tilt: false
+    mic: false
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-t31x_gc2053_rtl8189ftv_kernel44.bin
+  t31x_gc2053_rtl8189ftv_raptor:
+    id: t31x_gc2053_rtl8189ftv_raptor
+    device_type: TBD
+    brand: t31x
+    model: gc2053
+    status: wip
+    flash_mb: null
+    soc: *soc_tpl
+    sensor: *sensor_tpl
+    wifi: *wifi_tpl
+    ethernet: true
+    sd_card: false
+    pan_tilt: false
+    mic: false
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-t31x_gc2053_rtl8189ftv_raptor.bin
+  t31zx_ov5647_eth:
+    id: t31zx_ov5647_eth
+    device_type: TBD
+    brand: t31zx
+    model: ov5647
+    status: wip
+    flash_mb: null
+    soc: *soc_tpl
+    sensor: *sensor_tpl
+    wifi: *wifi_tpl
+    ethernet: true
+    sd_card: false
+    pan_tilt: false
+    mic: false
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-t31zx_ov5647_eth.bin
+  xiaomi_mjsxj03hl_t31n_jxq03p_rtl8189ftv_k4:
+    id: xiaomi_mjsxj03hl_t31n_jxq03p_rtl8189ftv_k4
+    device_type: TBD
+    brand: xiaomi
+    model: mjsxj03hl
+    status: wip
+    flash_mb: 16
+    soc: *soc_T31N
+    sensor: *sensor_JXQ03P
+    wifi: *wifi_RTL8189FTV
+    ethernet: true
+    sd_card: false
+    pan_tilt: false
+    mic: false
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj03hl_t31n_jxq03p_rtl8189ftv_k4.bin
