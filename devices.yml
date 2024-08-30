@@ -69,15 +69,19 @@ devices:
     device_image: ""
     wiki_page_url: ""
 
-  galayou_y4_t31n_atbm6012b: &galayou_y4_t31n
+  galayou_y4_t31l: &galayou_y4
     view_angle: 90
     power: wired 5V/1A microUSB
-    ip_rating:
+    ip_rating: 65
     last_price_w_ship: 38 EUR
     last_price_date: 2024-07
     shop_url: "https://www.amazon.de/dp/B09Y5FG27D"
     device_image: ""
     wiki_page_url: ""
+
+  galayou_y4_t23n_atbm6062: *galayou_y4
+  galayou_y4_t31l_atbm6032: *galayou_y4
+  galayou_y4_t31n_atbm6012b: *galayou_y4
 
   litokam_c1:
     view_angle:

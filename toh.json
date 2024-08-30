@@ -657,7 +657,57 @@
     "ir_cut": true,
     "ir_850": true,
     "ir_940": false,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_y4_t23n_atbm6062.bin"
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_y4_t23n_atbm6062.bin",
+    "view_angle": 90,
+    "power": "wired 5V/1A microUSB",
+    "ip_rating": 65,
+    "last_price_w_ship": "38 EUR",
+    "last_price_date": "2024-07",
+    "shop_url": "https://www.amazon.de/dp/B09Y5FG27D",
+    "device_image": "",
+    "wiki_page_url": ""
+  },
+  "galayou_y4_t31l_atbm6012bx": {
+    "id": "galayou_y4_t31l_atbm6012bx",
+    "device_type": "TBD",
+    "brand": "galayou",
+    "model": "y4",
+    "status": "supported",
+    "flash_mb": 8,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31L",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1000
+    },
+    "sensor": {
+      "name": "SC2336",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+    },
+    "wifi": {
+      "name": "ATBM6012BX",
+      "interface": "USB",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": false,
+      "w5g": false,
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+    },
+    "ethernet": true,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": false,
+    "ir_cut": false,
+    "ir_850": false,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_y4_t31l_atbm6012bx.bin"
   },
   "galayou_y4_t31l_atbm6032": {
     "id": "galayou_y4_t31l_atbm6032",
@@ -699,7 +749,15 @@
     "ir_cut": true,
     "ir_850": false,
     "ir_940": true,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_y4_t31l_atbm6032.bin"
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_y4_t31l_atbm6032.bin",
+    "view_angle": 90,
+    "power": "wired 5V/1A microUSB",
+    "ip_rating": 65,
+    "last_price_w_ship": "38 EUR",
+    "last_price_date": "2024-07",
+    "shop_url": "https://www.amazon.de/dp/B09Y5FG27D",
+    "device_image": "",
+    "wiki_page_url": ""
   },
   "galayou_y4_t31n_atbm6012b": {
     "id": "galayou_y4_t31n_atbm6012b",
@@ -744,7 +802,7 @@
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_y4_t31n_atbm6012b.bin",
     "view_angle": 90,
     "power": "wired 5V/1A microUSB",
-    "ip_rating": null,
+    "ip_rating": 65,
     "last_price_w_ship": "38 EUR",
     "last_price_date": "2024-07",
     "shop_url": "https://www.amazon.de/dp/B09Y5FG27D",
@@ -2895,7 +2953,15 @@
     "ir_cut": false,
     "ir_850": false,
     "ir_940": false,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_y4_t31l.bin"
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_y4_t31l.bin",
+    "view_angle": 90,
+    "power": "wired 5V/1A microUSB",
+    "ip_rating": 65,
+    "last_price_w_ship": "38 EUR",
+    "last_price_date": "2024-07",
+    "shop_url": "https://www.amazon.de/dp/B09Y5FG27D",
+    "device_image": "",
+    "wiki_page_url": ""
   },
   "h3c_c2041_t31x_jxk04_rtl8188ftv": {
     "id": "h3c_c2041_t31x_jxk04_rtl8188ftv",
