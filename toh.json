@@ -1199,7 +1199,7 @@
     "mic": true,
     "speaker": true,
     "ir_cut": true,
-    "ir_850": true,
+    "ir_850": false,
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-primecables_08360.bin",
     "view_angle": 105,
@@ -2325,8 +2325,8 @@
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cp3.bin"
   },
-  "wyze_vdb1": {
-    "id": "wyze_vdb1",
+  "wyze_vdb1_t31x": {
+    "id": "wyze_vdb1_t31x",
     "device_type": "TBD",
     "brand": "wyze",
     "model": "vdb1",
@@ -2365,7 +2365,7 @@
     "ir_cut": true,
     "ir_850": false,
     "ir_940": false,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1.bin"
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1_t31x.bin"
   },
   "xiaomi_hlcam04": {
     "id": "xiaomi_hlcam04",
@@ -2963,6 +2963,48 @@
     "device_image": "",
     "wiki_page_url": ""
   },
+  "ginzzu_op200": {
+    "id": "ginzzu_op200",
+    "device_type": "TBD",
+    "brand": "ginzzu",
+    "model": "op200",
+    "status": "wip",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31L",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1000
+    },
+    "sensor": {
+      "name": "GC2083",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+    },
+    "wifi": {
+      "name": "SSV6155",
+      "interface": "??",
+      "w2g": "??",
+      "w2g_radio": "??",
+      "w2g_HT40": "??",
+      "w5g": "??",
+      "docs_url": "??"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": false,
+    "ir_940": true,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-ginzzu_op200.bin"
+  },
   "h3c_c2041_t31x_jxk04_rtl8188ftv": {
     "id": "h3c_c2041_t31x_jxk04_rtl8188ftv",
     "device_type": "TBD",
@@ -3340,5 +3382,47 @@
     "ir_850": false,
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj03hl_t31n_jxq03p_rtl8189ftv_k4.bin"
+  },
+  "wyze_vdb1_t30x": {
+    "id": "wyze_vdb1_t30x",
+    "device_type": "TBD",
+    "brand": "wyze",
+    "model": "vdb1",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T30",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2688x2048",
+      "max_encoding": "3840x2160@30fps",
+      "name": "T30X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1000
+    },
+    "sensor": {
+      "name": "SC4236",
+      "resolution": "2304x1536@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+    },
+    "wifi": {
+      "name": "RTL8189FTV",
+      "interface": "SDIO",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407020948_Realtek-Semicon-RTL8189FTV-VC-CG_C2687145.pdf"
+    },
+    "ethernet": false,
+    "sd_card": false,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": false,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1_t30x.bin"
   }
 }

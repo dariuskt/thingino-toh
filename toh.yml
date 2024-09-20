@@ -1015,7 +1015,7 @@ devices:
     mic: true
     speaker: true
     ir_cut: true
-    ir_850: true
+    ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-primecables_08360.bin
     view_angle: 105
@@ -1565,8 +1565,8 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cp3.bin
-  wyze_vdb1:
-    id: wyze_vdb1
+  wyze_vdb1_t31x:
+    id: wyze_vdb1_t31x
     device_type: TBD
     brand: wyze
     model: vdb1
@@ -1583,7 +1583,7 @@ devices:
     ir_cut: true
     ir_850: false
     ir_940: false
-    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1.bin
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1_t31x.bin
   xiaomi_hlcam04:
     id: xiaomi_hlcam04
     device_type: TBD
@@ -1858,6 +1858,25 @@ devices:
     shop_url: https://www.amazon.de/dp/B09Y5FG27D
     device_image: ''
     wiki_page_url: ''
+  ginzzu_op200:
+    id: ginzzu_op200
+    device_type: TBD
+    brand: ginzzu
+    model: op200
+    status: wip
+    flash_mb: 16
+    soc: *soc_T31L
+    sensor: *sensor_GC2083
+    wifi: *wifi_SSV6155
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-ginzzu_op200.bin
   h3c_c2041_t31x_jxk04_rtl8188ftv:
     id: h3c_c2041_t31x_jxk04_rtl8188ftv
     device_type: TBD
@@ -2029,3 +2048,22 @@ devices:
     ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj03hl_t31n_jxq03p_rtl8189ftv_k4.bin
+  wyze_vdb1_t30x:
+    id: wyze_vdb1_t30x
+    device_type: TBD
+    brand: wyze
+    model: vdb1
+    status: supported
+    flash_mb: 16
+    soc: *soc_T30X
+    sensor: *sensor_SC4236
+    wifi: *wifi_RTL8189FTV
+    ethernet: false
+    sd_card: false
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1_t30x.bin
