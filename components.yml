@@ -391,6 +391,14 @@ wifi:
     w2g_HT40: true
     w5g: false
     docs_url: "http://www.icomm-semi.com/Uploads/Temp/files/2022-08-18/SV6158%20Datasheet%20V1.2.pdf"
+  SSV6355: &wifi_SSV6355
+    name: SSV6355
+    interface: ??
+    w2g: ??
+    w2g_radio: ??
+    w2g_HT40: ??
+    w5g: ??
+    docs_url: "??"
   SYN43436: &wifi_SYN43436
     name: SYN43436
     interface: ??

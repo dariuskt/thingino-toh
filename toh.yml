@@ -391,6 +391,14 @@ wifi:
     w2g_HT40: true
     w5g: false
     docs_url: "http://www.icomm-semi.com/Uploads/Temp/files/2022-08-18/SV6158%20Datasheet%20V1.2.pdf"
+  SSV6355: &wifi_SSV6355
+    name: SSV6355
+    interface: ??
+    w2g: ??
+    w2g_radio: ??
+    w2g_HT40: ??
+    w5g: ??
+    docs_url: "??"
   SYN43436: &wifi_SYN43436
     name: SYN43436
     interface: ??
@@ -869,8 +877,8 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-iflytek_xfp301_m_ssv6155.bin
-  jooan_a6m:
-    id: jooan_a6m
+  jooan_a6m_atbm6012bx:
+    id: jooan_a6m_atbm6012bx
     device_type: TBD
     brand: jooan
     model: a6m
@@ -887,7 +895,26 @@ devices:
     ir_cut: true
     ir_850: true
     ir_940: false
-    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_a6m.bin
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_a6m_atbm6012bx.bin
+  jooan_a6m_ssv6355:
+    id: jooan_a6m_ssv6355
+    device_type: TBD
+    brand: jooan
+    model: a6m
+    status: supported
+    flash_mb: 8
+    soc: *soc_T23N
+    sensor: *sensor_SC1A4T
+    wifi: *wifi_SSV6355
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_a6m_ssv6355.bin
   jooan_q3h:
     id: jooan_q3h
     device_type: TBD
