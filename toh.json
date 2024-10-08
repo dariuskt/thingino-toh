@@ -567,6 +567,48 @@
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_e220.bin"
   },
+  "feisda_hd620": {
+    "id": "feisda_hd620",
+    "device_type": "TBD",
+    "brand": "feisda",
+    "model": "hd620",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "JXQ03",
+      "resolution": "3600x1600@5~30fps ???",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+    },
+    "wifi": {
+      "name": "--",
+      "interface": "--",
+      "w2g": "--",
+      "w2g_radio": "--",
+      "w2g_HT40": "--",
+      "w5g": "--",
+      "docs_url": "--"
+    },
+    "ethernet": true,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": false,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-feisda_hd620.bin"
+  },
   "galayou_g2_t23n": {
     "id": "galayou_g2_t23n",
     "device_type": "TBD",

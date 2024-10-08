@@ -712,6 +712,25 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_e220.bin
+  feisda_hd620:
+    id: feisda_hd620
+    device_type: TBD
+    brand: feisda
+    model: hd620
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_JXQ03
+    wifi: *wifi_ETH
+    ethernet: true
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: false
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-feisda_hd620.bin
   galayou_g2_t23n:
     id: galayou_g2_t23n
     device_type: TBD
