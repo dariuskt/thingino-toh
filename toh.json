@@ -1345,6 +1345,48 @@
     "device_image": "",
     "wiki_page_url": ""
   },
+  "sim_simp400t": {
+    "id": "sim_simp400t",
+    "device_type": "TBD",
+    "brand": "sim",
+    "model": "simp400t",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "GC4653",
+      "resolution": "2560x1440@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+    },
+    "wifi": {
+      "name": "--",
+      "interface": "--",
+      "w2g": "--",
+      "w2g_radio": "--",
+      "w2g_HT40": "--",
+      "w5g": "--",
+      "docs_url": "--"
+    },
+    "ethernet": true,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-sim_simp400t.bin"
+  },
   "teacup": {
     "id": "teacup",
     "device_type": "TBD",
