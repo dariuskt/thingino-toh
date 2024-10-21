@@ -247,6 +247,10 @@ sensor:
     name: SC4236
     resolution: 2304x1536@30fps
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+  SC4336: &sensor_SC4336
+    name: SC4336
+    resolution: 2560x1440@30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
   SC4336P: &sensor_SC4336P
     name: SC4336p
     resolution: 2880x1620@30fps ???
@@ -1763,6 +1767,25 @@ devices:
     ir_850: false
     ir_940: true
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_xiaofang_t20l_jxf23.bin
+  zte_k540:
+    id: zte_k540
+    device_type: TBD
+    brand: zte
+    model: k540
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_SC4336
+    wifi: *wifi_ETH
+    ethernet: true
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-zte_k540.bin
   camsoy_okc01:
     id: camsoy_okc01
     device_type: TBD
@@ -2132,3 +2155,22 @@ devices:
     ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1_t30x.bin
+  xiaomi_mjsxj05hl:
+    id: xiaomi_mjsxj05hl
+    device_type: TBD
+    brand: xiaomi
+    model: mjsxj05hl
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31L
+    sensor: *sensor_GC2053
+    wifi: *wifi_ATBM6031
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj05hl.bin
