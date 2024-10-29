@@ -508,12 +508,12 @@
     },
     "wifi": {
       "name": "MT7601U",
-      "interface": "??",
-      "w2g": "??",
-      "w2g_radio": "??",
-      "w2g_HT40": "??",
-      "w5g": "??",
-      "docs_url": "??"
+      "interface": "USB",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": false,
+      "w5g": false,
+      "docs_url": ""
     },
     "ethernet": true,
     "sd_card": true,
@@ -550,12 +550,12 @@
     },
     "wifi": {
       "name": "SYN43438",
-      "interface": "??",
-      "w2g": "??",
-      "w2g_radio": "??",
-      "w2g_HT40": "??",
-      "w5g": "??",
-      "docs_url": "??"
+      "interface": "SDIO",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": false,
+      "w5g": false,
+      "docs_url": "https://wikidevi.wi-cat.ru/Synaptics"
     },
     "ethernet": false,
     "sd_card": true,
@@ -587,7 +587,7 @@
     },
     "sensor": {
       "name": "JXQ03",
-      "resolution": "3600x1600@5~30fps ???",
+      "resolution": "3600x1600@5~30fps",
       "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
     },
     "wifi": {
@@ -913,7 +913,7 @@
     },
     "sensor": {
       "name": "JXQ03",
-      "resolution": "3600x1600@5~30fps ???",
+      "resolution": "3600x1600@5~30fps",
       "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
     },
     "wifi": {
@@ -955,7 +955,7 @@
     },
     "sensor": {
       "name": "JXQ03",
-      "resolution": "3600x1600@5~30fps ???",
+      "resolution": "3600x1600@5~30fps",
       "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
     },
     "wifi": {
@@ -1178,12 +1178,12 @@
     },
     "wifi": {
       "name": "MT7601",
-      "interface": "??",
-      "w2g": "??",
-      "w2g_radio": "??",
-      "w2g_HT40": "??",
-      "w5g": "??",
-      "docs_url": "??"
+      "interface": "USB",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": false,
+      "w5g": false,
+      "docs_url": "https://h.hlktech.com/download/HLK-7601/1/MT7601_Data_Sheet_v0_04.pdf"
     },
     "ethernet": false,
     "sd_card": true,
@@ -1832,12 +1832,12 @@
     },
     "wifi": {
       "name": "MT7601U",
-      "interface": "??",
-      "w2g": "??",
-      "w2g_radio": "??",
-      "w2g_HT40": "??",
-      "w5g": "??",
-      "docs_url": "??"
+      "interface": "USB",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": false,
+      "w5g": false,
+      "docs_url": ""
     },
     "ethernet": false,
     "sd_card": true,
@@ -1882,12 +1882,12 @@
     },
     "wifi": {
       "name": "MT7601U",
-      "interface": "??",
-      "w2g": "??",
-      "w2g_radio": "??",
-      "w2g_HT40": "??",
-      "w5g": "??",
-      "docs_url": "??"
+      "interface": "USB",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": false,
+      "w5g": false,
+      "docs_url": ""
     },
     "ethernet": false,
     "sd_card": true,
@@ -2168,8 +2168,8 @@
       "cpu_clock_mhz": 1400
     },
     "sensor": {
-      "name": "SC4336p",
-      "resolution": "2880x1620@30fps ???",
+      "name": "SC4336P",
+      "resolution": "2880x1620@30fps",
       "docs_url": "https://smartsens.oss-cn-beijing.aliyuncs.com/web/img/1677747703063551255.pdf"
     },
     "wifi": {
@@ -2680,8 +2680,8 @@
       "cpu_clock_mhz": 1000
     },
     "sensor": {
-      "name": "JXQ03p",
-      "resolution": "2304x1296@5~30fps ???",
+      "name": "JXQ03P",
+      "resolution": "2304x1296@5~30fps",
       "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
     },
     "wifi": {
@@ -2723,7 +2723,7 @@
     },
     "sensor": {
       "name": "JXQ03",
-      "resolution": "3600x1600@5~30fps ???",
+      "resolution": "3600x1600@5~30fps",
       "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
     },
     "wifi": {
@@ -2764,8 +2764,8 @@
       "cpu_clock_mhz": 1400
     },
     "sensor": {
-      "name": "JXQ03p",
-      "resolution": "2304x1296@5~30fps ???",
+      "name": "JXQ03P",
+      "resolution": "2304x1296@5~30fps",
       "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
     },
     "wifi": {
@@ -3022,12 +3022,12 @@
     },
     "wifi": {
       "name": "SYN43436",
-      "interface": "??",
-      "w2g": "??",
-      "w2g_radio": "??",
-      "w2g_HT40": "??",
-      "w5g": "??",
-      "docs_url": "??"
+      "interface": "SDIO",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": false,
+      "w5g": false,
+      "docs_url": "https://wikidevi.wi-cat.ru/Synaptics"
     },
     "ethernet": true,
     "sd_card": false,
@@ -3059,7 +3059,7 @@
     },
     "sensor": {
       "name": "JXQ03",
-      "resolution": "3600x1600@5~30fps ???",
+      "resolution": "3600x1600@5~30fps",
       "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
     },
     "wifi": {
@@ -3738,8 +3738,8 @@
       "cpu_clock_mhz": 1400
     },
     "sensor": {
-      "name": "JXQ03p",
-      "resolution": "2304x1296@5~30fps ???",
+      "name": "JXQ03P",
+      "resolution": "2304x1296@5~30fps",
       "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
     },
     "wifi": {
@@ -3823,17 +3823,17 @@
     },
     "sensor": {
       "name": "SC2336P",
-      "resolution": "???",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://tehno32.ru/sites/default/files/download/cmos_smartsens/1676880676453184940.pdf"
     },
     "wifi": {
       "name": "ATBM6132BU",
-      "interface": "???",
-      "w2g": "???",
-      "w2g_radio": "???",
-      "w2g_HT40": "???",
-      "w5g": "???",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+      "interface": "USB",
+      "w2g": "a/b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": true,
+      "docs_url": "https://www.altobeam.com/en/contents/72/138.html"
     },
     "ethernet": false,
     "sd_card": true,

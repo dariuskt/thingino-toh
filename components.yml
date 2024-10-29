@@ -47,20 +47,22 @@ soc:
     name: --
     ram_mb: "--:"
     cpu_clock_mhz: "--:"
+
   T10N: &soc_T10N
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T10
     name: T10N
     ram_mb: 64
     cpu_clock_mhz: 860
-  T10: &soc_T10
-    <<: *soc_T10N
   T10L: &soc_T10L
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T10
     name: T10L
     ram_mb: 64
     cpu_clock_mhz: 860
+  T10: &soc_T10
+    <<: *soc_T10N
+
   T20L: &soc_T20L
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T20
@@ -73,6 +75,7 @@ soc:
     name: T20X
     ram_mb: 128
     cpu_clock_mhz: 800
+
   T21N: &soc_T21N
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T21
@@ -85,12 +88,14 @@ soc:
     name: T21Z
     ram_mb: 64
     cpu_clock_mhz: 800
+
   T23N: &soc_T23N
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T23
     name: T23N
     ram_mb: 64
     cpu_clock_mhz: 1400
+
   T30L: &soc_T30L
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T30
@@ -103,6 +108,7 @@ soc:
     name: T30X
     ram_mb: 128
     cpu_clock_mhz: 1000
+
   T31AL: &soc_T31AL
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T31
@@ -193,11 +199,11 @@ sensor:
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
   JXQ03: &sensor_JXQ03
     name: JXQ03
-    resolution: 3600x1600@5~30fps ???
+    resolution: 3600x1600@5~30fps
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
   JXQ03P: &sensor_JXQ03P
-    name: JXQ03p
-    resolution: 2304x1296@5~30fps ???
+    name: JXQ03P
+    resolution: 2304x1296@5~30fps
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
   OS02B10: &sensor_OS02B10
     name: OS02B10
@@ -245,8 +251,8 @@ sensor:
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
   SC2336P: &sensor_SC2336P
     name: SC2336P
-    resolution: ???
-    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+    resolution: 1920x1080@30fps
+    docs_url: "https://tehno32.ru/sites/default/files/download/cmos_smartsens/1676880676453184940.pdf"
   SC3335: &sensor_SC3335
     name: SC3335
     resolution: 2500x1620@30fps ???
@@ -268,8 +274,8 @@ sensor:
     resolution: 2560x1440@30fps
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
   SC4336P: &sensor_SC4336P
-    name: SC4336p
-    resolution: 2880x1620@30fps ???
+    name: SC4336P
+    resolution: 2880x1620@30fps
     docs_url: "https://smartsens.oss-cn-beijing.aliyuncs.com/web/img/1677747703063551255.pdf"
 
 
@@ -333,12 +339,12 @@ wifi:
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
   ATBM6132BU: &wifi_ATBM6132BU
     name: ATBM6132BU
-    interface: ???
-    w2g: ???
-    w2g_radio: ???
-    w2g_HT40: ???
-    w5g: ???
-    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+    interface: USB
+    w2g: a/b/g/n
+    w2g_radio: 1T1R
+    w2g_HT40: true
+    w5g: true
+    docs_url: "https://www.altobeam.com/en/contents/72/138.html"
   ETH: &wifi_ETH
     name: --
     interface: --
@@ -357,20 +363,20 @@ wifi:
     docs_url: "??"
   MT7601: &wifi_MT7601
     name: MT7601
-    interface: ??
-    w2g: ??
-    w2g_radio: ??
-    w2g_HT40: ??
-    w5g: ??
-    docs_url: "??"
+    interface: USB
+    w2g: b/g/n
+    w2g_radio: 1T1R
+    w2g_HT40: false
+    w5g: false
+    docs_url: "https://h.hlktech.com/download/HLK-7601/1/MT7601_Data_Sheet_v0_04.pdf"
   MT7601U: &wifi_MT7601U
     name: MT7601U
-    interface: ??
-    w2g: ??
-    w2g_radio: ??
-    w2g_HT40: ??
-    w5g: ??
-    docs_url: "??"
+    interface: USB
+    w2g: b/g/n
+    w2g_radio: 1T1R
+    w2g_HT40: false
+    w5g: false
+    docs_url: ""
   MT7601STA: &wifi_MT7601STA
     name: MT7601STA
     interface: USB?
@@ -437,19 +443,19 @@ wifi:
     docs_url: "??"
   SYN43436: &wifi_SYN43436
     name: SYN43436
-    interface: ??
-    w2g: ??
-    w2g_radio: ??
-    w2g_HT40: ??
-    w5g: ??
-    docs_url: "??"
+    interface: SDIO
+    w2g: b/g/n
+    w2g_radio: 1T1R
+    w2g_HT40: false
+    w5g: false
+    docs_url: "https://wikidevi.wi-cat.ru/Synaptics"
   SYN43438: &wifi_SYN43438
     name: SYN43438
-    interface: ??
-    w2g: ??
-    w2g_radio: ??
-    w2g_HT40: ??
-    w5g: ??
-    docs_url: "??"
+    interface: SDIO
+    w2g: b/g/n
+    w2g_radio: 1T1R
+    w2g_HT40: false
+    w5g: false
+    docs_url: "https://wikidevi.wi-cat.ru/Synaptics"
 
 
