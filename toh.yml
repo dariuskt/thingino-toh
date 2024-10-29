@@ -47,6 +47,14 @@ soc:
     name: --
     ram_mb: "--:"
     cpu_clock_mhz: "--:"
+  T10N: &soc_T10N
+    <<: *soc_brand_ingenic
+    <<: *soc_family_ingenic_T10
+    name: T10N
+    ram_mb: 64
+    cpu_clock_mhz: 860
+  T10: &soc_T10
+    <<: *soc_T10N
   T10L: &soc_T10L
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T10
@@ -203,6 +211,10 @@ sensor:
     name: OV2735b
     resolution: 2106x1595@5~30fps
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/omnivision.md"
+  OV9712: &sensor_OV9712
+    name: OV9712
+    resolution: 1280x800@30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/omnivision.md"
   SC1235: &sensor_SC1235
     name: SC1235
     resolution: 1800x1200@30fps
@@ -230,6 +242,10 @@ sensor:
   SC2336: &sensor_SC2336
     name: SC2336
     resolution: 1920x1080@30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+  SC2336P: &sensor_SC2336P
+    name: SC2336P
+    resolution: ???
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
   SC3335: &sensor_SC3335
     name: SC3335
@@ -267,6 +283,14 @@ wifi:
     w2g_HT40: --
     w5g: --
     docs_url: "--"
+  AP6181: &wifi_AP6181
+    name: AP6181
+    interface: SDIO
+    w2g: b/g/n
+    w2g_radio: 1T1R
+    w2g_HT40: false
+    w5g: false
+    docs_url: "https://www.t-firefly.com/images/3/39/Fireduino_WIFI_datesheet.pdf"
   ATBM6012B: &wifi_ATBM6012B
     name: ATBM6012B
     interface: USB
@@ -306,6 +330,14 @@ wifi:
     w2g_radio: 1T1R
     w2g_HT40: true
     w5g: false
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+  ATBM6132BU: &wifi_ATBM6132BU
+    name: ATBM6132BU
+    interface: ???
+    w2g: ???
+    w2g_radio: ???
+    w2g_HT40: ???
+    w5g: ???
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
   ETH: &wifi_ETH
     name: --
@@ -862,6 +894,25 @@ devices:
     shop_url: https://www.amazon.de/dp/B09Y5FG27D
     device_image: ''
     wiki_page_url: ''
+  hl_jdpan01:
+    id: hl_jdpan01
+    device_type: TBD
+    brand: hl
+    model: jdpan01
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31L
+    sensor: *sensor_GC2053
+    wifi: *wifi_ATBM6031
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-hl_jdpan01.bin
   iflytek_xfp301_m_rtl8188ftv:
     id: iflytek_xfp301_m_rtl8188ftv
     device_type: TBD
@@ -1428,6 +1479,25 @@ devices:
     shop_url: https://www.amazon.com/wansview-Security-Cameras-Wireless-Outdoor-2-4G/dp/B0BWDPSYDT
     device_image: ''
     wiki_page_url: ''
+  wja_g7:
+    id: wja_g7
+    device_type: TBD
+    brand: wja
+    model: g7
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_JXF37
+    wifi: *wifi_ETH
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: false
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wja_g7.bin
   wuuk_y0510_sc401ai:
     id: wuuk_y0510_sc401ai
     device_type: TBD
@@ -1634,6 +1704,25 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cp3.bin
+  wyze_vdb1_t30x:
+    id: wyze_vdb1_t30x
+    device_type: TBD
+    brand: wyze
+    model: vdb1
+    status: supported
+    flash_mb: 16
+    soc: *soc_T30X
+    sensor: *sensor_SC4236
+    wifi: *wifi_RTL8189FTV
+    ethernet: false
+    sd_card: false
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1_t30x.bin
   wyze_vdb1_t31x:
     id: wyze_vdb1_t31x
     device_type: TBD
@@ -1651,7 +1740,7 @@ devices:
     speaker: true
     ir_cut: true
     ir_850: false
-    ir_940: false
+    ir_940: true
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1_t31x.bin
   xiaomi_hlcam04:
     id: xiaomi_hlcam04
@@ -1965,6 +2054,25 @@ devices:
     ir_850: false
     ir_940: true
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-ginzzu_op200.bin
+  green-t10:
+    id: green-t10
+    device_type: TBD
+    brand: green-t10
+    model: green-t10
+    status: wip
+    flash_mb: 16
+    soc: *soc_T10
+    sensor: *sensor_OV9712
+    wifi: *wifi_AP6181
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: false
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-green-t10.bin
   h3c_c2041_t31x_jxk04_rtl8188ftv:
     id: h3c_c2041_t31x_jxk04_rtl8188ftv
     device_type: TBD
@@ -2117,6 +2225,25 @@ devices:
     ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-t31zx_ov5647_eth.bin
+  vstarcam-c662:
+    id: vstarcam-c662
+    device_type: TBD
+    brand: vstarcam-c662
+    model: vstarcam-c662
+    status: wip
+    flash_mb: 8
+    soc: *soc_T23N
+    sensor: *sensor_GC2083
+    wifi: *wifi_SSV6355
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vstarcam-c662.bin
   xiaomi_mjsxj03hl_t31n_jxq03p_rtl8189ftv_k4:
     id: xiaomi_mjsxj03hl_t31n_jxq03p_rtl8189ftv_k4
     device_type: TBD
@@ -2136,25 +2263,82 @@ devices:
     ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj03hl_t31n_jxq03p_rtl8189ftv_k4.bin
-  wyze_vdb1_t30x:
-    id: wyze_vdb1_t30x
+  jooan_a2r:
+    id: jooan_a2r
     device_type: TBD
-    brand: wyze
-    model: vdb1
+    brand: jooan
+    model: a2r
     status: supported
-    flash_mb: 16
-    soc: *soc_T30X
-    sensor: *sensor_SC4236
-    wifi: *wifi_RTL8189FTV
+    flash_mb: 8
+    soc: *soc_T23N
+    sensor: *sensor_SC1A4T
+    wifi: *wifi_ATBM6012BX
     ethernet: false
-    sd_card: false
-    pan_tilt: false
+    sd_card: true
+    pan_tilt: true
     mic: true
     speaker: true
     ir_cut: true
-    ir_850: false
+    ir_850: true
     ir_940: false
-    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1_t30x.bin
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_a2r.bin
+  jooan_c9ts:
+    id: jooan_c9ts
+    device_type: TBD
+    brand: jooan
+    model: c9ts
+    status: supported
+    flash_mb: 8
+    soc: *soc_T23N
+    sensor: *sensor_SC2336P
+    wifi: *wifi_ATBM6132BU
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_c9ts.bin
+  jooan_q3r:
+    id: jooan_q3r
+    device_type: TBD
+    brand: jooan
+    model: q3r
+    status: supported
+    flash_mb: 8
+    soc: *soc_T23N
+    sensor: *sensor_SC1A4T
+    wifi: *wifi_ATBM6012BX
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_q3r.bin
+  jooan_t2r:
+    id: jooan_t2r
+    device_type: TBD
+    brand: jooan
+    model: t2r
+    status: supported
+    flash_mb: 8
+    soc: *soc_T23N
+    sensor: *sensor_SC1A4T
+    wifi: *wifi_ATBM6012BX
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_t2r.bin
   xiaomi_mjsxj05hl:
     id: xiaomi_mjsxj05hl
     device_type: TBD

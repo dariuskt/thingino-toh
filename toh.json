@@ -851,6 +851,48 @@
     "device_image": "",
     "wiki_page_url": ""
   },
+  "hl_jdpan01": {
+    "id": "hl_jdpan01",
+    "device_type": "TBD",
+    "brand": "hl",
+    "model": "jdpan01",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31L",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1000
+    },
+    "sensor": {
+      "name": "GC2053",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+    },
+    "wifi": {
+      "name": "ATBM6031",
+      "interface": "SDIO",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": false,
+    "ir_940": true,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-hl_jdpan01.bin"
+  },
   "iflytek_xfp301_m_rtl8188ftv": {
     "id": "iflytek_xfp301_m_rtl8188ftv",
     "device_type": "TBD",
@@ -2015,6 +2057,48 @@
     "device_image": "",
     "wiki_page_url": ""
   },
+  "wja_g7": {
+    "id": "wja_g7",
+    "device_type": "TBD",
+    "brand": "wja",
+    "model": "g7",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "JXF37",
+      "resolution": "2400x1440@5~30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+    },
+    "wifi": {
+      "name": "--",
+      "interface": "--",
+      "w2g": "--",
+      "w2g_radio": "--",
+      "w2g_HT40": "--",
+      "w5g": "--",
+      "docs_url": "--"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": false,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wja_g7.bin"
+  },
   "wuuk_y0510_sc401ai": {
     "id": "wuuk_y0510_sc401ai",
     "device_type": "TBD",
@@ -2451,6 +2535,48 @@
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cp3.bin"
   },
+  "wyze_vdb1_t30x": {
+    "id": "wyze_vdb1_t30x",
+    "device_type": "TBD",
+    "brand": "wyze",
+    "model": "vdb1",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T30",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2688x2048",
+      "max_encoding": "3840x2160@30fps",
+      "name": "T30X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1000
+    },
+    "sensor": {
+      "name": "SC4236",
+      "resolution": "2304x1536@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+    },
+    "wifi": {
+      "name": "RTL8189FTV",
+      "interface": "SDIO",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407020948_Realtek-Semicon-RTL8189FTV-VC-CG_C2687145.pdf"
+    },
+    "ethernet": false,
+    "sd_card": false,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": false,
+    "ir_940": true,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1_t30x.bin"
+  },
   "wyze_vdb1_t31x": {
     "id": "wyze_vdb1_t31x",
     "device_type": "TBD",
@@ -2490,7 +2616,7 @@
     "speaker": true,
     "ir_cut": true,
     "ir_850": false,
-    "ir_940": false,
+    "ir_940": true,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1_t31x.bin"
   },
   "xiaomi_hlcam04": {
@@ -3173,6 +3299,48 @@
     "ir_940": true,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-ginzzu_op200.bin"
   },
+  "green-t10": {
+    "id": "green-t10",
+    "device_type": "TBD",
+    "brand": "green-t10",
+    "model": "green-t10",
+    "status": "wip",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T10",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "1280x1024",
+      "max_encoding": "960p@40fps",
+      "name": "T10N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 860
+    },
+    "sensor": {
+      "name": "OV9712",
+      "resolution": "1280x800@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/omnivision.md"
+    },
+    "wifi": {
+      "name": "AP6181",
+      "interface": "SDIO",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": false,
+      "w5g": false,
+      "docs_url": "https://www.t-firefly.com/images/3/39/Fireduino_WIFI_datesheet.pdf"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": false,
+    "mic": false,
+    "speaker": false,
+    "ir_cut": false,
+    "ir_850": false,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-green-t10.bin"
+  },
   "h3c_c2041_t31x_jxk04_rtl8188ftv": {
     "id": "h3c_c2041_t31x_jxk04_rtl8188ftv",
     "device_type": "TBD",
@@ -3509,6 +3677,48 @@
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-t31zx_ov5647_eth.bin"
   },
+  "vstarcam-c662": {
+    "id": "vstarcam-c662",
+    "device_type": "TBD",
+    "brand": "vstarcam-c662",
+    "model": "vstarcam-c662",
+    "status": "wip",
+    "flash_mb": 8,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T23",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2308x2048",
+      "max_encoding": "3MP@40fps",
+      "name": "T23N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "GC2083",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+    },
+    "wifi": {
+      "name": "SSV6355",
+      "interface": "??",
+      "w2g": "??",
+      "w2g_radio": "??",
+      "w2g_HT40": "??",
+      "w5g": "??",
+      "docs_url": "??"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vstarcam-c662.bin"
+  },
   "xiaomi_mjsxj03hl_t31n_jxq03p_rtl8189ftv_k4": {
     "id": "xiaomi_mjsxj03hl_t31n_jxq03p_rtl8189ftv_k4",
     "device_type": "TBD",
@@ -3551,47 +3761,173 @@
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj03hl_t31n_jxq03p_rtl8189ftv_k4.bin"
   },
-  "wyze_vdb1_t30x": {
-    "id": "wyze_vdb1_t30x",
+  "jooan_a2r": {
+    "id": "jooan_a2r",
     "device_type": "TBD",
-    "brand": "wyze",
-    "model": "vdb1",
+    "brand": "jooan",
+    "model": "a2r",
     "status": "supported",
-    "flash_mb": 16,
+    "flash_mb": 8,
     "soc": {
       "brand": "ingenic",
       "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
-      "family": "T30",
+      "family": "T23",
       "cpu_arch": "XBurst1",
-      "max_resolution": "2688x2048",
-      "max_encoding": "3840x2160@30fps",
-      "name": "T30X",
-      "ram_mb": 128,
-      "cpu_clock_mhz": 1000
+      "max_resolution": "2308x2048",
+      "max_encoding": "3MP@40fps",
+      "name": "T23N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1400
     },
     "sensor": {
-      "name": "SC4236",
-      "resolution": "2304x1536@30fps",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+      "name": "SC1A4T",
+      "resolution": "???",
+      "docs_url": ""
     },
     "wifi": {
-      "name": "RTL8189FTV",
-      "interface": "SDIO",
+      "name": "ATBM6012BX",
+      "interface": "USB",
       "w2g": "b/g/n",
       "w2g_radio": "1T1R",
-      "w2g_HT40": true,
+      "w2g_HT40": false,
       "w5g": false,
-      "docs_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407020948_Realtek-Semicon-RTL8189FTV-VC-CG_C2687145.pdf"
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
     },
     "ethernet": false,
-    "sd_card": false,
-    "pan_tilt": false,
+    "sd_card": true,
+    "pan_tilt": true,
     "mic": true,
     "speaker": true,
     "ir_cut": true,
-    "ir_850": false,
+    "ir_850": true,
     "ir_940": false,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_vdb1_t30x.bin"
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_a2r.bin"
+  },
+  "jooan_c9ts": {
+    "id": "jooan_c9ts",
+    "device_type": "TBD",
+    "brand": "jooan",
+    "model": "c9ts",
+    "status": "supported",
+    "flash_mb": 8,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T23",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2308x2048",
+      "max_encoding": "3MP@40fps",
+      "name": "T23N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "SC2336P",
+      "resolution": "???",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+    },
+    "wifi": {
+      "name": "ATBM6132BU",
+      "interface": "???",
+      "w2g": "???",
+      "w2g_radio": "???",
+      "w2g_HT40": "???",
+      "w5g": "???",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_c9ts.bin"
+  },
+  "jooan_q3r": {
+    "id": "jooan_q3r",
+    "device_type": "TBD",
+    "brand": "jooan",
+    "model": "q3r",
+    "status": "supported",
+    "flash_mb": 8,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T23",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2308x2048",
+      "max_encoding": "3MP@40fps",
+      "name": "T23N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "SC1A4T",
+      "resolution": "???",
+      "docs_url": ""
+    },
+    "wifi": {
+      "name": "ATBM6012BX",
+      "interface": "USB",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": false,
+      "w5g": false,
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_q3r.bin"
+  },
+  "jooan_t2r": {
+    "id": "jooan_t2r",
+    "device_type": "TBD",
+    "brand": "jooan",
+    "model": "t2r",
+    "status": "supported",
+    "flash_mb": 8,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T23",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2308x2048",
+      "max_encoding": "3MP@40fps",
+      "name": "T23N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "SC1A4T",
+      "resolution": "???",
+      "docs_url": ""
+    },
+    "wifi": {
+      "name": "ATBM6012BX",
+      "interface": "USB",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": false,
+      "w5g": false,
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_t2r.bin"
   },
   "xiaomi_mjsxj05hl": {
     "id": "xiaomi_mjsxj05hl",
