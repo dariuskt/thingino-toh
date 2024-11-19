@@ -3254,7 +3254,7 @@
     "device_type": "TBD",
     "brand": "camsoy",
     "model": "okc01",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 8,
     "soc": {
       "brand": "ingenic",
@@ -3296,7 +3296,7 @@
     "device_type": "TBD",
     "brand": "cinnado",
     "model": "d1",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 8,
     "soc": {
       "brand": "ingenic",
@@ -3338,7 +3338,7 @@
     "device_type": "TBD",
     "brand": "eufy",
     "model": "t8441",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 32,
     "soc": {
       "brand": "ingenic",
@@ -3380,7 +3380,7 @@
     "device_type": "TBD",
     "brand": "ezviz",
     "model": "cs",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 16,
     "soc": {
       "brand": "ingenic",
@@ -3422,7 +3422,7 @@
     "device_type": "TBD",
     "brand": "galayou",
     "model": "g2",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 8,
     "soc": {
       "brand": "ingenic",
@@ -3464,7 +3464,7 @@
     "device_type": "TBD",
     "brand": "galayou",
     "model": "g2",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 8,
     "soc": {
       "brand": "ingenic",
@@ -3506,7 +3506,7 @@
     "device_type": "TBD",
     "brand": "galayou",
     "model": "g7",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 8,
     "soc": {
       "brand": "ingenic",
@@ -3548,7 +3548,7 @@
     "device_type": "TBD",
     "brand": "galayou",
     "model": "y4",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 8,
     "soc": {
       "brand": "ingenic",
@@ -3598,7 +3598,7 @@
     "device_type": "TBD",
     "brand": "ginzzu",
     "model": "op200",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 16,
     "soc": {
       "brand": "ingenic",
@@ -3640,7 +3640,7 @@
     "device_type": "TBD",
     "brand": "green-t10",
     "model": "green-t10",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 16,
     "soc": {
       "brand": "ingenic",
@@ -3682,7 +3682,7 @@
     "device_type": "TBD",
     "brand": "h3c",
     "model": "c2041",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 16,
     "soc": {
       "brand": "ingenic",
@@ -3724,7 +3724,7 @@
     "device_type": "TBD",
     "brand": "jooan",
     "model": "c9ts",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 8,
     "soc": {
       "brand": "ingenic",
@@ -3766,7 +3766,7 @@
     "device_type": "TBD",
     "brand": "t31al",
     "model": "xxx",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": null,
     "soc": {
       "brand": "ingenic",
@@ -3808,7 +3808,7 @@
     "device_type": "TBD",
     "brand": "t31l",
     "model": "sc2336",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": null,
     "soc": {
       "brand": "ingenic",
@@ -3850,7 +3850,7 @@
     "device_type": "TBD",
     "brand": "t31x",
     "model": "gc2053",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 16,
     "soc": {
       "brand": "ingenic",
@@ -3892,7 +3892,7 @@
     "device_type": "TBD",
     "brand": "t31x",
     "model": "gc2053",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 16,
     "soc": {
       "brand": "ingenic",
@@ -3934,7 +3934,7 @@
     "device_type": "TBD",
     "brand": "t31x",
     "model": "gc2053",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": null,
     "soc": {
       "brand": "ingenic",
@@ -3976,7 +3976,7 @@
     "device_type": "TBD",
     "brand": "t31zx",
     "model": "ov5647",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": null,
     "soc": {
       "brand": "ingenic",
@@ -4018,7 +4018,7 @@
     "device_type": "TBD",
     "brand": "vstarcam-c662",
     "model": "vstarcam-c662",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 8,
     "soc": {
       "brand": "ingenic",
@@ -4060,7 +4060,7 @@
     "device_type": "TBD",
     "brand": "wansview",
     "model": "q6",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 16,
     "soc": {
       "brand": "ingenic",
@@ -4102,7 +4102,7 @@
     "device_type": "TBD",
     "brand": "wj01",
     "model": "wj01",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 8,
     "soc": {
       "brand": "ingenic",
@@ -4144,7 +4144,7 @@
     "device_type": "TBD",
     "brand": "xiaomi",
     "model": "mjsxj03hl",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 16,
     "soc": {
       "brand": "ingenic",
@@ -4186,7 +4186,7 @@
     "device_type": "TBD",
     "brand": "xiaomi",
     "model": "mjsxj05hl",
-    "status": "supported",
+    "status": "wip",
     "flash_mb": 16,
     "soc": {
       "brand": "ingenic",

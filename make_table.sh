@@ -6,7 +6,7 @@ function addCam() {
 	cam=$(basename $cam_file)
 	env_file="$repo_dir/$(cat ${cam_file} | fgrep U_BOOT_ENV_TXT | cut -d/ -f2- | cut -d'"' -f1)"
 
-	status=$(echo ${cam} | grep -q '^exp_' && echo wip || echo supported)
+	status=$(echo ${cam_file} | grep -q '/configs/testing/' && echo wip || echo supported)
 	cam=$(echo ${cam} | sed 's/^exp_//')
 
 	device_type=TBD
