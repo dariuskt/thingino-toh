@@ -109,6 +109,12 @@ soc:
     ram_mb: 128
     cpu_clock_mhz: 1000
 
+  T31A: &soc_T31A
+    <<: *soc_brand_ingenic
+    <<: *soc_family_ingenic_T31
+    name: T31A
+    ram_mb: ???
+    cpu_clock_mhz: ???
   T31AL: &soc_T31AL
     <<: *soc_brand_ingenic
     <<: *soc_family_ingenic_T31
@@ -213,6 +219,10 @@ sensor:
     name: OS02G10
     resolution: 1920x1080@30fps
     docs_url: "https://www.ovt.com/wp-content/uploads/2022/01/OS02G10-PB-v1.2-WEB.pdf"
+  OS03B10: &sensor_OS03B10
+    name: OS03B10
+    resolution: 2312x1304@30fps
+    docs_url: "https://www.ovt.com/products/os03b10/"
   OV2735B: &sensor_OV2735B
     name: OV2735b
     resolution: 2106x1595@5~30fps
@@ -253,6 +263,10 @@ sensor:
     name: SC2336P
     resolution: 1920x1080@30fps
     docs_url: "https://tehno32.ru/sites/default/files/download/cmos_smartsens/1676880676453184940.pdf"
+  SC301IOT: &sensor_SC301IOT
+    name: SC301IOT
+    resolution: 2048x1536@30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
   SC3335: &sensor_SC3335
     name: SC3335
     resolution: 2500x1620@30fps ???
