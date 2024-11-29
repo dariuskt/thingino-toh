@@ -1743,14 +1743,14 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c2_jxf23.bin
-  wyze_c3_t31a_atbm:
-    id: wyze_c3_t31a_atbm
+  wyze_c3_t31al_atbm:
+    id: wyze_c3_t31al_atbm
     device_type: TBD
     brand: wyze
     model: c3
     status: supported
     flash_mb: 16
-    soc: *soc_T31A
+    soc: *soc_T31AL
     sensor: *sensor_GC2053
     wifi: *wifi_ATBM6031
     ethernet: false
@@ -1761,7 +1761,7 @@ devices:
     ir_cut: true
     ir_850: true
     ir_940: true
-    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31a_atbm.bin
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31al_atbm.bin
   wyze_c3_t31x_atbm:
     id: wyze_c3_t31x_atbm
     device_type: TBD
@@ -2432,7 +2432,7 @@ devices:
     mic: true
     speaker: true
     ir_cut: true
-    ir_850: true
+    ir_850: false
     ir_940: true
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_q6.bin
   wj01:

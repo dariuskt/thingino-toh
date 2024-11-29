@@ -2577,8 +2577,8 @@
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c2_jxf23.bin"
   },
-  "wyze_c3_t31a_atbm": {
-    "id": "wyze_c3_t31a_atbm",
+  "wyze_c3_t31al_atbm": {
+    "id": "wyze_c3_t31al_atbm",
     "device_type": "TBD",
     "brand": "wyze",
     "model": "c3",
@@ -2591,9 +2591,9 @@
       "cpu_arch": "XBurst1",
       "max_resolution": "2592x2048",
       "max_encoding": "2592x2048@25fps",
-      "name": "T31A",
-      "ram_mb": "???",
-      "cpu_clock_mhz": "???"
+      "name": "T31AL",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1500
     },
     "sensor": {
       "name": "GC2053",
@@ -2617,7 +2617,7 @@
     "ir_cut": true,
     "ir_850": true,
     "ir_940": true,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31a_atbm.bin"
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31al_atbm.bin"
   },
   "wyze_c3_t31x_atbm": {
     "id": "wyze_c3_t31x_atbm",
@@ -4093,7 +4093,7 @@
     "mic": true,
     "speaker": true,
     "ir_cut": true,
-    "ir_850": true,
+    "ir_850": false,
     "ir_940": true,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_q6.bin"
   },
