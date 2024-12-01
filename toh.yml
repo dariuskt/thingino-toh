@@ -1478,6 +1478,25 @@ devices:
     ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wanjiaan_t30x.bin
+  wansview_106:
+    id: wansview_106
+    device_type: TBD
+    brand: wansview
+    model: '106'
+    status: supported
+    flash_mb: 8
+    soc: *soc_tpl
+    sensor: *sensor_tpl
+    wifi: *wifi_tpl
+    ethernet: false
+    sd_card: false
+    pan_tilt: true
+    mic: true
+    speaker: false
+    ir_cut: true
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_106.bin
   wansview_g6:
     id: wansview_g6
     device_type: TBD
