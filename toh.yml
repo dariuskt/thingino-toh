@@ -871,6 +871,25 @@ devices:
     shop_url: https://www.amazon.de/dp/B0B28PS326
     device_image: ''
     wiki_page_url: ''
+  galayou_g7_t23n_atbm6012bx:
+    id: galayou_g7_t23n_atbm6012bx
+    device_type: TBD
+    brand: galayou
+    model: g7
+    status: supported
+    flash_mb: 8
+    soc: *soc_T23N
+    sensor: *sensor_SC2336
+    wifi: *wifi_ATBM6012BX
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_g7_t23n_atbm6012bx.bin
   galayou_y4_t23n_atbm6062:
     id: galayou_y4_t23n_atbm6062
     device_type: TBD
@@ -990,6 +1009,25 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-gncc_gc2.bin
+  hamedal_c20:
+    id: hamedal_c20
+    device_type: TBD
+    brand: hamedal
+    model: c20
+    status: supported
+    flash_mb: 16
+    soc: *soc_tpl
+    sensor: *sensor_tpl
+    wifi: *wifi_tpl
+    ethernet: false
+    sd_card: false
+    pan_tilt: false
+    mic: true
+    speaker: false
+    ir_cut: true
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-hamedal_c20.bin
   hl_jdpan01:
     id: hl_jdpan01
     device_type: TBD
@@ -1819,6 +1857,63 @@ devices:
     ir_850: true
     ir_940: true
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31x_rtl.bin
+  wyze_cfl1_t31al_atbm:
+    id: wyze_cfl1_t31al_atbm
+    device_type: TBD
+    brand: wyze
+    model: cfl1
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31AL
+    sensor: *sensor_GC2053
+    wifi: *wifi_ATBM6031
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cfl1_t31al_atbm.bin
+  wyze_cfl1_t31x_atbm:
+    id: wyze_cfl1_t31x_atbm
+    device_type: TBD
+    brand: wyze
+    model: cfl1
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_GC2053
+    wifi: *wifi_ATBM6031
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cfl1_t31x_atbm.bin
+  wyze_cfl1_t31x_rtl:
+    id: wyze_cfl1_t31x_rtl
+    device_type: TBD
+    brand: wyze
+    model: cfl1
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_GC2053
+    wifi: *wifi_RTL8189FTV
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cfl1_t31x_rtl.bin
   wyze_cp1:
     id: wyze_cp1
     device_type: TBD
@@ -2156,7 +2251,7 @@ devices:
     sd_card: true
     pan_tilt: true
     mic: false
-    speaker: false
+    speaker: true
     ir_cut: true
     ir_850: false
     ir_940: true
@@ -2454,6 +2549,25 @@ devices:
     ir_850: false
     ir_940: true
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_q6.bin
+  wansview_y1:
+    id: wansview_y1
+    device_type: TBD
+    brand: wansview
+    model: y1
+    status: wip
+    flash_mb: 8
+    soc: *soc_T31L
+    sensor: *sensor_OS02G10
+    wifi: *wifi_ATBM6031
+    ethernet: true
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_y1.bin
   wj01:
     id: wj01
     device_type: TBD

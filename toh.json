@@ -785,6 +785,48 @@
     "device_image": "",
     "wiki_page_url": ""
   },
+  "galayou_g7_t23n_atbm6012bx": {
+    "id": "galayou_g7_t23n_atbm6012bx",
+    "device_type": "TBD",
+    "brand": "galayou",
+    "model": "g7",
+    "status": "supported",
+    "flash_mb": 8,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T23",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2308x2048",
+      "max_encoding": "3MP@40fps",
+      "name": "T23N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "SC2336",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+    },
+    "wifi": {
+      "name": "ATBM6012BX",
+      "interface": "USB",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": false,
+      "w5g": false,
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": false,
+    "ir_940": true,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_g7_t23n_atbm6012bx.bin"
+  },
   "galayou_y4_t23n_atbm6062": {
     "id": "galayou_y4_t23n_atbm6062",
     "device_type": "TBD",
@@ -1018,6 +1060,48 @@
     "ir_850": true,
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-gncc_gc2.bin"
+  },
+  "hamedal_c20": {
+    "id": "hamedal_c20",
+    "device_type": "TBD",
+    "brand": "hamedal",
+    "model": "c20",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "--",
+      "cpu_arch": "--",
+      "max_resolution": "--",
+      "max_encoding": "--",
+      "name": "--",
+      "ram_mb": "--:",
+      "cpu_clock_mhz": "--:"
+    },
+    "sensor": {
+      "name": "--",
+      "resolution": "--",
+      "docs_url": "--"
+    },
+    "wifi": {
+      "name": "--",
+      "interface": "--",
+      "w2g": "--",
+      "w2g_radio": "--",
+      "w2g_HT40": "--",
+      "w5g": "--",
+      "docs_url": "--"
+    },
+    "ethernet": false,
+    "sd_card": false,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": false,
+    "ir_cut": true,
+    "ir_850": false,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-hamedal_c20.bin"
   },
   "hl_jdpan01": {
     "id": "hl_jdpan01",
@@ -2745,6 +2829,132 @@
     "ir_940": true,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31x_rtl.bin"
   },
+  "wyze_cfl1_t31al_atbm": {
+    "id": "wyze_cfl1_t31al_atbm",
+    "device_type": "TBD",
+    "brand": "wyze",
+    "model": "cfl1",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31AL",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1500
+    },
+    "sensor": {
+      "name": "GC2053",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+    },
+    "wifi": {
+      "name": "ATBM6031",
+      "interface": "SDIO",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": true,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cfl1_t31al_atbm.bin"
+  },
+  "wyze_cfl1_t31x_atbm": {
+    "id": "wyze_cfl1_t31x_atbm",
+    "device_type": "TBD",
+    "brand": "wyze",
+    "model": "cfl1",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "GC2053",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+    },
+    "wifi": {
+      "name": "ATBM6031",
+      "interface": "SDIO",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": true,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cfl1_t31x_atbm.bin"
+  },
+  "wyze_cfl1_t31x_rtl": {
+    "id": "wyze_cfl1_t31x_rtl",
+    "device_type": "TBD",
+    "brand": "wyze",
+    "model": "cfl1",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "GC2053",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+    },
+    "wifi": {
+      "name": "RTL8189FTV",
+      "interface": "SDIO",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407020948_Realtek-Semicon-RTL8189FTV-VC-CG_C2687145.pdf"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": true,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_cfl1_t31x_rtl.bin"
+  },
   "wyze_cp1": {
     "id": "wyze_cp1",
     "device_type": "TBD",
@@ -3495,7 +3705,7 @@
     "sd_card": true,
     "pan_tilt": true,
     "mic": false,
-    "speaker": false,
+    "speaker": true,
     "ir_cut": true,
     "ir_850": false,
     "ir_940": true,
@@ -4138,6 +4348,48 @@
     "ir_850": false,
     "ir_940": true,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_q6.bin"
+  },
+  "wansview_y1": {
+    "id": "wansview_y1",
+    "device_type": "TBD",
+    "brand": "wansview",
+    "model": "y1",
+    "status": "wip",
+    "flash_mb": 8,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31L",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1000
+    },
+    "sensor": {
+      "name": "OS02G10",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://www.ovt.com/wp-content/uploads/2022/01/OS02G10-PB-v1.2-WEB.pdf"
+    },
+    "wifi": {
+      "name": "ATBM6031",
+      "interface": "SDIO",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+    },
+    "ethernet": true,
+    "sd_card": true,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": false,
+    "ir_cut": false,
+    "ir_850": false,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_y1.bin"
   },
   "wj01": {
     "id": "wj01",
