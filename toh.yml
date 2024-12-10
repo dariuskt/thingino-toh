@@ -1047,6 +1047,25 @@ devices:
     ir_850: false
     ir_940: true
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-hl_jdpan01.bin
+  howell_qj05t:
+    id: howell_qj05t
+    device_type: TBD
+    brand: howell
+    model: qj05t
+    status: supported
+    flash_mb: null
+    soc: *soc_T20L
+    sensor: *sensor_SC2235
+    wifi: *wifi_ETH
+    ethernet: true
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-howell_qj05t.bin
   iflytek_xfp301_m_rtl8188ftv:
     id: iflytek_xfp301_m_rtl8188ftv
     device_type: TBD
@@ -1383,8 +1402,8 @@ devices:
     ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-teacup.bin
-  tplink_tapo_c100:
-    id: tplink_tapo_c100
+  tplink_tapo_c100_t31l:
+    id: tplink_tapo_c100_t31l
     device_type: TBD
     brand: tplink
     model: tapo
@@ -1401,7 +1420,7 @@ devices:
     ir_cut: true
     ir_850: true
     ir_940: false
-    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-tplink_tapo_c100.bin
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-tplink_tapo_c100_t31l.bin
   vanhua_ak54:
     id: vanhua_ak54
     device_type: TBD
@@ -1662,8 +1681,8 @@ devices:
     shop_url: https://www.amazon.com/Security-Wansview-Waterproof-Surveillance-Detection/dp/B08CL1B2PM
     device_image: ''
     wiki_page_url: ''
-  wansview_w7:
-    id: wansview_w7
+  wansview_w7_t31l_atbm6012b:
+    id: wansview_w7_t31l_atbm6012b
     device_type: TBD
     brand: wansview
     model: w7
@@ -1680,15 +1699,7 @@ devices:
     ir_cut: true
     ir_850: false
     ir_940: true
-    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_w7.bin
-    view_angle: 95
-    power: wired 5V/1A USB
-    ip_rating: 65
-    last_price_w_ship: 52 USD
-    last_price_date: 2024-07
-    shop_url: https://www.amazon.com/wansview-Security-Cameras-Wireless-Outdoor-2-4G/dp/B0BWDPSYDT
-    device_image: ''
-    wiki_page_url: ''
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_w7_t31l_atbm6012b.bin
   wja_g7:
     id: wja_g7
     device_type: TBD
@@ -2625,3 +2636,12 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj05hl.bin
+  wansview_w7:
+    view_angle: 95
+    power: wired 5V/1A USB
+    ip_rating: 65
+    last_price_w_ship: 52 USD
+    last_price_date: 2024-07
+    shop_url: https://www.amazon.com/wansview-Security-Cameras-Wireless-Outdoor-2-4G/dp/B0BWDPSYDT
+    device_image: ''
+    wiki_page_url: ''
