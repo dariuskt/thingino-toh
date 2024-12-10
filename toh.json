@@ -2509,7 +2509,15 @@
     "ir_cut": true,
     "ir_850": false,
     "ir_940": true,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_w7_t31l_atbm6012b.bin"
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_w7_t31l_atbm6012b.bin",
+    "view_angle": 95,
+    "power": "wired 5V/1A USB",
+    "ip_rating": 65,
+    "last_price_w_ship": "52 USD",
+    "last_price_date": "2024-07",
+    "shop_url": "https://www.amazon.com/wansview-Security-Cameras-Wireless-Outdoor-2-4G/dp/B0BWDPSYDT",
+    "device_image": "",
+    "wiki_page_url": ""
   },
   "wja_g7": {
     "id": "wja_g7",
@@ -4550,15 +4558,5 @@
     "ir_850": true,
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj05hl.bin"
-  },
-  "wansview_w7": {
-    "view_angle": 95,
-    "power": "wired 5V/1A USB",
-    "ip_rating": 65,
-    "last_price_w_ship": "52 USD",
-    "last_price_date": "2024-07",
-    "shop_url": "https://www.amazon.com/wansview-Security-Cameras-Wireless-Outdoor-2-4G/dp/B0BWDPSYDT",
-    "device_image": "",
-    "wiki_page_url": ""
   }
 }

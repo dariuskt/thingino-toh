@@ -149,7 +149,7 @@ devices:
   wansview_w6_os02g10:
     <<: *wansview_w6
 
-  wansview_w7:
+  wansview_w7_t31l_atbm6012b:
     view_angle: 95
     power: wired 5V/1A USB
     ip_rating: 65
