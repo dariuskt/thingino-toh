@@ -1028,6 +1028,25 @@ devices:
     ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-hamedal_c20.bin
+  hc-3301y-mt1:
+    id: hc-3301y-mt1
+    device_type: TBD
+    brand: hc-3301y-mt1
+    model: hc-3301y-mt1
+    status: supported
+    flash_mb: 8
+    soc: *soc_T31N
+    sensor: *sensor_SC2332
+    wifi: *wifi_HI3881
+    ethernet: true
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-hc-3301y-mt1.bin
   hl_jdpan01:
     id: hl_jdpan01
     device_type: TBD
@@ -1053,7 +1072,7 @@ devices:
     brand: howell
     model: qj05t
     status: supported
-    flash_mb: null
+    flash_mb: 8
     soc: *soc_T20L
     sensor: *sensor_SC2235
     wifi: *wifi_ETH
@@ -1063,7 +1082,7 @@ devices:
     mic: true
     speaker: true
     ir_cut: true
-    ir_850: true
+    ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-howell_qj05t.bin
   iflytek_xfp301_m_rtl8188ftv:
@@ -1199,8 +1218,8 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_q3r.bin
-  jooan_t2r:
-    id: jooan_t2r
+  jooan_t2r_atbm6012bx:
+    id: jooan_t2r_atbm6012bx
     device_type: TBD
     brand: jooan
     model: t2r
@@ -1217,7 +1236,26 @@ devices:
     ir_cut: true
     ir_850: true
     ir_940: false
-    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_t2r.bin
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_t2r_atbm6012bx.bin
+  jooan_t2r_ssv6355:
+    id: jooan_t2r_ssv6355
+    device_type: TBD
+    brand: jooan
+    model: t2r
+    status: supported
+    flash_mb: 8
+    soc: *soc_T23N
+    sensor: *sensor_SC1A4T
+    wifi: *wifi_SSV6355
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_t2r_ssv6355.bin
   litokam_c1:
     id: litokam_c1
     device_type: TBD
@@ -1727,6 +1765,25 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wja_g7.bin
+  wuuk_y0310_sc401ai:
+    id: wuuk_y0310_sc401ai
+    device_type: TBD
+    brand: wuuk
+    model: y0310
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_SC401AI
+    wifi: *wifi_SSV6158
+    ethernet: false
+    sd_card: true
+    pan_tilt: false
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: false
+    ir_940: true
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wuuk_y0310_sc401ai.bin
   wuuk_y0510_sc401ai:
     id: wuuk_y0510_sc401ai
     device_type: TBD
