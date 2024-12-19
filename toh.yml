@@ -1478,11 +1478,11 @@ devices:
     ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_ak54.bin
-  vanhua_h33c:
-    id: vanhua_h33c
+  vanhua_h33:
+    id: vanhua_h33
     device_type: TBD
     brand: vanhua
-    model: h33c
+    model: h33
     status: supported
     flash_mb: 8
     soc: *soc_T31L
@@ -1496,7 +1496,7 @@ devices:
     ir_cut: true
     ir_850: false
     ir_940: false
-    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_h33c.bin
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_h33.bin
   vanhua_l34:
     id: vanhua_l34
     device_type: TBD
@@ -1516,11 +1516,11 @@ devices:
     ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_l34.bin
-  vanhua_z55i:
-    id: vanhua_z55i
+  vanhua_z55:
+    id: vanhua_z55
     device_type: TBD
     brand: vanhua
-    model: z55i
+    model: z55
     status: supported
     flash_mb: 16
     soc: *soc_T31X
@@ -1531,10 +1531,10 @@ devices:
     pan_tilt: false
     mic: true
     speaker: false
-    ir_cut: true
+    ir_cut: false
     ir_850: false
     ir_940: false
-    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_z55i.bin
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_z55.bin
   victure_pc420:
     id: victure_pc420
     device_type: TBD
