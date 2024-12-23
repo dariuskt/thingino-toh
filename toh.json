@@ -183,198 +183,6 @@
     "device_image": null,
     "wiki_page_url": null
   },
-  "chinamobile_hdc51_t21n": {
-    "id": "chinamobile_hdc51_t21n",
-    "device_type": "TBD",
-    "brand": "chinamobile",
-    "model": "hdc51",
-    "status": "supported",
-    "flash_mb": 16,
-    "soc": {
-      "brand": "ingenic",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
-      "family": "T21",
-      "cpu_arch": "XBurst1",
-      "max_resolution": "2048x2048",
-      "max_encoding": "1920x1080@40fps",
-      "name": "T21N",
-      "ram_mb": 64,
-      "cpu_clock_mhz": 800
-    },
-    "sensor": {
-      "name": "SC2235",
-      "resolution": "1920x1080@50fps",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
-    },
-    "wifi": {
-      "name": "RTL8189FTV",
-      "interface": "SDIO",
-      "w2g": "b/g/n",
-      "w2g_radio": "1T1R",
-      "w2g_HT40": true,
-      "w5g": false,
-      "docs_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407020948_Realtek-Semicon-RTL8189FTV-VC-CG_C2687145.pdf"
-    },
-    "ethernet": false,
-    "sd_card": true,
-    "pan_tilt": false,
-    "mic": true,
-    "speaker": true,
-    "ir_cut": false,
-    "ir_850": false,
-    "ir_940": false,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-chinamobile_hdc51_t21n.bin",
-    "view_angle": null,
-    "power": "wired",
-    "ip_rating": null,
-    "last_price_w_ship": null,
-    "last_price_date": null,
-    "shop_url": "https://www.chinahao.com/Product/619963647106",
-    "device_image": null,
-    "wiki_page_url": null
-  },
-  "chinamobile_hdc51_t31l_jxf37": {
-    "id": "chinamobile_hdc51_t31l_jxf37",
-    "device_type": "TBD",
-    "brand": "chinamobile",
-    "model": "hdc51",
-    "status": "supported",
-    "flash_mb": 16,
-    "soc": {
-      "brand": "ingenic",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
-      "family": "T31",
-      "cpu_arch": "XBurst1",
-      "max_resolution": "2592x2048",
-      "max_encoding": "2592x2048@25fps",
-      "name": "T31L",
-      "ram_mb": 64,
-      "cpu_clock_mhz": 1000
-    },
-    "sensor": {
-      "name": "JXF37",
-      "resolution": "2400x1440@5~30fps",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
-    },
-    "wifi": {
-      "name": "RTL8188FTV",
-      "interface": "USB",
-      "w2g": "b/g/n",
-      "w2g_radio": "1T1R",
-      "w2g_HT40": true,
-      "w5g": false,
-      "docs_url": "https://xonstorage.blob.core.windows.net/pdf/realtek_rtl8188ftvvccg_apr22_xonlink.pdf"
-    },
-    "ethernet": false,
-    "sd_card": true,
-    "pan_tilt": false,
-    "mic": true,
-    "speaker": true,
-    "ir_cut": true,
-    "ir_850": false,
-    "ir_940": false,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-chinamobile_hdc51_t31l_jxf37.bin",
-    "view_angle": null,
-    "power": "wired",
-    "ip_rating": null,
-    "last_price_w_ship": null,
-    "last_price_date": null,
-    "shop_url": "https://www.chinahao.com/Product/619963647106",
-    "device_image": null,
-    "wiki_page_url": null
-  },
-  "chinamobile_hdc51_t31l_sc2332": {
-    "id": "chinamobile_hdc51_t31l_sc2332",
-    "device_type": "TBD",
-    "brand": "chinamobile",
-    "model": "hdc51",
-    "status": "supported",
-    "flash_mb": 16,
-    "soc": {
-      "brand": "ingenic",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
-      "family": "T31",
-      "cpu_arch": "XBurst1",
-      "max_resolution": "2592x2048",
-      "max_encoding": "2592x2048@25fps",
-      "name": "T31L",
-      "ram_mb": 64,
-      "cpu_clock_mhz": 1000
-    },
-    "sensor": {
-      "name": "SC2332",
-      "resolution": "1920x1080@30fps",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
-    },
-    "wifi": {
-      "name": "RTL8188FTV",
-      "interface": "USB",
-      "w2g": "b/g/n",
-      "w2g_radio": "1T1R",
-      "w2g_HT40": true,
-      "w5g": false,
-      "docs_url": "https://xonstorage.blob.core.windows.net/pdf/realtek_rtl8188ftvvccg_apr22_xonlink.pdf"
-    },
-    "ethernet": false,
-    "sd_card": true,
-    "pan_tilt": false,
-    "mic": true,
-    "speaker": true,
-    "ir_cut": true,
-    "ir_850": false,
-    "ir_940": false,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-chinamobile_hdc51_t31l_sc2332.bin",
-    "view_angle": null,
-    "power": "wired",
-    "ip_rating": null,
-    "last_price_w_ship": null,
-    "last_price_date": null,
-    "shop_url": "https://www.chinahao.com/Product/619963647106",
-    "device_image": null,
-    "wiki_page_url": null
-  },
-  "chinamobile_hdc55_t31n": {
-    "id": "chinamobile_hdc55_t31n",
-    "device_type": "TBD",
-    "brand": "chinamobile",
-    "model": "hdc55",
-    "status": "supported",
-    "flash_mb": 16,
-    "soc": {
-      "brand": "ingenic",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
-      "family": "T31",
-      "cpu_arch": "XBurst1",
-      "max_resolution": "2592x2048",
-      "max_encoding": "2592x2048@25fps",
-      "name": "T31N",
-      "ram_mb": 64,
-      "cpu_clock_mhz": 1400
-    },
-    "sensor": {
-      "name": "SC2332",
-      "resolution": "1920x1080@30fps",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
-    },
-    "wifi": {
-      "name": "RTL8188FTV",
-      "interface": "USB",
-      "w2g": "b/g/n",
-      "w2g_radio": "1T1R",
-      "w2g_HT40": true,
-      "w5g": false,
-      "docs_url": "https://xonstorage.blob.core.windows.net/pdf/realtek_rtl8188ftvvccg_apr22_xonlink.pdf"
-    },
-    "ethernet": false,
-    "sd_card": true,
-    "pan_tilt": true,
-    "mic": true,
-    "speaker": true,
-    "ir_cut": true,
-    "ir_850": false,
-    "ir_940": false,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-chinamobile_hdc55_t31n.bin"
-  },
   "cinnado_d1_t23n": {
     "id": "cinnado_d1_t23n",
     "device_type": "TBD",
@@ -609,47 +417,47 @@
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-elife_et_n3431h_dw.bin"
   },
-  "escam_g16": {
-    "id": "escam_g16",
+  "eufy_e210": {
+    "id": "eufy_e210",
     "device_type": "TBD",
-    "brand": "escam",
-    "model": "g16",
+    "brand": "eufy",
+    "model": "e210",
     "status": "supported",
-    "flash_mb": 8,
+    "flash_mb": 16,
     "soc": {
       "brand": "ingenic",
       "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
-      "family": "T21",
+      "family": "T31",
       "cpu_arch": "XBurst1",
-      "max_resolution": "2048x2048",
-      "max_encoding": "1920x1080@40fps",
-      "name": "T21N",
-      "ram_mb": 64,
-      "cpu_clock_mhz": 800
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1400
     },
     "sensor": {
-      "name": "JXH62",
-      "resolution": "??@60fps",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+      "name": "SC3338",
+      "resolution": "2304x1296@100fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
     },
     "wifi": {
-      "name": "MT7601U",
-      "interface": "USB",
+      "name": "SYN43438",
+      "interface": "SDIO",
       "w2g": "b/g/n",
       "w2g_radio": "1T1R",
       "w2g_HT40": false,
       "w5g": false,
-      "docs_url": ""
+      "docs_url": "https://wikidevi.wi-cat.ru/Synaptics"
     },
-    "ethernet": true,
+    "ethernet": false,
     "sd_card": true,
-    "pan_tilt": false,
+    "pan_tilt": true,
     "mic": true,
-    "speaker": false,
-    "ir_cut": false,
-    "ir_850": false,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
     "ir_940": false,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-escam_g16.bin"
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_e210.bin"
   },
   "eufy_e220": {
     "id": "eufy_e220",
@@ -909,14 +717,14 @@
       "w5g": false,
       "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
     },
-    "ethernet": true,
+    "ethernet": false,
     "sd_card": true,
     "pan_tilt": true,
     "mic": true,
-    "speaker": false,
-    "ir_cut": false,
+    "speaker": true,
+    "ir_cut": true,
     "ir_850": false,
-    "ir_940": false,
+    "ir_940": true,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_y4_t31l_atbm6012bx.bin"
   },
   "galayou_y4_t31l_atbm6032": {
@@ -1018,6 +826,48 @@
     "shop_url": "https://www.amazon.de/dp/B09Y5FG27D",
     "device_image": "",
     "wiki_page_url": ""
+  },
+  "ginzzu_op200": {
+    "id": "ginzzu_op200",
+    "device_type": "TBD",
+    "brand": "ginzzu",
+    "model": "op200",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31L",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1000
+    },
+    "sensor": {
+      "name": "GC2083",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+    },
+    "wifi": {
+      "name": "SSV6155",
+      "interface": "??",
+      "w2g": "??",
+      "w2g_radio": "??",
+      "w2g_HT40": "??",
+      "w5g": "??",
+      "docs_url": "??"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": false,
+    "ir_940": true,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-ginzzu_op200.bin"
   },
   "gncc_gc2": {
     "id": "gncc_gc2",
@@ -2059,6 +1909,90 @@
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_ak54.bin"
   },
+  "vanhua_djz": {
+    "id": "vanhua_djz",
+    "device_type": "TBD",
+    "brand": "vanhua",
+    "model": "djz",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "GC2083",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+    },
+    "wifi": {
+      "name": "--",
+      "interface": "--",
+      "w2g": "--",
+      "w2g_radio": "--",
+      "w2g_HT40": "--",
+      "w5g": "--",
+      "docs_url": "--"
+    },
+    "ethernet": true,
+    "sd_card": false,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": false,
+    "ir_cut": true,
+    "ir_850": false,
+    "ir_940": true,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_djz.bin"
+  },
+  "vanhua_fjz": {
+    "id": "vanhua_fjz",
+    "device_type": "TBD",
+    "brand": "vanhua",
+    "model": "fjz",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "GC4653",
+      "resolution": "2560x1440@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+    },
+    "wifi": {
+      "name": "--",
+      "interface": "--",
+      "w2g": "--",
+      "w2g_radio": "--",
+      "w2g_HT40": "--",
+      "w5g": "--",
+      "docs_url": "--"
+    },
+    "ethernet": true,
+    "sd_card": false,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": false,
+    "ir_cut": true,
+    "ir_850": false,
+    "ir_940": true,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_fjz.bin"
+  },
   "vanhua_h33": {
     "id": "vanhua_h33",
     "device_type": "TBD",
@@ -2180,10 +2114,52 @@
     "pan_tilt": false,
     "mic": true,
     "speaker": false,
-    "ir_cut": false,
+    "ir_cut": true,
     "ir_850": false,
-    "ir_940": false,
+    "ir_940": true,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_z55.bin"
+  },
+  "vanhua_z55i": {
+    "id": "vanhua_z55i",
+    "device_type": "TBD",
+    "brand": "vanhua",
+    "model": "z55i",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "GC4653",
+      "resolution": "2560x1440@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+    },
+    "wifi": {
+      "name": "--",
+      "interface": "--",
+      "w2g": "--",
+      "w2g_radio": "--",
+      "w2g_HT40": "--",
+      "w5g": "--",
+      "docs_url": "--"
+    },
+    "ethernet": true,
+    "sd_card": false,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": false,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-vanhua_z55i.bin"
   },
   "victure_pc420": {
     "id": "victure_pc420",
@@ -2227,11 +2203,221 @@
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-victure_pc420.bin"
   },
-  "wanjiaan_t30x": {
-    "id": "wanjiaan_t30x",
+  "wanjiaan_g7": {
+    "id": "wanjiaan_g7",
     "device_type": "TBD",
     "brand": "wanjiaan",
-    "model": "t30x",
+    "model": "g7",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "JXF37",
+      "resolution": "2400x1440@5~30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+    },
+    "wifi": {
+      "name": "--",
+      "interface": "--",
+      "w2g": "--",
+      "w2g_radio": "--",
+      "w2g_HT40": "--",
+      "w5g": "--",
+      "docs_url": "--"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": false,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wanjiaan_g7.bin"
+  },
+  "wanjiaan_hdc51_t21n": {
+    "id": "wanjiaan_hdc51_t21n",
+    "device_type": "TBD",
+    "brand": "wanjiaan",
+    "model": "hdc51",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T21",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2048x2048",
+      "max_encoding": "1920x1080@40fps",
+      "name": "T21N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 800
+    },
+    "sensor": {
+      "name": "SC2235",
+      "resolution": "1920x1080@50fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+    },
+    "wifi": {
+      "name": "RTL8189FTV",
+      "interface": "SDIO",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407020948_Realtek-Semicon-RTL8189FTV-VC-CG_C2687145.pdf"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": false,
+    "ir_850": false,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wanjiaan_hdc51_t21n.bin"
+  },
+  "wanjiaan_hdc51_t31l_jxf37": {
+    "id": "wanjiaan_hdc51_t31l_jxf37",
+    "device_type": "TBD",
+    "brand": "wanjiaan",
+    "model": "hdc51",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31L",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1000
+    },
+    "sensor": {
+      "name": "JXF37",
+      "resolution": "2400x1440@5~30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+    },
+    "wifi": {
+      "name": "RTL8188FTV",
+      "interface": "USB",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://xonstorage.blob.core.windows.net/pdf/realtek_rtl8188ftvvccg_apr22_xonlink.pdf"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": false,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wanjiaan_hdc51_t31l_jxf37.bin"
+  },
+  "wanjiaan_hdc51_t31l_sc2332": {
+    "id": "wanjiaan_hdc51_t31l_sc2332",
+    "device_type": "TBD",
+    "brand": "wanjiaan",
+    "model": "hdc51",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31L",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1000
+    },
+    "sensor": {
+      "name": "SC2332",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+    },
+    "wifi": {
+      "name": "RTL8188FTV",
+      "interface": "USB",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://xonstorage.blob.core.windows.net/pdf/realtek_rtl8188ftvvccg_apr22_xonlink.pdf"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": false,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wanjiaan_hdc51_t31l_sc2332.bin"
+  },
+  "wanjiaan_hdc55_t31n": {
+    "id": "wanjiaan_hdc55_t31n",
+    "device_type": "TBD",
+    "brand": "wanjiaan",
+    "model": "hdc55",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "SC2332",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+    },
+    "wifi": {
+      "name": "RTL8188FTV",
+      "interface": "USB",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://xonstorage.blob.core.windows.net/pdf/realtek_rtl8188ftvvccg_apr22_xonlink.pdf"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": false,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wanjiaan_hdc55_t31n.bin"
+  },
+  "wanjiaan_q2_t30x": {
+    "id": "wanjiaan_q2_t30x",
+    "device_type": "TBD",
+    "brand": "wanjiaan",
+    "model": "q2",
     "status": "supported",
     "flash_mb": 16,
     "soc": {
@@ -2267,7 +2453,7 @@
     "ir_cut": true,
     "ir_850": false,
     "ir_940": false,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wanjiaan_t30x.bin"
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wanjiaan_q2_t30x.bin"
   },
   "wansview_106": {
     "id": "wansview_106",
@@ -2453,6 +2639,48 @@
     "device_image": "",
     "wiki_page_url": ""
   },
+  "wansview_q7": {
+    "id": "wansview_q7",
+    "device_type": "TBD",
+    "brand": "wansview",
+    "model": "q7",
+    "status": "supported",
+    "flash_mb": 8,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T23",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2308x2048",
+      "max_encoding": "3MP@40fps",
+      "name": "T23N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "SC2336",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+    },
+    "wifi": {
+      "name": "ATBM6012BX",
+      "interface": "USB",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": false,
+      "w5g": false,
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": false,
+    "ir_940": true,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wansview_q7.bin"
+  },
   "wansview_w6_os02g10": {
     "id": "wansview_w6_os02g10",
     "device_type": "TBD",
@@ -2602,48 +2830,6 @@
     "shop_url": "https://www.amazon.com/wansview-Security-Cameras-Wireless-Outdoor-2-4G/dp/B0BWDPSYDT",
     "device_image": "",
     "wiki_page_url": ""
-  },
-  "wja_g7": {
-    "id": "wja_g7",
-    "device_type": "TBD",
-    "brand": "wja",
-    "model": "g7",
-    "status": "supported",
-    "flash_mb": 16,
-    "soc": {
-      "brand": "ingenic",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
-      "family": "T31",
-      "cpu_arch": "XBurst1",
-      "max_resolution": "2592x2048",
-      "max_encoding": "2592x2048@25fps",
-      "name": "T31X",
-      "ram_mb": 128,
-      "cpu_clock_mhz": 1400
-    },
-    "sensor": {
-      "name": "JXF37",
-      "resolution": "2400x1440@5~30fps",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
-    },
-    "wifi": {
-      "name": "--",
-      "interface": "--",
-      "w2g": "--",
-      "w2g_radio": "--",
-      "w2g_HT40": "--",
-      "w5g": "--",
-      "docs_url": "--"
-    },
-    "ethernet": false,
-    "sd_card": true,
-    "pan_tilt": false,
-    "mic": true,
-    "speaker": false,
-    "ir_cut": true,
-    "ir_850": true,
-    "ir_940": false,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wja_g7.bin"
   },
   "wuuk_y0310_sc401ai": {
     "id": "wuuk_y0310_sc401ai",
@@ -3753,6 +3939,48 @@
     "ir_940": true,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-cinnado_d1_t31l_kernel44.bin"
   },
+  "escam_g16": {
+    "id": "escam_g16",
+    "device_type": "TBD",
+    "brand": "escam",
+    "model": "g16",
+    "status": "wip",
+    "flash_mb": 8,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T21",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2048x2048",
+      "max_encoding": "1920x1080@40fps",
+      "name": "T21N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 800
+    },
+    "sensor": {
+      "name": "JXH62",
+      "resolution": "??@60fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+    },
+    "wifi": {
+      "name": "MT7601U",
+      "interface": "USB",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": false,
+      "w5g": false,
+      "docs_url": ""
+    },
+    "ethernet": true,
+    "sd_card": true,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": false,
+    "ir_cut": false,
+    "ir_850": false,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-escam_g16.bin"
+  },
   "eufy_t8441": {
     "id": "eufy_t8441",
     "device_type": "TBD",
@@ -3998,7 +4226,7 @@
     "ethernet": true,
     "sd_card": true,
     "pan_tilt": true,
-    "mic": false,
+    "mic": true,
     "speaker": false,
     "ir_cut": false,
     "ir_850": false,
@@ -4012,48 +4240,6 @@
     "shop_url": "https://www.amazon.de/dp/B09Y5FG27D",
     "device_image": "",
     "wiki_page_url": ""
-  },
-  "ginzzu_op200": {
-    "id": "ginzzu_op200",
-    "device_type": "TBD",
-    "brand": "ginzzu",
-    "model": "op200",
-    "status": "wip",
-    "flash_mb": 16,
-    "soc": {
-      "brand": "ingenic",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
-      "family": "T31",
-      "cpu_arch": "XBurst1",
-      "max_resolution": "2592x2048",
-      "max_encoding": "2592x2048@25fps",
-      "name": "T31L",
-      "ram_mb": 64,
-      "cpu_clock_mhz": 1000
-    },
-    "sensor": {
-      "name": "GC2083",
-      "resolution": "1920x1080@30fps",
-      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
-    },
-    "wifi": {
-      "name": "SSV6155",
-      "interface": "??",
-      "w2g": "??",
-      "w2g_radio": "??",
-      "w2g_HT40": "??",
-      "w5g": "??",
-      "docs_url": "??"
-    },
-    "ethernet": false,
-    "sd_card": true,
-    "pan_tilt": true,
-    "mic": true,
-    "speaker": true,
-    "ir_cut": true,
-    "ir_850": false,
-    "ir_940": true,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-ginzzu_op200.bin"
   },
   "green-t10": {
     "id": "green-t10",
@@ -4684,5 +4870,35 @@
     "ir_850": true,
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj05hl.bin"
+  },
+  "chinamobile_hdc51_t21n": {
+    "view_angle": null,
+    "power": "wired",
+    "ip_rating": null,
+    "last_price_w_ship": null,
+    "last_price_date": null,
+    "shop_url": "https://www.chinahao.com/Product/619963647106",
+    "device_image": null,
+    "wiki_page_url": null
+  },
+  "chinamobile_hdc51_t31l_jxf37": {
+    "view_angle": null,
+    "power": "wired",
+    "ip_rating": null,
+    "last_price_w_ship": null,
+    "last_price_date": null,
+    "shop_url": "https://www.chinahao.com/Product/619963647106",
+    "device_image": null,
+    "wiki_page_url": null
+  },
+  "chinamobile_hdc51_t31l_sc2332": {
+    "view_angle": null,
+    "power": "wired",
+    "ip_rating": null,
+    "last_price_w_ship": null,
+    "last_price_date": null,
+    "shop_url": "https://www.chinahao.com/Product/619963647106",
+    "device_image": null,
+    "wiki_page_url": null
   }
 }
