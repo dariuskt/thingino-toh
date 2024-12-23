@@ -543,6 +543,7 @@ devices:
     shop_url: https://www.amazon.com/dp/B0BXP8BCH1
     device_image: null
     wiki_page_url: null
+    tutorial_video_url: ''
   atom_cam_2:
     id: atom_cam_2
     device_type: TBD
@@ -570,6 +571,7 @@ devices:
     shop_url: https://www.amazon.co.jp/-/en/Sensitivity-Waterproof-Dustproof-Infrared-Detection/dp/B094YDG7ZV
     device_image: null
     wiki_page_url: null
+    tutorial_video_url: ''
   cinnado_d1_t23n:
     id: cinnado_d1_t23n
     device_type: TBD
@@ -598,6 +600,7 @@ devices:
       ???
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: https://www.youtube.com/watch?v=40MUbIXVBNI
   cinnado_d1_t31l:
     id: cinnado_d1_t31l
     device_type: TBD
@@ -626,6 +629,7 @@ devices:
       ???
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: https://www.youtube.com/watch?v=40MUbIXVBNI
   dekco_dc5l:
     id: dekco_dc5l
     device_type: TBD
@@ -653,6 +657,7 @@ devices:
     shop_url: https://www.amazon.com/Security-DEKCO-Surveillance-Detection-Waterproof/dp/B09GK7RHSM
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: ''
   ec76_u15:
     id: ec76_u15
     device_type: TBD
@@ -775,6 +780,7 @@ devices:
     shop_url: https://www.amazon.de/dp/B0B28PS326
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: ''
   galayou_g7_t23n_atbm6012bx:
     id: galayou_g7_t23n_atbm6012bx
     device_type: TBD
@@ -821,6 +827,7 @@ devices:
     shop_url: https://www.amazon.de/dp/B09Y5FG27D
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: ''
   galayou_y4_t31l_atbm6012bx:
     id: galayou_y4_t31l_atbm6012bx
     device_type: TBD
@@ -867,6 +874,7 @@ devices:
     shop_url: https://www.amazon.de/dp/B09Y5FG27D
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: ''
   galayou_y4_t31n_atbm6012b:
     id: galayou_y4_t31n_atbm6012b
     device_type: TBD
@@ -894,6 +902,7 @@ devices:
     shop_url: https://www.amazon.de/dp/B09Y5FG27D
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: ''
   ginzzu_op200:
     id: ginzzu_op200
     device_type: TBD
@@ -1206,6 +1215,7 @@ devices:
     shop_url: https://www.amazon.com/litokam-Cameras-Security-Detection-Monitor-2Pack/dp/B0D86VWTW5
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: ''
   noname_t10l_jxh42_mt7601:
     id: noname_t10l_jxh42_mt7601
     device_type: TBD
@@ -1252,6 +1262,7 @@ devices:
     shop_url: https://www.fravega.com/p/camara-exterior-seguridad-overtech-ov-59wb-full-hd-wifi-3x-color-blanco-21192815/
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: ''
   personalcam:
     id: personalcam
     device_type: TBD
@@ -1298,6 +1309,7 @@ devices:
     shop_url: https://www.primecables.ca/p-397949-cab-pc-08360-security-smart-camera-1080p-2-way-audio-night-vision-motion-detection-cloud-storage-sd-card
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: ''
   primecables_08361:
     id: primecables_08361
     device_type: TBD
@@ -1325,6 +1337,7 @@ devices:
     shop_url: https://www.shopperplus.ca/p-397950-cab-pc-08361-smart-security-camera-ptz-360-2-way-audio-night-vision-motion-detection-cloud-storage-sd-card#sku429817
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: ''
   sim_simp400t:
     id: sim_simp400t
     device_type: TBD
@@ -1580,6 +1593,7 @@ devices:
     shop_url: https://www.chinahao.com/Product/619963647106
     device_image: null
     wiki_page_url: null
+    tutorial_video_url: ''
   wanjiaan_hdc51_t31l_jxf37:
     id: wanjiaan_hdc51_t31l_jxf37
     device_type: TBD
@@ -1607,6 +1621,7 @@ devices:
     shop_url: https://www.chinahao.com/Product/619963647106
     device_image: null
     wiki_page_url: null
+    tutorial_video_url: ''
   wanjiaan_hdc51_t31l_sc2332:
     id: wanjiaan_hdc51_t31l_sc2332
     device_type: TBD
@@ -1634,6 +1649,7 @@ devices:
     shop_url: https://www.chinahao.com/Product/619963647106
     device_image: null
     wiki_page_url: null
+    tutorial_video_url: ''
   wanjiaan_hdc55_t31n:
     id: wanjiaan_hdc55_t31n
     device_type: TBD
@@ -1737,6 +1753,7 @@ devices:
     shop_url: https://www.amazon.com/Security-Wansview-1080PHD-Monitor-Detection/dp/B093B9LQKF
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: ''
   wansview_k5_ov2735b:
     id: wansview_k5_ov2735b
     device_type: TBD
@@ -1764,6 +1781,7 @@ devices:
     shop_url: https://www.amazon.com/Security-Wansview-1080PHD-Monitor-Detection/dp/B093B9LQKF
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: ''
   wansview_q7:
     id: wansview_q7
     device_type: TBD
@@ -1810,6 +1828,7 @@ devices:
     shop_url: https://www.amazon.com/Security-Wansview-Waterproof-Surveillance-Detection/dp/B08CL1B2PM
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: ''
   wansview_w6_ov2735b:
     id: wansview_w6_ov2735b
     device_type: TBD
@@ -1837,6 +1856,7 @@ devices:
     shop_url: https://www.amazon.com/Security-Wansview-Waterproof-Surveillance-Detection/dp/B08CL1B2PM
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: ''
   wansview_w7_t31l_atbm6012b:
     id: wansview_w7_t31l_atbm6012b
     device_type: TBD
@@ -1864,6 +1884,7 @@ devices:
     shop_url: https://www.amazon.com/wansview-Security-Cameras-Wireless-Outdoor-2-4G/dp/B0BWDPSYDT
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: https://www.youtube.com/watch?v=jCRiIljSWlw
   wuuk_y0310_sc401ai:
     id: wuuk_y0310_sc401ai
     device_type: TBD
@@ -1910,6 +1931,7 @@ devices:
     shop_url: https://www.amazon.de/-/en/Surveillance-Tracking-Monitor-Supports-Detection/dp/B0BC8DRX9D
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: https://www.youtube.com/watch?v=PhXbeY-PBgg
   wuuk_y0510_sc4336p:
     id: wuuk_y0510_sc4336p
     device_type: TBD
@@ -1937,6 +1959,7 @@ devices:
     shop_url: https://www.amazon.de/-/en/Surveillance-Tracking-Monitor-Supports-Detection/dp/B0BC8DRX9D
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: https://www.youtube.com/watch?v=PhXbeY-PBgg
   wyze_c2_jxf22:
     id: wyze_c2_jxf22
     device_type: TBD
@@ -1956,6 +1979,15 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c2_jxf22.bin
+    view_angle: null
+    power: null
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: ''
+    device_image: ''
+    wiki_page_url: ''
+    tutorial_video_url: https://www.youtube.com/watch?v=Ax6usUOjxkY
   wyze_c2_jxf23:
     id: wyze_c2_jxf23
     device_type: TBD
@@ -1975,6 +2007,15 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c2_jxf23.bin
+    view_angle: null
+    power: null
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: ''
+    device_image: ''
+    wiki_page_url: ''
+    tutorial_video_url: https://www.youtube.com/watch?v=Ax6usUOjxkY
   wyze_c3_t31al_atbm:
     id: wyze_c3_t31al_atbm
     device_type: TBD
@@ -1994,6 +2035,15 @@ devices:
     ir_850: true
     ir_940: true
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31al_atbm.bin
+    view_angle: null
+    power: null
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: ''
+    device_image: ''
+    wiki_page_url: ''
+    tutorial_video_url: https://www.youtube.com/watch?v=SX637mrp0R0
   wyze_c3_t31x_atbm:
     id: wyze_c3_t31x_atbm
     device_type: TBD
@@ -2013,6 +2063,15 @@ devices:
     ir_850: true
     ir_940: true
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31x_atbm.bin
+    view_angle: null
+    power: null
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: ''
+    device_image: ''
+    wiki_page_url: ''
+    tutorial_video_url: https://www.youtube.com/watch?v=SX637mrp0R0
   wyze_c3_t31x_rtl:
     id: wyze_c3_t31x_rtl
     device_type: TBD
@@ -2032,6 +2091,15 @@ devices:
     ir_850: true
     ir_940: true
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wyze_c3_t31x_rtl.bin
+    view_angle: null
+    power: null
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: ''
+    device_image: ''
+    wiki_page_url: ''
+    tutorial_video_url: https://www.youtube.com/watch?v=SX637mrp0R0
   wyze_cfl1_t31al_atbm:
     id: wyze_cfl1_t31al_atbm
     device_type: TBD
@@ -2515,6 +2583,7 @@ devices:
     shop_url: https://www.amazon.de/dp/B09Y5FG27D
     device_image: ''
     wiki_page_url: ''
+    tutorial_video_url: ''
   green-t10:
     id: green-t10
     device_type: TBD

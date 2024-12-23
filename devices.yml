@@ -9,6 +9,7 @@ devices:
     shop_url: "https://www.amazon.com/dp/B0BXP8BCH1"
     device_image:
     wiki_page_url:
+    tutorial_video_url: ""
 
   atom_cam_2:
     view_angle: 120
@@ -19,6 +20,7 @@ devices:
     shop_url: "https://www.amazon.co.jp/-/en/Sensitivity-Waterproof-Dustproof-Infrared-Detection/dp/B094YDG7ZV"
     device_image:
     wiki_page_url:
+    tutorial_video_url: ""
 
   wanjiaan_hdc51_t21n: &wanjiaan_hdc51_t21n
     view_angle:
@@ -29,6 +31,7 @@ devices:
     shop_url: "https://www.chinahao.com/Product/619963647106"
     device_image:
     wiki_page_url:
+    tutorial_video_url: ""
 
   wanjiaan_hdc51_t31l_jxf37:
     <<: *wanjiaan_hdc51_t21n
@@ -45,6 +48,7 @@ devices:
     shop_url: "https://www.amazon.de/-/en/Cinnado-Indoor-Surveillance-Camera-Compatible/dp/B0CDBTDRTP ???"
     device_image: ""
     wiki_page_url: ""
+    tutorial_video_url: "https://www.youtube.com/watch?v=40MUbIXVBNI"
 
   cinnado_d1_t31l:
     <<: *cinnado_d1_t23n
@@ -58,6 +62,7 @@ devices:
     shop_url: "https://www.amazon.com/Security-DEKCO-Surveillance-Detection-Waterproof/dp/B09GK7RHSM"
     device_image: ""
     wiki_page_url: ""
+    tutorial_video_url: ""
 
   galayou_g2_t23n: &galayou_g2_t23n
     view_angle:
@@ -68,6 +73,7 @@ devices:
     shop_url: "https://www.amazon.de/dp/B0B28PS326"
     device_image: ""
     wiki_page_url: ""
+    tutorial_video_url: ""
 
   galayou_y4_t31l: &galayou_y4
     view_angle: 90
@@ -78,6 +84,7 @@ devices:
     shop_url: "https://www.amazon.de/dp/B09Y5FG27D"
     device_image: ""
     wiki_page_url: ""
+    tutorial_video_url: ""
 
   galayou_y4_t23n_atbm6062: *galayou_y4
   galayou_y4_t31l_atbm6032: *galayou_y4
@@ -92,6 +99,7 @@ devices:
     shop_url: "https://www.amazon.com/litokam-Cameras-Security-Detection-Monitor-2Pack/dp/B0D86VWTW5"
     device_image: ""
     wiki_page_url: ""
+    tutorial_video_url: ""
 
   overtech_ov59wb:
     view_angle:
@@ -102,6 +110,7 @@ devices:
     shop_url: "https://www.fravega.com/p/camara-exterior-seguridad-overtech-ov-59wb-full-hd-wifi-3x-color-blanco-21192815/"
     device_image: ""
     wiki_page_url: ""
+    tutorial_video_url: ""
 
   primecables_08360:
     view_angle: 105
@@ -112,6 +121,7 @@ devices:
     shop_url: "https://www.primecables.ca/p-397949-cab-pc-08360-security-smart-camera-1080p-2-way-audio-night-vision-motion-detection-cloud-storage-sd-card"
     device_image: ""
     wiki_page_url: ""
+    tutorial_video_url: ""
 
   primecables_08361:
     view_angle:
@@ -122,6 +132,7 @@ devices:
     shop_url: "https://www.shopperplus.ca/p-397950-cab-pc-08361-smart-security-camera-ptz-360-2-way-audio-night-vision-motion-detection-cloud-storage-sd-card#sku429817"
     device_image: ""
     wiki_page_url: ""
+    tutorial_video_url: ""
 
   wansview_k5_ov2735b: &wansview_k5
     view_angle: 125
@@ -132,6 +143,7 @@ devices:
     shop_url: "https://www.amazon.com/Security-Wansview-1080PHD-Monitor-Detection/dp/B093B9LQKF"
     device_image: ""
     wiki_page_url: ""
+    tutorial_video_url: ""
 
   wansview_k5_os02b10:
     <<: *wansview_k5
@@ -145,6 +157,7 @@ devices:
     shop_url: "https://www.amazon.com/Security-Wansview-Waterproof-Surveillance-Detection/dp/B08CL1B2PM"
     device_image: ""
     wiki_page_url: ""
+    tutorial_video_url: ""
 
   wansview_w6_os02g10:
     <<: *wansview_w6
@@ -158,6 +171,7 @@ devices:
     shop_url: "https://www.amazon.com/wansview-Security-Cameras-Wireless-Outdoor-2-4G/dp/B0BWDPSYDT"
     device_image: ""
     wiki_page_url: ""
+    tutorial_video_url: "https://www.youtube.com/watch?v=jCRiIljSWlw"
 
   wuuk_y0510_sc401ai: &wuuk_y0510_sc401ai
     view_angle:
@@ -168,10 +182,40 @@ devices:
     shop_url: "https://www.amazon.de/-/en/Surveillance-Tracking-Monitor-Supports-Detection/dp/B0BC8DRX9D"
     device_image: ""
     wiki_page_url: ""
+    tutorial_video_url: "https://www.youtube.com/watch?v=PhXbeY-PBgg"
 
   wuuk_y0510_sc4336p:
     <<: *wuuk_y0510_sc401ai
 
+  wyze_c2_jxf22: &wyze_c2_jxf22
+    view_angle:
+    power:
+    ip_rating:
+    last_price_w_ship:
+    last_price_date:
+    shop_url: ""
+    device_image: ""
+    wiki_page_url: ""
+    tutorial_video_url: "https://www.youtube.com/watch?v=Ax6usUOjxkY"
 
+  wyze_c2_jxf23:
+    <<: *wyze_c2_jxf22
+
+  wyze_c3_t31al_atbm: &wyze_c3_t31al_atbm
+    view_angle:
+    power:
+    ip_rating:
+    last_price_w_ship:
+    last_price_date:
+    shop_url: ""
+    device_image: ""
+    wiki_page_url: ""
+    tutorial_video_url: "https://www.youtube.com/watch?v=SX637mrp0R0"
+
+  wyze_c3_t31x_atbm:
+    <<: *wyze_c3_t31al_atbm
+
+  wyze_c3_t31x_rtl:
+    <<: *wyze_c3_t31al_atbm
 
 
