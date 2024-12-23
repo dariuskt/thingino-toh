@@ -597,7 +597,6 @@ devices:
     last_price_w_ship: 30 EUR ???
     last_price_date: 2024-07
     shop_url: https://www.amazon.de/-/en/Cinnado-Indoor-Surveillance-Camera-Compatible/dp/B0CDBTDRTP
-      ???
     device_image: ''
     wiki_page_url: ''
     tutorial_video_url: https://www.youtube.com/watch?v=40MUbIXVBNI
@@ -626,7 +625,6 @@ devices:
     last_price_w_ship: 30 EUR ???
     last_price_date: 2024-07
     shop_url: https://www.amazon.de/-/en/Cinnado-Indoor-Surveillance-Camera-Compatible/dp/B0CDBTDRTP
-      ???
     device_image: ''
     wiki_page_url: ''
     tutorial_video_url: https://www.youtube.com/watch?v=40MUbIXVBNI
@@ -2442,6 +2440,15 @@ devices:
     ir_850: false
     ir_940: true
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-cinnado_d1_t31l_kernel44.bin
+    view_angle: null
+    power: wired 5V/1A
+    ip_rating: null
+    last_price_w_ship: 30 EUR ???
+    last_price_date: 2024-07
+    shop_url: https://www.amazon.de/-/en/Cinnado-Indoor-Surveillance-Camera-Compatible/dp/B0CDBTDRTP
+    device_image: ''
+    wiki_page_url: ''
+    tutorial_video_url: https://www.youtube.com/watch?v=40MUbIXVBNI
   escam_g16:
     id: escam_g16
     device_type: TBD
