@@ -1572,6 +1572,14 @@ devices:
     ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wanjiaan_hdc51_t21n.bin
+    view_angle: null
+    power: wired
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: https://www.chinahao.com/Product/619963647106
+    device_image: null
+    wiki_page_url: null
   wanjiaan_hdc51_t31l_jxf37:
     id: wanjiaan_hdc51_t31l_jxf37
     device_type: TBD
@@ -1591,6 +1599,14 @@ devices:
     ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wanjiaan_hdc51_t31l_jxf37.bin
+    view_angle: null
+    power: wired
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: https://www.chinahao.com/Product/619963647106
+    device_image: null
+    wiki_page_url: null
   wanjiaan_hdc51_t31l_sc2332:
     id: wanjiaan_hdc51_t31l_sc2332
     device_type: TBD
@@ -1610,6 +1626,14 @@ devices:
     ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-wanjiaan_hdc51_t31l_sc2332.bin
+    view_angle: null
+    power: wired
+    ip_rating: null
+    last_price_w_ship: null
+    last_price_date: null
+    shop_url: https://www.chinahao.com/Product/619963647106
+    device_image: null
+    wiki_page_url: null
   wanjiaan_hdc55_t31n:
     id: wanjiaan_hdc55_t31n
     device_type: TBD
@@ -2776,30 +2800,3 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-xiaomi_mjsxj05hl.bin
-  chinamobile_hdc51_t21n:
-    view_angle: null
-    power: wired
-    ip_rating: null
-    last_price_w_ship: null
-    last_price_date: null
-    shop_url: https://www.chinahao.com/Product/619963647106
-    device_image: null
-    wiki_page_url: null
-  chinamobile_hdc51_t31l_jxf37:
-    view_angle: null
-    power: wired
-    ip_rating: null
-    last_price_w_ship: null
-    last_price_date: null
-    shop_url: https://www.chinahao.com/Product/619963647106
-    device_image: null
-    wiki_page_url: null
-  chinamobile_hdc51_t31l_sc2332:
-    view_angle: null
-    power: wired
-    ip_rating: null
-    last_price_w_ship: null
-    last_price_date: null
-    shop_url: https://www.chinahao.com/Product/619963647106
-    device_image: null
-    wiki_page_url: null

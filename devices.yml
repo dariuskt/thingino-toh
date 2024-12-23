@@ -20,7 +20,7 @@ devices:
     device_image:
     wiki_page_url:
 
-  chinamobile_hdc51_t21n: &chinamobile_hdc51_t21n
+  wanjiaan_hdc51_t21n: &wanjiaan_hdc51_t21n
     view_angle:
     power: wired
     ip_rating:
@@ -30,11 +30,11 @@ devices:
     device_image:
     wiki_page_url:
 
-  chinamobile_hdc51_t31l_jxf37:
-    <<: *chinamobile_hdc51_t21n
+  wanjiaan_hdc51_t31l_jxf37:
+    <<: *wanjiaan_hdc51_t21n
 
-  chinamobile_hdc51_t31l_sc2332:
-    <<: *chinamobile_hdc51_t21n
+  wanjiaan_hdc51_t31l_sc2332:
+    <<: *wanjiaan_hdc51_t21n
 
   cinnado_d1_t23n: &cinnado_d1_t23n
     view_angle:
