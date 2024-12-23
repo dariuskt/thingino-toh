@@ -275,6 +275,10 @@ sensor:
     name: SC3336
     resolution: 2304x1296@30fps
     docs_url: "https://smartsens.oss-cn-beijing.aliyuncs.com/web/img/1631255683627289713.pdf"
+  SC3338: &sensor_SC3338
+    name: SC3338
+    resolution: 2304x1296@100fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
   SC401AI: &sensor_SC401AI
     name: SC401AI
     resolution: 2560x1440@30fps
