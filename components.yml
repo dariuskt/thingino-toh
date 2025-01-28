@@ -39,6 +39,12 @@ soc_family:
     cpu_arch: XBurst1
     max_resolution: 2592x2048
     max_encoding: 2592x2048@25fps
+  ingenic_T40: &soc_family_ingenic_T40
+    family: T40
+    cpu_arch: XBurst2
+    max_resolution: 3840x2160
+    max_encoding: 1080p@60fps, 3840x2160@20fps
+
 
 soc:
   tpl: &soc_tpl
@@ -152,6 +158,20 @@ soc:
     ram_mb: 128
     cpu_clock_mhz: 1400
 
+  T40N: &soc_T40N
+    <<: *soc_brand_ingenic
+    <<: *soc_family_ingenic_T40
+    name: T40N
+    ram_mb: 1024
+    cpu_clock_mhz: 2x1000
+  T40NN: &soc_T40NN
+    <<: *soc_T40N
+  T40XP: &soc_T40XP
+    <<: *soc_brand_ingenic
+    <<: *soc_family_ingenic_T40
+    name: T40XP
+    ram_mb: 2048
+    cpu_clock_mhz: 2x1200
 
 
 sensor:
@@ -175,6 +195,10 @@ sensor:
     name: GC4653
     resolution: 2560x1440@30fps
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+  IMX307: &sensor_IMX307
+    name: IMX307
+    resolution: 2200x1125@10~30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/sony.md"
   IMX327: &sensor_IMX327
     name: IMX327
     resolution: 2136x2781@5~25fps
@@ -231,6 +255,10 @@ sensor:
     name: OV9712
     resolution: 1280x800@30fps
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/omnivision.md"
+  PS5250: &sensor_PS5250
+    name: PS5250
+    resolution: 1920x1080@30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/pixart.md"
   SC1235: &sensor_SC1235
     name: SC1235
     resolution: 1800x1200@30fps
@@ -266,6 +294,10 @@ sensor:
   SC301IOT: &sensor_SC301IOT
     name: SC301IOT
     resolution: 2048x1536@30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+  SC3235: &sensor_SC3235
+    name: SC3235
+    resolution: 2400x1620@30fps
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
   SC3335: &sensor_SC3335
     name: SC3335
@@ -435,6 +467,14 @@ wifi:
     w2g_HT40: true
     w5g: false
     docs_url: "https://fccid.io/pdf.php?id=1291410"
+  RTL8192FS: &wifi_RTL8192FS
+    name: RTL8192FS
+    interface: PCIe
+    w2g: b/g/n
+    w2g_radio: ??
+    w2g_HT40: ??
+    w5g: ??
+    docs_url: "??"
   SSV6155: &wifi_SSV6155
     name: SSV6155
     interface: ??
@@ -451,8 +491,25 @@ wifi:
     w2g_HT40: true
     w5g: false
     docs_url: "http://www.icomm-semi.com/Uploads/Temp/files/2022-08-18/SV6158%20Datasheet%20V1.2.pdf"
+  SSV6256P: &wifi_SSV6256P
+    name: SSV6256P
+    interface: SDIO??
+    w2g: a/b/g/n
+    w2g_radio: 1T1R
+    w2g_HT40: true
+    w5g: true
+    docs_url: "https://www.scribd.com/document/621419437/SV6256P-Datasheet-V720"
+
   SSV6355: &wifi_SSV6355
     name: SSV6355
+    interface: ??
+    w2g: ??
+    w2g_radio: ??
+    w2g_HT40: ??
+    w5g: ??
+    docs_url: "??"
+  SYN4343: &wifi_SYN4343
+    name: SYN4343
     interface: ??
     w2g: ??
     w2g_radio: ??
@@ -475,5 +532,13 @@ wifi:
     w2g_HT40: false
     w5g: false
     docs_url: "https://wikidevi.wi-cat.ru/Synaptics"
+  WQ9001: &wifi_WQ9001
+    name: WQ9001
+    interface: USB
+    w2g: a/b/g/n
+    w2g_radio: 1T1R
+    w2g_HT40: false
+    w5g: false
+    docs_url: "https://www.wuqi-micro.com/Public/Uploads/uploadfile2/files/20230522/WQ9001EN.pdf"
 
 
