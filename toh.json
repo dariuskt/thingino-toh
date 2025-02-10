@@ -674,8 +674,8 @@
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8410x_t31x_sc3338.bin"
   },
-  "eufy_t8441x": {
-    "id": "eufy_t8441x",
+  "eufy_t8441x_t31x_sc3335": {
+    "id": "eufy_t8441x_t31x_sc3335",
     "device_type": "TBD",
     "brand": "eufy",
     "model": "t8441x",
@@ -714,10 +714,94 @@
     "ir_cut": true,
     "ir_850": true,
     "ir_940": false,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8441x.bin"
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8441x_t31x_sc3335.bin"
   },
-  "eufy_t8442x": {
-    "id": "eufy_t8442x",
+  "eufy_t8441x_t31x_sc3338": {
+    "id": "eufy_t8441x_t31x_sc3338",
+    "device_type": "TBD",
+    "brand": "eufy",
+    "model": "t8441x",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "SC3338",
+      "resolution": "2304x1296@100fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+    },
+    "wifi": {
+      "name": "SYN4343",
+      "interface": "??",
+      "w2g": "??",
+      "w2g_radio": "??",
+      "w2g_HT40": "??",
+      "w5g": "??",
+      "docs_url": "??"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8441x_t31x_sc3338.bin"
+  },
+  "eufy_t8442x_t31x_sc3335": {
+    "id": "eufy_t8442x_t31x_sc3335",
+    "device_type": "TBD",
+    "brand": "eufy",
+    "model": "t8442x",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "SC3335",
+      "resolution": "2500x1620@30fps ???",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+    },
+    "wifi": {
+      "name": "SYN4343",
+      "interface": "??",
+      "w2g": "??",
+      "w2g_radio": "??",
+      "w2g_HT40": "??",
+      "w5g": "??",
+      "docs_url": "??"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8442x_t31x_sc3335.bin"
+  },
+  "eufy_t8442x_t31x_sc3338": {
+    "id": "eufy_t8442x_t31x_sc3338",
     "device_type": "TBD",
     "brand": "eufy",
     "model": "t8442x",
@@ -756,7 +840,7 @@
     "ir_cut": true,
     "ir_850": true,
     "ir_940": false,
-    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8442x.bin"
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8442x_t31x_sc3338.bin"
   },
   "feisda_hd620": {
     "id": "feisda_hd620",
@@ -1801,6 +1885,48 @@
     "ir_850": true,
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-laview_l2_t31l_sc3338_atbm6012b.bin"
+  },
+  "laview_l2_t31l_sc3338_ssv6256p": {
+    "id": "laview_l2_t31l_sc3338_ssv6256p",
+    "device_type": "TBD",
+    "brand": "laview",
+    "model": "l2",
+    "status": "supported",
+    "flash_mb": 8,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31L",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1000
+    },
+    "sensor": {
+      "name": "SC3338",
+      "resolution": "2304x1296@100fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+    },
+    "wifi": {
+      "name": "SSV6256P",
+      "interface": "SDIO??",
+      "w2g": "a/b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": true,
+      "docs_url": "https://www.scribd.com/document/621419437/SV6256P-Datasheet-V720"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-laview_l2_t31l_sc3338_ssv6256p.bin"
   },
   "litokam_c1": {
     "id": "litokam_c1",
@@ -5014,6 +5140,48 @@
     "ir_850": false,
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-h3c_c2041_t31x_jxk04_rtl8188ftv.bin"
+  },
+  "jienuo-jn-107ar-e": {
+    "id": "jienuo-jn-107ar-e",
+    "device_type": "TBD",
+    "brand": "jienuo-jn-107ar-e",
+    "model": "jienuo-jn-107ar-e",
+    "status": "wip",
+    "flash_mb": null,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "--",
+      "cpu_arch": "--",
+      "max_resolution": "--",
+      "max_encoding": "--",
+      "name": "--",
+      "ram_mb": "--:",
+      "cpu_clock_mhz": "--:"
+    },
+    "sensor": {
+      "name": "--",
+      "resolution": "--",
+      "docs_url": "--"
+    },
+    "wifi": {
+      "name": "--",
+      "interface": "--",
+      "w2g": "--",
+      "w2g_radio": "--",
+      "w2g_HT40": "--",
+      "w5g": "--",
+      "docs_url": "--"
+    },
+    "ethernet": true,
+    "sd_card": false,
+    "pan_tilt": false,
+    "mic": false,
+    "speaker": false,
+    "ir_cut": false,
+    "ir_850": false,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jienuo-jn-107ar-e.bin"
   },
   "jooan_c9ts": {
     "id": "jooan_c9ts",

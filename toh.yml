@@ -873,8 +873,8 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8410x_t31x_sc3338.bin
-  eufy_t8441x:
-    id: eufy_t8441x
+  eufy_t8441x_t31x_sc3335:
+    id: eufy_t8441x_t31x_sc3335
     device_type: TBD
     brand: eufy
     model: t8441x
@@ -891,9 +891,47 @@ devices:
     ir_cut: true
     ir_850: true
     ir_940: false
-    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8441x.bin
-  eufy_t8442x:
-    id: eufy_t8442x
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8441x_t31x_sc3335.bin
+  eufy_t8441x_t31x_sc3338:
+    id: eufy_t8441x_t31x_sc3338
+    device_type: TBD
+    brand: eufy
+    model: t8441x
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_SC3338
+    wifi: *wifi_SYN4343
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8441x_t31x_sc3338.bin
+  eufy_t8442x_t31x_sc3335:
+    id: eufy_t8442x_t31x_sc3335
+    device_type: TBD
+    brand: eufy
+    model: t8442x
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_SC3335
+    wifi: *wifi_SYN4343
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8442x_t31x_sc3335.bin
+  eufy_t8442x_t31x_sc3338:
+    id: eufy_t8442x_t31x_sc3338
     device_type: TBD
     brand: eufy
     model: t8442x
@@ -910,7 +948,7 @@ devices:
     ir_cut: true
     ir_850: true
     ir_940: false
-    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8442x.bin
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-eufy_t8442x_t31x_sc3338.bin
   feisda_hd620:
     id: feisda_hd620
     device_type: TBD
@@ -1403,6 +1441,25 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-laview_l2_t31l_sc3338_atbm6012b.bin
+  laview_l2_t31l_sc3338_ssv6256p:
+    id: laview_l2_t31l_sc3338_ssv6256p
+    device_type: TBD
+    brand: laview
+    model: l2
+    status: supported
+    flash_mb: 8
+    soc: *soc_T31L
+    sensor: *sensor_SC3338
+    wifi: *wifi_SSV6256P
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-laview_l2_t31l_sc3338_ssv6256p.bin
   litokam_c1:
     id: litokam_c1
     device_type: TBD
@@ -2960,6 +3017,25 @@ devices:
     ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-h3c_c2041_t31x_jxk04_rtl8188ftv.bin
+  jienuo-jn-107ar-e:
+    id: jienuo-jn-107ar-e
+    device_type: TBD
+    brand: jienuo-jn-107ar-e
+    model: jienuo-jn-107ar-e
+    status: wip
+    flash_mb: null
+    soc: *soc_tpl
+    sensor: *sensor_tpl
+    wifi: *wifi_tpl
+    ethernet: true
+    sd_card: false
+    pan_tilt: false
+    mic: false
+    speaker: false
+    ir_cut: false
+    ir_850: false
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jienuo-jn-107ar-e.bin
   jooan_c9ts:
     id: jooan_c9ts
     device_type: TBD
