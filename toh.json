@@ -1676,6 +1676,48 @@
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_a6m_ssv6355.bin"
   },
+  "jooan_f2t": {
+    "id": "jooan_f2t",
+    "device_type": "TBD",
+    "brand": "jooan",
+    "model": "f2t",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T30",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2688x2048",
+      "max_encoding": "3840x2160@30fps",
+      "name": "T30X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1000
+    },
+    "sensor": {
+      "name": "SC4236",
+      "resolution": "2304x1536@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
+    },
+    "wifi": {
+      "name": "--",
+      "interface": "--",
+      "w2g": "--",
+      "w2g_radio": "--",
+      "w2g_HT40": "--",
+      "w5g": "--",
+      "docs_url": "--"
+    },
+    "ethernet": true,
+    "sd_card": true,
+    "pan_tilt": false,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_f2t.bin"
+  },
   "jooan_q3h": {
     "id": "jooan_q3h",
     "device_type": "TBD",
