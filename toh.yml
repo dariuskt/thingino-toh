@@ -187,6 +187,10 @@ sensor:
     name: GC2053
     resolution: 1920x1080@30fps
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+  GC2063: &sensor_GC2063
+    name: GC2063
+    resolution: 1920x1080@30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
   GC2083: &sensor_GC2083
     name: GC2083
     resolution: 1920x1080@30fps
@@ -327,6 +331,10 @@ sensor:
     name: SC4336P
     resolution: 2880x1620@30fps
     docs_url: "https://smartsens.oss-cn-beijing.aliyuncs.com/web/img/1677747703063551255.pdf"
+  SC5235: &sensor_SC5235
+    name: SC5235
+    resolution: 2592x1944@20fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
 
 
 
@@ -387,6 +395,14 @@ wifi:
     w2g_HT40: true
     w5g: false
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+  ATBM6132U: &wifi_ATBM6132U
+    name: ATBM6132U
+    interface: ??
+    w2g: ??
+    w2g_radio: ??
+    w2g_HT40: ??
+    w5g: ??
+    docs_url: ""
   ATBM6132BU: &wifi_ATBM6132BU
     name: ATBM6132BU
     interface: USB
@@ -1526,6 +1542,25 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-litokam_m1.bin
+  longplus_x07_t31n_jxf23:
+    id: longplus_x07_t31n_jxf23
+    device_type: TBD
+    brand: longplus
+    model: x07
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31N
+    sensor: *sensor_JXF23
+    wifi: *wifi_RTL8189FTV
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-longplus_x07_t31n_jxf23.bin
   noname_t10l_jxh42_mt7601:
     id: noname_t10l_jxh42_mt7601
     device_type: TBD
@@ -1592,6 +1627,25 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-personalcam.bin
+  pesita_x09_t31n_jxf23:
+    id: pesita_x09_t31n_jxf23
+    device_type: TBD
+    brand: pesita
+    model: x09
+    status: supported
+    flash_mb: 16
+    soc: *soc_T31N
+    sensor: *sensor_JXF23
+    wifi: *wifi_RTL8189FTV
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-pesita_x09_t31n_jxf23.bin
   primecables_08360:
     id: primecables_08360
     device_type: TBD
@@ -3042,16 +3096,16 @@ devices:
     brand: jienuo-jn-107ar-e
     model: jienuo-jn-107ar-e
     status: wip
-    flash_mb: null
-    soc: *soc_tpl
-    sensor: *sensor_tpl
-    wifi: *wifi_tpl
+    flash_mb: 16
+    soc: *soc_T31X
+    sensor: *sensor_SC5235
+    wifi: *wifi_ETH
     ethernet: true
-    sd_card: false
+    sd_card: true
     pan_tilt: false
-    mic: false
+    mic: true
     speaker: false
-    ir_cut: false
+    ir_cut: true
     ir_850: false
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jienuo-jn-107ar-e.bin
@@ -3093,6 +3147,44 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan-w5u.bin
+  jooan_w8u_atbm6132u:
+    id: jooan_w8u_atbm6132u
+    device_type: TBD
+    brand: jooan
+    model: w8u
+    status: wip
+    flash_mb: 8
+    soc: *soc_T23N
+    sensor: *sensor_SC2336P
+    wifi: *wifi_ATBM6132U
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_w8u_atbm6132u.bin
+  longplus_x07_t31n_gc2063:
+    id: longplus_x07_t31n_gc2063
+    device_type: TBD
+    brand: longplus
+    model: x07
+    status: wip
+    flash_mb: 16
+    soc: *soc_T31N
+    sensor: *sensor_GC2063
+    wifi: *wifi_RTL8189FTV
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-longplus_x07_t31n_gc2063.bin
   t31al_xxx_rtl8189ftv:
     id: t31al_xxx_rtl8189ftv
     device_type: TBD

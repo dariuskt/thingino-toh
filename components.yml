@@ -187,6 +187,10 @@ sensor:
     name: GC2053
     resolution: 1920x1080@30fps
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+  GC2063: &sensor_GC2063
+    name: GC2063
+    resolution: 1920x1080@30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
   GC2083: &sensor_GC2083
     name: GC2083
     resolution: 1920x1080@30fps
@@ -327,6 +331,10 @@ sensor:
     name: SC4336P
     resolution: 2880x1620@30fps
     docs_url: "https://smartsens.oss-cn-beijing.aliyuncs.com/web/img/1677747703063551255.pdf"
+  SC5235: &sensor_SC5235
+    name: SC5235
+    resolution: 2592x1944@20fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
 
 
 
@@ -387,6 +395,14 @@ wifi:
     w2g_HT40: true
     w5g: false
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/wireless/altobeam.md"
+  ATBM6132U: &wifi_ATBM6132U
+    name: ATBM6132U
+    interface: ??
+    w2g: ??
+    w2g_radio: ??
+    w2g_HT40: ??
+    w5g: ??
+    docs_url: ""
   ATBM6132BU: &wifi_ATBM6132BU
     name: ATBM6132BU
     interface: USB

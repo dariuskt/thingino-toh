@@ -2063,6 +2063,48 @@
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-litokam_m1.bin"
   },
+  "longplus_x07_t31n_jxf23": {
+    "id": "longplus_x07_t31n_jxf23",
+    "device_type": "TBD",
+    "brand": "longplus",
+    "model": "x07",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "JXF23",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+    },
+    "wifi": {
+      "name": "RTL8189FTV",
+      "interface": "SDIO",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407020948_Realtek-Semicon-RTL8189FTV-VC-CG_C2687145.pdf"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-longplus_x07_t31n_jxf23.bin"
+  },
   "noname_t10l_jxh42_mt7601": {
     "id": "noname_t10l_jxh42_mt7601",
     "device_type": "TBD",
@@ -2197,6 +2239,48 @@
     "ir_850": true,
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-personalcam.bin"
+  },
+  "pesita_x09_t31n_jxf23": {
+    "id": "pesita_x09_t31n_jxf23",
+    "device_type": "TBD",
+    "brand": "pesita",
+    "model": "x09",
+    "status": "supported",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "JXF23",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/soi.md"
+    },
+    "wifi": {
+      "name": "RTL8189FTV",
+      "interface": "SDIO",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407020948_Realtek-Semicon-RTL8189FTV-VC-CG_C2687145.pdf"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-pesita_x09_t31n_jxf23.bin"
   },
   "primecables_08360": {
     "id": "primecables_08360",
@@ -5189,22 +5273,22 @@
     "brand": "jienuo-jn-107ar-e",
     "model": "jienuo-jn-107ar-e",
     "status": "wip",
-    "flash_mb": null,
+    "flash_mb": 16,
     "soc": {
       "brand": "ingenic",
       "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
-      "family": "--",
-      "cpu_arch": "--",
-      "max_resolution": "--",
-      "max_encoding": "--",
-      "name": "--",
-      "ram_mb": "--:",
-      "cpu_clock_mhz": "--:"
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31X",
+      "ram_mb": 128,
+      "cpu_clock_mhz": 1400
     },
     "sensor": {
-      "name": "--",
-      "resolution": "--",
-      "docs_url": "--"
+      "name": "SC5235",
+      "resolution": "2592x1944@20fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/smartsens.md"
     },
     "wifi": {
       "name": "--",
@@ -5216,11 +5300,11 @@
       "docs_url": "--"
     },
     "ethernet": true,
-    "sd_card": false,
+    "sd_card": true,
     "pan_tilt": false,
-    "mic": false,
+    "mic": true,
     "speaker": false,
-    "ir_cut": false,
+    "ir_cut": true,
     "ir_850": false,
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jienuo-jn-107ar-e.bin"
@@ -5308,6 +5392,90 @@
     "ir_850": true,
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan-w5u.bin"
+  },
+  "jooan_w8u_atbm6132u": {
+    "id": "jooan_w8u_atbm6132u",
+    "device_type": "TBD",
+    "brand": "jooan",
+    "model": "w8u",
+    "status": "wip",
+    "flash_mb": 8,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T23",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2308x2048",
+      "max_encoding": "3MP@40fps",
+      "name": "T23N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "SC2336P",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://tehno32.ru/sites/default/files/download/cmos_smartsens/1676880676453184940.pdf"
+    },
+    "wifi": {
+      "name": "ATBM6132U",
+      "interface": "??",
+      "w2g": "??",
+      "w2g_radio": "??",
+      "w2g_HT40": "??",
+      "w5g": "??",
+      "docs_url": ""
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-jooan_w8u_atbm6132u.bin"
+  },
+  "longplus_x07_t31n_gc2063": {
+    "id": "longplus_x07_t31n_gc2063",
+    "device_type": "TBD",
+    "brand": "longplus",
+    "model": "x07",
+    "status": "wip",
+    "flash_mb": 16,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T31",
+      "cpu_arch": "XBurst1",
+      "max_resolution": "2592x2048",
+      "max_encoding": "2592x2048@25fps",
+      "name": "T31N",
+      "ram_mb": 64,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "GC2063",
+      "resolution": "1920x1080@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+    },
+    "wifi": {
+      "name": "RTL8189FTV",
+      "interface": "SDIO",
+      "w2g": "b/g/n",
+      "w2g_radio": "1T1R",
+      "w2g_HT40": true,
+      "w5g": false,
+      "docs_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407020948_Realtek-Semicon-RTL8189FTV-VC-CG_C2687145.pdf"
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-longplus_x07_t31n_gc2063.bin"
   },
   "t31al_xxx_rtl8189ftv": {
     "id": "t31al_xxx_rtl8189ftv",
