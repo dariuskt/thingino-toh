@@ -44,6 +44,11 @@ soc_family:
     cpu_arch: XBurst2
     max_resolution: 3840x2160
     max_encoding: 1080p@60fps, 3840x2160@20fps
+  ingenic_T41: &soc_family_ingenic_T41
+    family: T41
+    cpu_arch: XBurst2
+    max_resolution: ??
+    max_encoding: ??
 
 
 soc:
@@ -173,6 +178,13 @@ soc:
     ram_mb: 2048
     cpu_clock_mhz: 2x1200
 
+  T41NQ: &soc_T41NQ
+    <<: *soc_brand_ingenic
+    <<: *soc_family_ingenic_T41
+    name: T41NQ
+    ram_mb: 1024
+    cpu_clock_mhz: 1400
+
 
 sensor:
   tpl: &sensor_tpl
@@ -194,6 +206,10 @@ sensor:
   GC2083: &sensor_GC2083
     name: GC2083
     resolution: 1920x1080@30fps
+    docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+  GC4023: &sensor_GC4023
+    name: GC4023
+    resolution: 2560x1440@30fps
     docs_url: "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
   GC4653: &sensor_GC4653
     name: GC4653
@@ -347,6 +363,14 @@ wifi:
     w2g_HT40: --
     w5g: --
     docs_url: "--"
+  AIC8800D: &wifi_AIC8800D
+    name: AIC8800D
+    interface: ??
+    w2g: ??
+    w2g_radio: ??
+    w2g_HT40: ??
+    w5g: ??
+    docs_url: ""
   AP6181: &wifi_AP6181
     name: AP6181
     interface: SDIO
@@ -3185,6 +3209,25 @@ devices:
     ir_850: true
     ir_940: false
     firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-longplus_x07_t31n_gc2063.bin
+  noorio_t110:
+    id: noorio_t110
+    device_type: TBD
+    brand: noorio
+    model: t110
+    status: wip
+    flash_mb: 32
+    soc: *soc_T41NQ
+    sensor: *sensor_GC4023
+    wifi: *wifi_AIC8800D
+    ethernet: false
+    sd_card: true
+    pan_tilt: true
+    mic: true
+    speaker: true
+    ir_cut: true
+    ir_850: true
+    ir_940: false
+    firmware_url: https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-noorio_t110.bin
   t31al_xxx_rtl8189ftv:
     id: t31al_xxx_rtl8189ftv
     device_type: TBD

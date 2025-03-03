@@ -5477,6 +5477,48 @@
     "ir_940": false,
     "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-longplus_x07_t31n_gc2063.bin"
   },
+  "noorio_t110": {
+    "id": "noorio_t110",
+    "device_type": "TBD",
+    "brand": "noorio",
+    "model": "t110",
+    "status": "wip",
+    "flash_mb": 32,
+    "soc": {
+      "brand": "ingenic",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/soc/ingenic.md",
+      "family": "T41",
+      "cpu_arch": "XBurst2",
+      "max_resolution": "??",
+      "max_encoding": "??",
+      "name": "T41NQ",
+      "ram_mb": 1024,
+      "cpu_clock_mhz": 1400
+    },
+    "sensor": {
+      "name": "GC4023",
+      "resolution": "2560x1440@30fps",
+      "docs_url": "https://github.com/themactep/wiki/blob/master/hardware/components/sensor/galaxycore.md"
+    },
+    "wifi": {
+      "name": "AIC8800D",
+      "interface": "??",
+      "w2g": "??",
+      "w2g_radio": "??",
+      "w2g_HT40": "??",
+      "w5g": "??",
+      "docs_url": ""
+    },
+    "ethernet": false,
+    "sd_card": true,
+    "pan_tilt": true,
+    "mic": true,
+    "speaker": true,
+    "ir_cut": true,
+    "ir_850": true,
+    "ir_940": false,
+    "firmware_url": "https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-noorio_t110.bin"
+  },
   "t31al_xxx_rtl8189ftv": {
     "id": "t31al_xxx_rtl8189ftv",
     "device_type": "TBD",
